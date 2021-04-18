@@ -2,6 +2,12 @@
 
 [uBlacklist](https://iorate.github.io/ublacklist/)向けのルールです。
 
+# 購読
+
+こちらから最新版の購読が可能です。
+
+<https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt>
+
 # ブロックするサイト
 
 ## 技術系スパムサイト
