@@ -1,0 +1,46 @@
+-- 日本語がshow時に文字化けすることへの対処
+-- 直積型が改行なしで読みづらいことへの対処
+import qualified Text.Pretty.Simple
+:set -interactive-print=Text.Pretty.Simple.pPrint
+
+-- rioが推奨する言語拡張を有効にする
+:set -XBangPatterns
+:set -XBinaryLiterals
+:set -XConstraintKinds
+:set -XDataKinds
+:set -XDefaultSignatures
+:set -XDeriveDataTypeable
+:set -XDeriveFoldable
+:set -XDeriveFunctor
+:set -XDeriveGeneric
+:set -XDeriveTraversable
+:set -XDoAndIfThenElse
+:set -XEmptyDataDecls
+:set -XExistentialQuantification
+:set -XFlexibleContexts
+:set -XFlexibleInstances
+:set -XFunctionalDependencies
+:set -XGADTs
+:set -XGeneralizedNewtypeDeriving
+:set -XInstanceSigs
+:set -XKindSignatures
+:set -XLambdaCase
+:set -XMultiParamTypeClasses
+:set -XMultiWayIf
+:set -XNamedFieldPuns
+:set -XNoImplicitPrelude
+:set -XOverloadedStrings
+:set -XPartialTypeSignatures
+:set -XPatternGuards
+:set -XPolyKinds
+:set -XRankNTypes
+:set -XRecordWildCards
+:set -XScopedTypeVariables
+:set -XStandaloneDeriving
+:set -XTupleSections
+:set -XTypeFamilies
+:set -XTypeSynonymInstances
+:set -XViewPatterns
+
+-- NoImplicitPreludeが既に指定されているのでRIOをimportしないと基本的な関数が使えなくなる
+import RIO

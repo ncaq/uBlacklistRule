@@ -1,0 +1,62 @@
+name: uBlacklistRule
+version: 0.1.0
+github: ncaq/uBlacklistRule
+license: MIT
+author: ncaq
+maintainer: ncaq@ncaq.net
+copyright: © ncaq
+
+extra-source-files:
+  - README.md
+
+description: uBlacklist向けのルールです。
+
+dependencies:
+  # prelude
+  - base >= 4.11 && < 10
+  - rio >= 0.1.12.0
+  # library
+  - iso3166-country-codes
+  - iso639
+  - raw-strings-qq
+  # for debug
+  - pretty-simple
+
+ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wpartial-fields
+  - -Wredundant-constraints
+
+library:
+  source-dirs: src
+
+executables:
+  uBlacklistRule:
+    main: Main.hs
+    source-dirs: app
+    dependencies:
+      - uBlacklistRule
+
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+
+tests:
+  uBlacklistRule-test:
+    main: Spec.hs
+    source-dirs: test
+    dependencies:
+      - uBlacklistRule
+      - aeson
+      - hspec
+      - http-conduit
+
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
