@@ -4431,3 +4431,5 @@
 *://*.nicovideo.me/*
 *://*.nicozon.net/*
 *://*.sub-nicoapple.ssl-lolipop.jp/*
+*://*.proxyfly.org/*
+*://*.proxybot.cc/*

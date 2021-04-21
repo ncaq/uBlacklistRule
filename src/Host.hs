@@ -9,7 +9,7 @@ import qualified RIO.Text as T
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHosts :: [Text]
-makeHosts = concat [tech, game, ch, rumor, video]
+makeHosts = concat [tech, game, ch, rumor, video, copy]
 
 -- | 技術系スパムサイト。
 tech :: [Text]
@@ -162,4 +162,11 @@ nicoco.net
 nicovideo.me
 nicozon.net
 sub-nicoapple.ssl-lolipop.jp
+|]
+
+-- | 特に対象無くコピペを行うサイト
+copy :: [Text]
+copy = T.lines $ T.strip [r|
+proxyfly.org
+proxybot.cc
 |]
