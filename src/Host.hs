@@ -11,11 +11,11 @@ import qualified RIO.Text as T
 makeHosts :: [Text]
 makeHosts = concat [tech, game, ch, rumor, video, copy]
 
--- | 技術系スパムサイト。
+-- | 技術系スパムサイト全て。
 tech :: [Text]
 tech = concat [singleTechSites, itMure, itSwarm, qastack]
 
--- | 規則性があまり無いぼぼ単発のサイト。
+-- | 規則性があまり無いぼぼ単発の技術系スパムサイト。
 singleTechSites :: [Text]
 singleTechSites = T.lines $ T.strip [r|
 365airsoft.com
@@ -43,6 +43,7 @@ codetd.com
 codingdict.com
 coredump.biz
 crypto-days.jp
+csdn.net
 de-vraag.com
 devadvisor.io
 developreference.com

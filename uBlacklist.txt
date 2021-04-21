@@ -23,6 +23,7 @@
 *://*.codingdict.com/*
 *://*.coredump.biz/*
 *://*.crypto-days.jp/*
+*://*.csdn.net/*
 *://*.de-vraag.com/*
 *://*.devadvisor.io/*
 *://*.developreference.com/*
