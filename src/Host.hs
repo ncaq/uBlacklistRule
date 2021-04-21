@@ -96,11 +96,16 @@ itMure = (\code -> "it-mure." <> code <> ".net") <$> codes
 
 -- | `it-swarm.com` 系のサイト。
 itSwarm :: [Text]
-itSwarm = concat
-  [ ["it-swarm.com", "it-swarm.dev", "it-swarm.net", "it-swarm.xyz"]
-  , (\code -> "it-swarm-" <> code <> ".tech") <$> codes
-  , (\code -> "it-swarm-" <> code <> ".net") <$> codes
-  ]
+itSwarm =
+  let topLevelDomains =
+        [ "com"
+        , "dev"
+        , "net"
+        , "tech"
+        , "xyz"
+        ]
+  in (["it-swarm." <> domain | domain <- topLevelDomains]) ++
+     (["it-swarm-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
 
 -- | `qastack.jp` 系のサイト。
 qastack :: [Text]
