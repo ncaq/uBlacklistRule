@@ -54,6 +54,7 @@ helpex.vn
 issue.life
 iteramos.com
 javaer101.com
+jpcloud.net
 knews.vip
 kotaeta.com
 laptrinhx.com
