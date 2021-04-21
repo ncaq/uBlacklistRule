@@ -67,6 +67,7 @@ qa-help.ru
 qa.1r1g.com
 qaru.site
 quabr.com
+quares.ru
 railstoolkit.com
 removemalware-jp.com
 riptutorial.com
