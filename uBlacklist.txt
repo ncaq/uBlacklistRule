@@ -3306,11 +3306,6 @@
 *://*.qastack.info.zm/*
 *://*.qastack.info.zu/*
 *://*.qastack.info.zw/*
-*://*.altema.jp/*
-*://*.game8.jp/*
-*://*.gamerch.com/*
-*://*.gamewith.jp/*
-*://*.gamy.jp/*
 *://*.proxyfly.org/*
 *://*.proxybot.cc/*
 *://*.2ch-ranking.net/*
@@ -3333,5 +3328,10 @@
 *://*.nicovideo.me/*
 *://*.nicozon.net/*
 *://*.sub-nicoapple.ssl-lolipop.jp/*
+*://*.altema.jp/*
+*://*.game8.jp/*
+*://*.gamerch.com/*
+*://*.gamewith.jp/*
+*://*.gamy.jp/*
 *://*.esuteru.com/*
 *://*.jin115.com/*
