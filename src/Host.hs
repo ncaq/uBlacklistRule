@@ -10,7 +10,7 @@ import qualified RIO.Text as T
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHosts :: [Text]
-makeHosts = nub $ concat [tech, game, ch, rumor, video, copy]
+makeHosts = nub $ concat [tech, copy, ch, video, game, rumor]
 
 -- | 技術系スパムサイト全て。
 tech :: [Text]
@@ -120,14 +120,12 @@ qastack = concat
   , ("qastack.info." <>) <$> codes
   ]
 
--- | ゲーム攻略コピペサイト。
-game :: [Text]
-game = T.lines $ T.strip [r|
-altema.jp
-game8.jp
-gamerch.com
-gamewith.jp
-gamy.jp
+
+-- | 特に対象無くコピペを行うサイト
+copy :: [Text]
+copy = T.lines $ T.strip [r|
+proxyfly.org
+proxybot.cc
 |]
 
 -- | 5chコピペサイト。
@@ -148,13 +146,6 @@ ikioi2ch.net
 ikioi5ch.net
 |]
 
--- | デマを流すサイト。
-rumor :: [Text]
-rumor = T.lines $ T.strip [r|
-esuteru.com
-jin115.com
-|]
-
 -- | 動画をiframeで埋め込んで流したり、メタ情報で検索に引っ掛けてくるもの。
 video :: [Text]
 video = T.lines $ T.strip [r|
@@ -167,9 +158,19 @@ nicozon.net
 sub-nicoapple.ssl-lolipop.jp
 |]
 
--- | 特に対象無くコピペを行うサイト
-copy :: [Text]
-copy = T.lines $ T.strip [r|
-proxyfly.org
-proxybot.cc
+-- | ゲーム攻略コピペサイト。
+game :: [Text]
+game = T.lines $ T.strip [r|
+altema.jp
+game8.jp
+gamerch.com
+gamewith.jp
+gamy.jp
+|]
+
+-- | デマを流すサイト。
+rumor :: [Text]
+rumor = T.lines $ T.strip [r|
+esuteru.com
+jin115.com
 |]
