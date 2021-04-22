@@ -1,15 +1,17 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# OPTIONS_GHC -Wno-orphans #-}
-module Code where
+module Code (codes) where
 
 import           Data.ISO3166_CountryCodes
 import           Data.LanguageCodes
 import           Import
+import           RIO.List
 import           RIO.Text                  as T
 
 -- | 機械翻訳サイトが使う可能性のある地域コード一覧。
+-- 単にブラックリスト一覧として見ると、分かれているのはわかりにくいだけなので混ぜてソートします。
 codes :: [Text]
-codes = countryCodes <> langCodes
+codes = sort $ countryCodes <> langCodes
 
 -- | 国別コード。
 countryCodes :: [Text]
