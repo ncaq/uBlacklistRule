@@ -124,8 +124,10 @@ qastack = concat
 -- | 特に対象無くコピペを行うサイト
 copy :: [Text]
 copy = T.lines $ T.strip [r|
-proxyfly.org
+nipponkaigi.net
 proxybot.cc
+proxyfly.org
+wikiarabi.org
 |]
 
 -- | 5chコピペサイト。

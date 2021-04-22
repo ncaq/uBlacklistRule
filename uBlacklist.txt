@@ -3306,8 +3306,10 @@
 *://*.qastack.info.zm/*
 *://*.qastack.info.zu/*
 *://*.qastack.info.zw/*
-*://*.proxyfly.org/*
+*://*.nipponkaigi.net/*
 *://*.proxybot.cc/*
+*://*.proxyfly.org/*
+*://*.wikiarabi.org/*
 *://*.2ch-ranking.net/*
 *://*.2ch.live/*
 *://*.2ch.pet/*
