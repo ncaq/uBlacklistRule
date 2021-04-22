@@ -5,11 +5,12 @@ module Host (makeHosts) where
 
 import           Code
 import           Import
+import           RIO.List
 import qualified RIO.Text as T
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHosts :: [Text]
-makeHosts = concat [tech, game, ch, rumor, video, copy]
+makeHosts = nub $ concat [tech, game, ch, rumor, video, copy]
 
 -- | 技術系スパムサイト全て。
 tech :: [Text]
