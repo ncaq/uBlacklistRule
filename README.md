@@ -8,6 +8,19 @@
 
 <https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt>
 
+# 何故既にルールを共有するリポジトリがあるのに新しく作ったのか
+
+[arosh/ublacklist-stackoverflow-translation: Stack Overflow の機械翻訳サイトの除外用フィルタ](https://github.com/arosh/ublacklist-stackoverflow-translation)
+など、
+すばらしい先駆者様が居ます。
+
+ただ、
+このリポジトリの対象はあくまで機械翻訳サイトのみなので、
+もっと広くブロックする自前のルールを作っていました。
+
+メンテナンスが結構大変になってきたので、
+生成ツール付きで独立リポジトリとして公開することにしました。
+
 # ブロックするサイト
 
 ## 技術系スパムサイト
@@ -16,13 +29,11 @@
 
 翻訳してないで単にコピーしているサイトも入ってることがあります。
 
-## デマサイト
+## コピペサイト
 
-主にゲハブログなど悪質なデマを撒き散らすサイトです。
-
-## コピーゲーム攻略サイト
-
-他の情報源からゲームの攻略情報をコピーして新しい情報を生み出さないサイトです。
+特に新しい情報を生み出さないスパムサイト。
+webプロキシなども対象です。
+webプロキシを使いたい場合普通検索結果経由では行きませんよね?
 
 ## 5chのコピーサイト
 
@@ -40,7 +51,17 @@
 
 ## YouTube、ニコニコ動画などのコピーサイト
 
-特に新しい情報を生み出さないインラインで動画を出していたりメタデータを転載しているサイトです。
+インラインで動画を出していたりメタデータを転載しているサイトです。
+
+## コピーゲーム攻略サイト
+
+他の情報源からゲームの攻略情報をコピーしていたり、
+「工事中」でページを埋めたりする、
+いわゆる企業型攻略サイトです。
+
+## デマサイト
+
+主にゲハブログなど悪質なデマを撒き散らすサイトです。
 
 ## その他検索の役に立たないサイト
 
@@ -57,10 +78,13 @@
 
 Issue, Pull Requestを是非ともお待ちしております。
 
+Issueだけ建てるのも歓迎しますし、
+[uBlacklistRule/Host.hs at master · ncaq/uBlacklistRule](https://github.com/ncaq/uBlacklistRule/blob/master/src/Host.hs)
+などに書き込んでくださるのも歓迎いたします。
+
 # 関連リンク
 
 * [uBlacklistを使ってポケモン徹底攻略やStack OverflowのコピペサイトをGoogle検索から除外しましょう - ncaq](https://www.ncaq.net/2019/12/18/19/18/05/)
 * [uBlacklist - iorate.github.io](https://iorate.github.io/ublacklist/)
 * [iorate/uBlacklist: Blocks specific sites from appearing in Google search results](https://github.com/iorate/uBlacklist)
-* [arosh/ublacklist-stackoverflow-translation: Stack Overflow の機械翻訳サイトの除外用フィルタ](https://github.com/arosh/ublacklist-stackoverflow-translation)
 * [アフィカスリスト作成所 - なんJ AdGuard部 Wiki*](https://wikiwiki.jp/nanj-adguard/%E3%82%A2%E3%83%95%E3%82%A3%E3%82%AB%E3%82%B9%E3%83%AA%E3%82%B9%E3%83%88%E4%BD%9C%E6%88%90%E6%89%80)
