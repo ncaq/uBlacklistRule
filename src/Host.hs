@@ -49,6 +49,7 @@ de-vraag.com
 devadvisor.io
 developreference.com
 exceptionshub.com
+extutorial.com
 fixes.pub
 gitmemory.com
 helpex.vn
@@ -89,6 +90,7 @@ thinbug.com
 tutorialmore.com
 ubuntu.buildwebhost.com
 ubuntugeeks.com
+uefir.com
 uwenku.com
 voidcc.com
 while-do.com
