@@ -59,6 +59,7 @@ gitmemory.com
 helpex.vn
 hi.qaru.tech
 hu.qaru.tech
+ichi.pro
 issue.life
 issues-world.com
 iteramos.com
