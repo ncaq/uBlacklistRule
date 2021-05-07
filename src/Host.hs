@@ -57,6 +57,7 @@ geek-tips.imtqy.com
 ghcc.net
 gitmemory.com
 helpex.vn
+hi.qaru.tech
 hu.qaru.tech
 issue.life
 issues-world.com
