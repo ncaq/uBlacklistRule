@@ -56,6 +56,7 @@ fixes.pub
 geek-tips.imtqy.com
 ghcc.net
 gitmemory.com
+helloworldkb.com
 helpex.vn
 hi.qaru.tech
 hu.qaru.tech
@@ -87,6 +88,7 @@ question-it.com
 railstoolkit.com
 removemalware-jp.com
 riptutorial.com
+risposta.org
 rupython.com
 softonic.com
 softonic.jp
