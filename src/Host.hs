@@ -22,6 +22,7 @@ singleTechSites = T.lines $ T.strip [r|
 365airsoft.com
 366service.com
 4meahc.com
+888wenti.com
 answer-id.com
 askdev.info
 bestecode.com
