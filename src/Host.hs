@@ -53,6 +53,7 @@ extutorial.com
 fixes.pub
 gitmemory.com
 helpex.vn
+hu.qaru.tech
 issue.life
 issues-world.com
 iteramos.com
