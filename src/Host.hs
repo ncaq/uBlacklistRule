@@ -68,6 +68,7 @@ programmerz.ru
 programqa.com
 python2.net
 python5.com
+pythonq.com
 qa-help.ru
 qa.1r1g.com
 qaru.site
