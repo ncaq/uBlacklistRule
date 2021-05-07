@@ -101,6 +101,7 @@ uwenku.com
 voidcc.com
 while-do.com
 xbuba.com
+zhouni.net
 |]
 
 -- | `it-mure.jp.net` 系のサイト。

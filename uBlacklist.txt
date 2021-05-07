@@ -80,6 +80,7 @@
 *://*.voidcc.com/*
 *://*.while-do.com/*
 *://*.xbuba.com/*
+*://*.zhouni.net/*
 *://*.it-mure.aa.net/*
 *://*.it-mure.ab.net/*
 *://*.it-mure.ad.net/*
