@@ -49,6 +49,7 @@
 *://*.jpcloud.net/*
 *://*.kejisen.com/*
 *://*.knews.vip/*
+*://*.konnichiwasekai.com/*
 *://*.kotaeta.com/*
 *://*.laptrinhx.com/*
 *://*.living-sun.com/*
