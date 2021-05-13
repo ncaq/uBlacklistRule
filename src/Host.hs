@@ -55,6 +55,7 @@ exceptionshub.com
 extutorial.com
 fixes.pub
 geek-tips.imtqy.com
+generacodice.com
 ghcc.net
 gitmemory.com
 helloworldkb.com
@@ -73,6 +74,7 @@ knews.vip
 konnichiwasekai.com
 kotaeta.com
 laptrinhx.com
+legkovopros.ru
 living-sun.com
 nobis.work
 ojit.com
@@ -102,6 +104,7 @@ stackoom.com
 stackovernet.com
 stackovernet.xyz
 stackoverrun.com
+stackscn.com
 steakrecords.com
 suttonedfoundation.org
 switch-case.com
