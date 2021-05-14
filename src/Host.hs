@@ -25,6 +25,7 @@ singleTechSites = T.lines $ T.strip [r|
 888wenti.com
 answer-id.com
 askdev.info
+base64.work
 bestecode.com
 bleepcoder.com
 buginfo.tech
