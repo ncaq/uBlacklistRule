@@ -60,6 +60,7 @@ fixes.pub
 geek-tips.imtqy.com
 generacodice.com
 ghcc.net
+githubmemory.com
 gitmemory.com
 helloworldkb.com
 helpex.vn
