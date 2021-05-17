@@ -4,6 +4,7 @@
 *://*.888wenti.com/*
 *://*.answer-id.com/*
 *://*.askdev.info/*
+*://*.bar-stools-plus.com/*
 *://*.base64.work/*
 *://*.bestecode.com/*
 *://*.bleepcoder.com/*
