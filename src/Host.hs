@@ -10,13 +10,13 @@ import qualified RIO.Text as T
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHosts :: [Text]
-makeHosts = nub $ concat [tech, copy, ch, video, game, rumor]
+makeHosts = nub $ concat [tech, ch, video, game, rumor, qa, otherCopy]
 
 -- | 技術系スパムサイト全て。
 tech :: [Text]
 tech = concat [singleTechSites, itMure, itSwarm, qastack]
 
--- | 規則性があまり無いぼぼ単発の技術系スパムサイト。
+-- | 規則性があまり無いぼぼ単発の技術系コピーサイト。
 singleTechSites :: [Text]
 singleTechSites = T.lines $ T.strip [r|
 365airsoft.com
@@ -155,16 +155,6 @@ qastack = concat
   , ("qastack.info." <>) <$> codes
   ]
 
-
--- | 特に対象無くコピペを行うサイト
-copy :: [Text]
-copy = T.lines $ T.strip [r|
-nipponkaigi.net
-proxybot.cc
-proxyfly.org
-wikiarabi.org
-|]
-
 -- | 5chコピペサイト。
 ch :: [Text]
 ch = T.lines $ T.strip [r|
@@ -210,4 +200,22 @@ rumor :: [Text]
 rumor = T.lines $ T.strip [r|
 esuteru.com
 jin115.com
+|]
+
+-- | Yahoo!知恵袋や教えて!gooなどに偽装するサイトや、そのサイトにリダイレクトさせるサイト。
+qa :: [Text]
+qa = T.lines $ T.strip [r|
+bmxklubben.dk
+ferrum42kem.ru
+proklimatshop.ru
+sportfiske.org
+|]
+
+-- | その他のコピペサイト。
+otherCopy :: [Text]
+otherCopy = T.lines $ T.strip [r|
+nipponkaigi.net
+proxybot.cc
+proxyfly.org
+wikiarabi.org
 |]

@@ -3341,10 +3341,6 @@
 *://*.qastack.info.zm/*
 *://*.qastack.info.zu/*
 *://*.qastack.info.zw/*
-*://*.nipponkaigi.net/*
-*://*.proxybot.cc/*
-*://*.proxyfly.org/*
-*://*.wikiarabi.org/*
 *://*.2ch-ranking.net/*
 *://*.2ch.live/*
 *://*.2ch.pet/*
@@ -3372,3 +3368,11 @@
 *://*.gamy.jp/*
 *://*.esuteru.com/*
 *://*.jin115.com/*
+*://*.bmxklubben.dk/*
+*://*.ferrum42kem.ru/*
+*://*.proklimatshop.ru/*
+*://*.sportfiske.org/*
+*://*.nipponkaigi.net/*
+*://*.proxybot.cc/*
+*://*.proxyfly.org/*
+*://*.wikiarabi.org/*
