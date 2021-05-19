@@ -67,6 +67,7 @@ helpex.vn
 hi.qaru.tech
 hu.qaru.tech
 ichi.pro
+ifaj-congress.org
 isolution.pro
 issue.life
 issues-world.com
@@ -120,6 +121,7 @@ tutorialmore.com
 ubuntu.buildwebhost.com
 ubuntugeeks.com
 uefir.com
+usersuper.ru
 uwenku.com
 voidcc.com
 while-do.com
