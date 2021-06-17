@@ -10,7 +10,7 @@ import qualified RIO.Text as T
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHosts :: [Text]
-makeHosts = nub $ concat [tech, ch, video, game, rumor, qa, otherCopy]
+makeHosts = nub $ concat [tech, ch, video, game, wikipedia, proxy, qa, rumor, otherCopy]
 
 -- | 技術系スパムサイト全て。
 tech :: [Text]
@@ -202,11 +202,20 @@ gamewith.jp
 gamy.jp
 |]
 
--- | デマを流すサイト。
-rumor :: [Text]
-rumor = T.lines $ T.strip [r|
-esuteru.com
-jin115.com
+-- | Wikipediaのコピーサイト。
+wikipedia :: [Text]
+wikipedia = T.lines $ T.strip [r|
+linkfang.org
+melayukini.net
+nipponkaigi.net
+wikiarabi.org
+|]
+
+-- | webプロキシ。
+proxy :: [Text]
+proxy = T.lines $ T.strip [r|
+proxybot.cc
+proxyfly.org
 |]
 
 -- | Yahoo!知恵袋や教えて!gooなどに偽装するサイトや、そのサイトにリダイレクトさせるサイト。
@@ -218,13 +227,13 @@ proklimatshop.ru
 sportfiske.org
 |]
 
+-- | デマを流すサイト。
+rumor :: [Text]
+rumor = T.lines $ T.strip [r|
+esuteru.com
+jin115.com
+|]
 -- | その他のコピペサイト。
 otherCopy :: [Text]
 otherCopy = T.lines $ T.strip [r|
-linkfang.org
-melayukini.net
-nipponkaigi.net
-proxybot.cc
-proxyfly.org
-wikiarabi.org
 |]
