@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -eux
+
+stack build
+stack exec -- uBlacklistRule
