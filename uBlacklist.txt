@@ -3379,6 +3379,7 @@
 *://*.ferrum42kem.ru/*
 *://*.proklimatshop.ru/*
 *://*.sportfiske.org/*
+*://*.linkfang.org/*
 *://*.nipponkaigi.net/*
 *://*.proxybot.cc/*
 *://*.proxyfly.org/*

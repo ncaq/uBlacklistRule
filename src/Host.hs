@@ -221,6 +221,7 @@ sportfiske.org
 -- | その他のコピペサイト。
 otherCopy :: [Text]
 otherCopy = T.lines $ T.strip [r|
+linkfang.org
 nipponkaigi.net
 proxybot.cc
 proxyfly.org
