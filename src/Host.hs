@@ -222,6 +222,7 @@ sportfiske.org
 otherCopy :: [Text]
 otherCopy = T.lines $ T.strip [r|
 linkfang.org
+melayukini.net
 nipponkaigi.net
 proxybot.cc
 proxyfly.org
