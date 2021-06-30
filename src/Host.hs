@@ -141,7 +141,7 @@ zhouni.net
 itMure :: [Text]
 itMure = (\code -> "it-mure." <> code <> ".net") <$> codes
 
--- | `it-swarm.com` 系のサイト。
+-- | `it-swarm.` 系のサイト。
 itSwarm :: [Text]
 itSwarm =
   let topLevelDomains =
@@ -151,7 +151,7 @@ itSwarm =
         , "tech"
         , "xyz"
         ]
-  in (["it-swarm." <> domain | domain <- topLevelDomains]) ++
+  in (["it-swarm." <> domain | domain <- topLevelDomains <> codes]) ++
      (["it-swarm-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
 
 -- | `qastack.jp` 系のサイト。
