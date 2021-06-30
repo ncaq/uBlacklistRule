@@ -164,6 +164,7 @@ qastack = concat
   ]
 
 -- | 5chコピペサイト。
+-- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。
 ch :: [Text]
 ch = T.lines $ T.strip [r|
 2ch-ranking.net
@@ -176,6 +177,7 @@ ch = T.lines $ T.strip [r|
 2nn.jp
 5ch-ranking.com
 5ch.pub
+bbspink.icu
 calcal.net
 ikioi2ch.net
 ikioi5ch.net

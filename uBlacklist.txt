@@ -3682,6 +3682,7 @@
 *://*.2nn.jp/*
 *://*.5ch-ranking.com/*
 *://*.5ch.pub/*
+*://*.bbspink.icu/*
 *://*.calcal.net/*
 *://*.ikioi2ch.net/*
 *://*.ikioi5ch.net/*
