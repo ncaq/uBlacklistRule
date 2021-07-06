@@ -42,6 +42,7 @@ codefaq.info
 codefaq.ru
 codeflow.site
 codegrepper.com
+codehero.jp
 codenong.com
 coder.work
 coderoad.ru
