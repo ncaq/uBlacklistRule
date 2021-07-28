@@ -127,6 +127,7 @@ switch-case.ru
 tech-ja.netlify.app
 thinbug.com
 titanwolf.org
+try2explore.com
 tutorialmore.com
 ubuntu.buildwebhost.com
 ubuntugeeks.com
