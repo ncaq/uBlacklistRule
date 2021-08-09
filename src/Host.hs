@@ -247,6 +247,7 @@ rumor = T.lines $ T.strip [r|
 esuteru.com
 jin115.com
 |]
+
 -- | その他のコピペサイト。
 otherCopy :: [Text]
 otherCopy = T.lines $ T.strip [r|
