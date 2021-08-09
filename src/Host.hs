@@ -33,6 +33,7 @@ bleepcoder.com
 buginfo.tech
 bugsdb.com
 ciupacabra.com
+cloud.tencent.com/developer/ask
 cloud6.net
 cocoachina.com
 code-adviser.com
@@ -91,6 +92,7 @@ ojit.com
 overcoder.net
 point808.com
 progi.pro
+prograide.com
 programmerstart.com
 programmerz.ru
 programqa.com
@@ -111,6 +113,7 @@ riptutorial.com
 risposta.org
 runebook.dev
 rupython.com
+sanchezsalvador.com
 softonic.com
 softonic.jp
 soinside.com
@@ -127,6 +130,7 @@ suttonedfoundation.org
 switch-case.com
 switch-case.ru
 tech-ja.netlify.app
+thercb.org
 thinbug.com
 titanwolf.org
 try2explore.com
@@ -167,6 +171,7 @@ qastack = concat
   , ("qastack.com." <>) <$> codes
   , ("qastack.in." <>) <$> codes
   , ("qastack.info." <>) <$> codes
+  , ("qa-stack." <>) <$> codes
   ]
 
 -- | 5chコピペサイト。
