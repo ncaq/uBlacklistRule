@@ -219,6 +219,7 @@ gamy.jp
 -- | Wikipediaのコピーサイト。
 wikipedia :: [Text]
 wikipedia = T.lines $ T.strip [r|
+japan2.wiki
 linkfang.org
 melayukini.net
 nipponkaigi.net

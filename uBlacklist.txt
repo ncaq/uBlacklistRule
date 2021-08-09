@@ -5645,6 +5645,7 @@
 *://*.gamerch.com/*
 *://*.gamewith.jp/*
 *://*.gamy.jp/*
+*://*.japan2.wiki/*
 *://*.linkfang.org/*
 *://*.melayukini.net/*
 *://*.nipponkaigi.net/*
