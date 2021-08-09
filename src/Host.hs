@@ -156,7 +156,8 @@ itSwarm =
         , "tech"
         , "xyz"
         ]
-  in (["it-swarm." <> domain | domain <- topLevelDomains <> codes]) ++
+  in (["it-swarm." <> domain | domain <- topLevelDomains <> codes]) <>
+     (["it-swarm." <> domain <> "." <> code | domain <- topLevelDomains, code <- codes]) <>
      (["it-swarm-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
 
 -- | `qastack.jp` 系のサイト。
