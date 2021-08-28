@@ -5653,6 +5653,7 @@
 *://*.melayukini.net/*
 *://*.nipponkaigi.net/*
 *://*.wikiarabi.org/*
+*://*.wikiwand.com/*
 *://*.proxybot.cc/*
 *://*.proxyfly.org/*
 *://*.bmxklubben.dk/*

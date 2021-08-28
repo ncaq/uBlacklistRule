@@ -232,6 +232,7 @@ linkfang.org
 melayukini.net
 nipponkaigi.net
 wikiarabi.org
+wikiwand.com
 |]
 
 -- | webプロキシ。
