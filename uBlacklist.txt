@@ -5645,6 +5645,8 @@
 *://*.gamerch.com/*
 *://*.gamewith.jp/*
 *://*.gamy.jp/*
+*://*.esuteru.com/*
+*://*.jin115.com/*
 *://*.japan2.wiki/*
 *://*.linkfang.org/*
 *://*.melayukini.net/*
@@ -5656,5 +5658,3 @@
 *://*.ferrum42kem.ru/*
 *://*.proklimatshop.ru/*
 *://*.sportfiske.org/*
-*://*.esuteru.com/*
-*://*.jin115.com/*
