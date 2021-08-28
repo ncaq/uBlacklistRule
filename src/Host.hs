@@ -220,6 +220,7 @@ gamy.jp
 ghard :: [Text]
 ghard = T.lines $ T.strip [r|
 esuteru.com
+ha-navi.com
 jin115.com
 |]
 
