@@ -87,6 +87,7 @@ kotaeta.com
 laptrinhx.com
 legkovopros.ru
 living-sun.com
+newbedev.com
 nobis.work
 ojit.com
 overcoder.net
