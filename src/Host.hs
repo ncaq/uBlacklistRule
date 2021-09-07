@@ -26,6 +26,7 @@ singleTechSites = T.lines $ T.strip [r|
 answer-id.com
 artfit-prk.com
 askdev.info
+athabasca-foto.com
 bar-stools-plus.com
 base64.work
 bestecode.com
