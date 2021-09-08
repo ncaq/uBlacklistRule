@@ -248,6 +248,7 @@ proxyfly.org
 qa :: [Text]
 qa = T.lines $ T.strip [r|
 bmxklubben.dk
+cuchelschool.it
 ferrum42kem.ru
 proklimatshop.ru
 sportfiske.org

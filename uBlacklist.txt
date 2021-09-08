@@ -5659,6 +5659,7 @@
 *://*.proxybot.cc/*
 *://*.proxyfly.org/*
 *://*.bmxklubben.dk/*
+*://*.cuchelschool.it/*
 *://*.ferrum42kem.ru/*
 *://*.proklimatshop.ru/*
 *://*.sportfiske.org/*
