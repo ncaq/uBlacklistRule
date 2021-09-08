@@ -247,11 +247,20 @@ proxyfly.org
 -- | Yahoo!知恵袋や教えて!gooなどに偽装するサイトや、そのサイトにリダイレクトさせるサイト。
 qa :: [Text]
 qa = T.lines $ T.strip [r|
+4beacademy.it
+appartamentilignanoviacarinzia.it
 bmxklubben.dk
+consorziorebaude.it
 cuchelschool.it
+diddyhome.fr
 ferrum42kem.ru
+festivalvocideuropa.it
+modulosnc.it
+monicagargiulo.it
 proklimatshop.ru
+serenissimagranloggiaunitaditaliaignis.it
 sportfiske.org
+vitadamoglie.it
 |]
 
 -- | その他のコピペサイト。

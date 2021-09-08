@@ -5658,8 +5658,17 @@
 *://*.wikiwand.com/*
 *://*.proxybot.cc/*
 *://*.proxyfly.org/*
+*://*.4beacademy.it/*
+*://*.appartamentilignanoviacarinzia.it/*
 *://*.bmxklubben.dk/*
+*://*.consorziorebaude.it/*
 *://*.cuchelschool.it/*
+*://*.diddyhome.fr/*
 *://*.ferrum42kem.ru/*
+*://*.festivalvocideuropa.it/*
+*://*.modulosnc.it/*
+*://*.monicagargiulo.it/*
 *://*.proklimatshop.ru/*
+*://*.serenissimagranloggiaunitaditaliaignis.it/*
 *://*.sportfiske.org/*
+*://*.vitadamoglie.it/*
