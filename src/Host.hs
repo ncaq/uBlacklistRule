@@ -1,24 +1,42 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes       #-}
-module Host (makeHosts) where
+{-# LANGUAGE StrictData        #-}
+module Host (HostGroup(..), makeHostGroups) where
 
 import           Code
 import           Import
-import           RIO.List
 import qualified RIO.Text as T
+import qualified RIO.List as L
+
+-- | ホストのひとまとまり。
+data HostGroup
+  = HostGroup
+  { -- | ホストをシンプルに全体を表したもの。
+    -- 冗長。
+    -- うまく取り扱ってくれるuBlacklist向け。
+    hostGroupFull  :: [Text]
+    -- | ホストをなるべく簡潔にinfixを表したもの。
+    -- uBlock Originなどデータ量が多いと処理できないもの向け。
+  , hostGroupInfix :: [Text]
+  }
+  deriving (Eq, Ord, Show, Read)
+
+-- | 簡潔に表す方法が無い場合に諦めてそのままfullもinfixも作ってしまう。
+fromFull :: [Text] -> HostGroup
+fromFull ts = HostGroup { hostGroupFull = ts, hostGroupInfix = ts }
 
 -- | 全てのホスト対象のURLリストを生成します。
-makeHosts :: [Text]
-makeHosts = nub $ concat [tech, ch, video, game, ghard, wikipedia, proxy, malware, otherCopy]
+makeHostGroups :: [HostGroup]
+makeHostGroups = tech <> [ch, video, game, ghard, wikipedia, proxy, malware]
 
 -- | 技術系スパムサイト全て。
-tech :: [Text]
-tech = concat [singleTechSites, itMure, itSwarm, qastack]
+tech :: [HostGroup]
+tech = [singleTechSites, itMure, itSwarm, qastack]
 
 -- | 規則性があまり無いぼぼ単発の技術系コピーサイト。
-singleTechSites :: [Text]
-singleTechSites = T.lines $ T.strip [r|
+singleTechSites :: HostGroup
+singleTechSites = fromFull $ T.lines $ T.strip [r|
 365airsoft.com
 366service.com
 4meahc.com
@@ -149,37 +167,42 @@ zhouni.net
 |]
 
 -- | `it-mure.jp.net` 系のサイト。
-itMure :: [Text]
-itMure = (\code -> "it-mure." <> code <> ".net") <$> codes
+itMure :: HostGroup
+itMure = HostGroup
+  { hostGroupFull = L.nub $ (\code -> "it-mure." <> code <> ".net") <$> codes
+  , hostGroupInfix = ["it-mure"]
+  }
 
 -- | `it-swarm.` 系のサイト。
-itSwarm :: [Text]
-itSwarm =
-  let topLevelDomains =
-        [ "com"
-        , "dev"
-        , "net"
-        , "tech"
-        , "xyz"
-        ]
-  in (["it-swarm." <> domain | domain <- topLevelDomains <> codes]) <>
-     (["it-swarm." <> domain <> "." <> code | domain <- topLevelDomains, code <- codes]) <>
-     (["it-swarm-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
+itSwarm :: HostGroup
+itSwarm = HostGroup
+  { hostGroupFull = full
+  , hostGroupInfix = ["it-swarm"]
+  }
+  where full = let topLevelDomains = ["com", "dev", "net", "tech", "xyz"]
+               in L.nub $
+                  (["it-swarm." <> domain | domain <- topLevelDomains <> codes]) <>
+                  (["it-swarm." <> domain <> "." <> code | domain <- topLevelDomains, code <- codes]) <>
+                  (["it-swarm-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
 
 -- | `qastack.jp` 系のサイト。
-qastack :: [Text]
-qastack = concat
-  [ ("qastack." <>) <$> codes
-  , ("qastack.com." <>) <$> codes
-  , ("qastack.in." <>) <$> codes
-  , ("qastack.info." <>) <$> codes
-  , ("qa-stack." <>) <$> codes
-  ]
+qastack :: HostGroup
+qastack = HostGroup
+  { hostGroupFull = full
+  , hostGroupInfix = ["qastack", "qa-stack"]
+  }
+  where full = L.nub $ concat
+          [ ("qastack." <>) <$> codes
+          , ("qastack.com." <>) <$> codes
+          , ("qastack.in." <>) <$> codes
+          , ("qastack.info." <>) <$> codes
+          , ("qa-stack." <>) <$> codes
+          ]
 
 -- | 5chコピペサイト。
 -- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。
-ch :: [Text]
-ch = T.lines $ T.strip [r|
+ch :: HostGroup
+ch = fromFull $ T.lines $ T.strip [r|
 2ch-ranking.net
 2ch.live
 2ch.pet
@@ -197,8 +220,8 @@ ikioi5ch.net
 |]
 
 -- | 動画をiframeで埋め込んで流したり、メタ情報で検索に引っ掛けてくるもの。
-video :: [Text]
-video = T.lines $ T.strip [r|
+video :: HostGroup
+video = fromFull $ T.lines $ T.strip [r|
 nico-ran.jp
 nicoapple.sub.jp
 nicochart.jp
@@ -209,8 +232,8 @@ sub-nicoapple.ssl-lolipop.jp
 |]
 
 -- | ゲーム攻略コピペサイト。
-game :: [Text]
-game = T.lines $ T.strip [r|
+game :: HostGroup
+game = fromFull $  T.lines $ T.strip [r|
 altema.jp
 game8.jp
 gamerch.com
@@ -219,16 +242,16 @@ gamy.jp
 |]
 
 -- | ゲハブログ。
-ghard :: [Text]
-ghard = T.lines $ T.strip [r|
+ghard :: HostGroup
+ghard = fromFull $ T.lines $ T.strip [r|
 esuteru.com
 ha-navi.com
 jin115.com
 |]
 
 -- | Wikipediaのコピーサイト。
-wikipedia :: [Text]
-wikipedia = T.lines $ T.strip [r|
+wikipedia :: HostGroup
+wikipedia = fromFull $ T.lines $ T.strip [r|
 japan2.wiki
 linkfang.org
 melayukini.net
@@ -238,15 +261,15 @@ wikiwand.com
 |]
 
 -- | webプロキシ。
-proxy :: [Text]
-proxy = T.lines $ T.strip [r|
+proxy :: HostGroup
+proxy = fromFull $ T.lines $ T.strip [r|
 proxybot.cc
 proxyfly.org
 |]
 
 -- | 検索ワードだけを散りばめて、詐欺サイトなどに飛ばすサイト。
-malware :: [Text]
-malware = T.lines $ T.strip [r|
+malware :: HostGroup
+malware = fromFull $ T.lines $ T.strip [r|
 4beacademy.it
 achillemannara.it
 aleaonlus.it
@@ -287,9 +310,4 @@ sportfiske.org
 studiocoppolasarzana.it
 tappezzeriafusco.it
 vitadamoglie.it
-|]
-
--- | その他のコピペサイト。
-otherCopy :: [Text]
-otherCopy = T.lines $ T.strip [r|
 |]

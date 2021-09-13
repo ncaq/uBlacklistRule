@@ -26,7 +26,7 @@ spec = do
   describe "makeHosts" $ do
     it "Stack Exchangeが公式に運用しているホストをブロックしていないか" $ do
       stackExchangeSites <- liftIO getStackExchangeSites
-      mapM_ (\host -> stackExchangeSites `shouldNotContain` [host]) makeHosts
+      mapM_ (\hostGroup -> stackExchangeSites `shouldNotContain` hostGroupFull hostGroup) makeHostGroups
 
 -- | Stack Exchangeが公式に運用しているホスト一覧
 -- [Usage of /sites [GET] - Stack Exchange API](https://api.stackexchange.com/docs/sites)
