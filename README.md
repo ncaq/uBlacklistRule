@@ -8,6 +8,12 @@
 
 <https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt>
 
+Firefox for Androidの、
+[uBlock Origin](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)
+で利用するためのルールはこちらです。
+Firefox for Androidでしかテストしていません。
+<https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlockOrigin.txt>
+
 # 何故既にルールを共有するリポジトリがあるのに新しく作ったのか
 
 [arosh/ublacklist-stackoverflow-translation: Stack Overflow の機械翻訳サイトの除外用フィルタ](https://github.com/arosh/ublacklist-stackoverflow-translation)
