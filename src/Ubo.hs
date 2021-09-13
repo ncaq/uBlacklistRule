@@ -6,12 +6,21 @@ Ubo = uBlock Origin
 -}
 module Ubo (writeUboTxt) where
 
-import           RIO.Text as T
 import           Import
+import           Network.DNS
+import qualified RIO.Text    as T
 
 -- | uBlockOrigin.txtをワーキングディレクトリに書き込みます。
 writeUboTxt :: [Text] -> RIO App ()
-writeUboTxt hosts = writeFileUtf8 "uBlockOrigin.txt" . stripTextFile . (uboHeader <>) . T.unlines $ toUboRule <$> hosts
+writeUboTxt hosts = do
+  -- 生きているホストのみをuBlock Originのフィルタには追加する。
+  -- ビルドするたびに結果が変わる恐れがあり、
+  -- 定期的な再ビルドが必要ですが、
+  -- そのままだとuBlock Originのフィルタ形式だとCSSセレクタの制約のせいか重すぎるので、
+  -- 必要な犠牲であると判断します。
+  -- 完全に除外出来なくても除外することには意味がある。
+  liveHosts <- liftIO $ filterDns hosts
+  writeFileUtf8 "uBlockOrigin.txt" . stripTextFile . (uboHeader <>) . T.unlines $ toUboRule <$> liveHosts
 
 uboHeader :: Text
 uboHeader = [r|
@@ -36,4 +45,34 @@ toUboRule host = T.unlines
 -- | 通常の`strip`だとテキストファイルとして必要な末尾改行も削除してしまうのでそれを取り付け直す。
 -- 効率のことは考えていないコードです。
 stripTextFile :: Text -> Text
-stripTextFile = flip snoc '\n' . T.strip
+stripTextFile = flip T.snoc '\n' . T.strip
+
+-- | DNSレコードが存在するホストのみを抽出します。
+filterDns :: [Text] -> IO [Text]
+filterDns hosts = do
+  rs <- makeResolvSeed defaultResolvConf
+    { resolvInfo = RCHostNames ["1.1.1.1", "8.8.8.8", "8.8.4.4"]
+    , resolvConcurrent = True
+    , resolvCache = Just defaultCacheConf
+    }
+  withResolver rs f
+  where f resolver = filterConcurrently (g resolver) hosts
+        g resolver t = do
+          let h = toByteStringStrict t
+          -- `Network.URL`の使い方がよく分からなかった。
+          -- アドホックな対処としてスラッシュパスがあれば有効なホストとします。
+          -- こういうルールが増えてきて問題になったらちゃんと直します。
+          if (== '/') `T.any` t
+            then return True
+            else do
+            a <- rightAndSome <$> lookupA resolver h
+            if a
+              then return True
+              else rightAndSome <$> lookupAAAA resolver h
+        rightAndSome (Right (_ : _)) = True
+        rightAndSome _               = False
+
+filterConcurrently :: (a -> IO Bool) -> [a] -> IO [a]
+filterConcurrently f source = do
+  target <- mapConcurrently f source
+  return $ map fst $ filter snd $ zip source target
