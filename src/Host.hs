@@ -10,7 +10,7 @@ import qualified RIO.Text as T
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHosts :: [Text]
-makeHosts = nub $ concat [tech, ch, video, game, ghard, wikipedia, proxy, qa, otherCopy]
+makeHosts = nub $ concat [tech, ch, video, game, ghard, wikipedia, proxy, malware, otherCopy]
 
 -- | 技術系スパムサイト全て。
 tech :: [Text]
@@ -244,22 +244,48 @@ proxybot.cc
 proxyfly.org
 |]
 
--- | Yahoo!知恵袋や教えて!gooなどに偽装するサイトや、そのサイトにリダイレクトさせるサイト。
-qa :: [Text]
-qa = T.lines $ T.strip [r|
+-- | 検索ワードだけを散りばめて、詐欺サイトなどに飛ばすサイト。
+malware :: [Text]
+malware = T.lines $ T.strip [r|
 4beacademy.it
+achillemannara.it
+aleaonlus.it
+alessandrototaro.it
+andreafagioni.it
+annuncitelelavoro.it
 appartamentilignanoviacarinzia.it
+arnosportservice.it
+betaniaroma.it
 bmxklubben.dk
+bomode.it
+brigantipaolo.it
+caltapippo.it
+cantierebaruffaldi.it
 consorziorebaude.it
+cooparcadia.it
+crazysportevents.it
+cseclubgarden.it
 cuchelschool.it
+designpet.it
+dgtaz698.ecomedincanto.it
 diddyhome.fr
+ecomedincanto.it
+edilemazzocco.it
+farmaciazarla.it
 ferrum42kem.ru
 festivalvocideuropa.it
+francogaliano.it
+italianfooding.it
 modulosnc.it
 monicagargiulo.it
+ninaco.it
+obmxklubben.dk
+parchisalentointour.it
 proklimatshop.ru
 serenissimagranloggiaunitaditaliaignis.it
 sportfiske.org
+studiocoppolasarzana.it
+tappezzeriafusco.it
 vitadamoglie.it
 |]
 
