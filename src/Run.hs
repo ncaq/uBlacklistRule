@@ -40,10 +40,8 @@ uboHeader = [r|
 
 toUboRule :: Text -> Text
 toUboRule host = T.unlines
-  [ "www.google.*##.kCrYT > a[href*=\"" <> host <> "\"]:upward(.xpd)"
-  , "www.google.*##.C8nzq[href*=\"" <> host <> "\"]:upward(.xpd)"
-  , "www.google.*##.xpdopen .sXtWJb[href*=\"" <> host <> "\"]:upward(.xpdopen)"
-  , "www.google.*##.aI1xUe .sXtWJb[href*=\"" <> host <> "\"]:upward(.aI1xUe)"
+  [ "www.google.*##.kCrYT > a[href*=\"" <> host <> "\"]:upward(.xpd)" -- 通常のFirefox for Android向けの画面で必要。
+  , "www.google.*##.C8nzq[href*=\"" <> host <> "\"]:upward(.xpd)"     -- Google Search Fixerなどを使って、Chrome向けの画面を出している時に必要。
   ]
 
 -- | 通常の`strip`だとテキストファイルとして必要な末尾改行も削除してしまうのでそれを取り付け直す。
