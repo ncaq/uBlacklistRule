@@ -56,7 +56,7 @@ filterDns hosts = do
     , resolvCache = Just defaultCacheConf
     }
   withResolver rs f
-  where f resolver = filterConcurrently (g resolver) hosts
+  where f resolver = filterM (g resolver) hosts
         g resolver t = do
           let h = toByteStringStrict t
           -- `Network.URL`の使い方がよく分からなかった。
@@ -71,8 +71,3 @@ filterDns hosts = do
               else rightAndSome <$> lookupAAAA resolver h
         rightAndSome (Right (_ : _)) = True
         rightAndSome _               = False
-
-filterConcurrently :: (a -> IO Bool) -> [a] -> IO [a]
-filterConcurrently f source = do
-  target <- mapConcurrently f source
-  return $ map fst $ filter snd $ zip source target

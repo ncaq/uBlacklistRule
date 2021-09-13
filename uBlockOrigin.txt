@@ -498,8 +498,1124 @@ www.google.*##.C8nzq[href*="it-mure.kv.net"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="it-mure.kz.net"]:upward(.xpd)
 www.google.*##.C8nzq[href*="it-mure.kz.net"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="it-mure.lb.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.lb.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.li.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.li.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.lo.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.lo.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.lr.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.lr.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.lt.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.lt.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.ma.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.ma.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.mf.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.mf.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.mn.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.mn.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.mq.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.mq.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.my.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.my.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.mz.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.mz.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.nd.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.nd.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.ni.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.ni.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.no.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.no.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.or.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.or.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.os.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.os.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.pf.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.pf.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.pg.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.pg.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.pk.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.pk.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.pr.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.pr.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.py.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.py.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.qa.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.qa.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.qu.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.qu.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.re.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.re.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.ro.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.ro.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.ru.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.ru.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.rw.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.rw.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.sb.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.sb.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.sc.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.sc.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.se.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.se.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.sl.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.sl.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.so.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.so.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.ss.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.ss.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.sw.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.sw.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.sx.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.sx.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.ta.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.ta.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.td.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.td.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.ti.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.ti.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.tk.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.tk.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.tw.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.tw.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.uy.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.uy.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.uz.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.uz.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.ve.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.ve.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.vg.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.vg.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.vn.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.vn.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.wo.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.wo.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.ws.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.ws.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.xh.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.xh.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.yi.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.yi.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.zm.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.zm.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-mure.zw.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-mure.zw.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.cn"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.cn"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.de"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.de"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.ph"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.ph"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.vg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.vg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.ws"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.ws"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.com.ba"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.com.ba"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.com.de"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.com.de"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.com.nl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.com.nl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.com.nu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.com.nu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.com.ph"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.com.ph"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.com.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.com.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.com.tv"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.com.tv"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.com.vg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.com.vg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.com.ws"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.com.ws"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ai"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ai"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.am"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.am"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.at"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.at"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ax"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ax"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ba"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ba"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ca"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ca"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.cc"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.cc"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.cm"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.cm"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.co"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.co"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.cz"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.cz"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ec"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ec"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ee"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ee"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.es"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.es"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.eu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.eu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.fr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.fr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.gd"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.gd"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.gg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.gg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.gr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.gr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.gy"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.gy"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.hr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.hr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ht"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ht"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.hu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.hu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ie"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ie"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.je"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.je"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.kr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.kr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.lt"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.lt"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.lu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.lu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.lv"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.lv"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.md"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.md"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.mg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.mg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.mx"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.mx"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.nf"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.nf"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.nl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.nl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.nu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.nu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.pl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.pl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.pt"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.pt"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.qa"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.qa"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ro"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ro"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.sc"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.sc"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.se"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.se"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.sk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.sk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.so"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.so"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.sr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.sr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.su"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.su"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.tf"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.tf"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.tj"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.tj"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.tm"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.tm"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.ug"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.ug"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.uk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.uk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.dev.us"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.dev.us"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.cz"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.cz"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.eu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.eu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.hr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.hr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.nl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.nl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.ph"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.ph"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.pw"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.pw"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.ro"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.ro"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.se"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.se"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.su"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.su"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.vg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.vg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.net.ws"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.net.ws"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.am"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.am"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.at"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.at"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.az"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.az"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.ba"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.ba"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.bg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.bg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.ci"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.ci"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.cm"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.cm"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.cz"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.cz"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.do"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.do"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.es"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.es"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.fo"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.fo"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.gl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.gl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.gs"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.gs"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.hk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.hk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.hu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.hu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.im"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.im"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.io"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.io"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.kr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.kr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.la"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.la"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.li"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.li"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.lt"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.lt"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.ms"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.ms"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.nl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.nl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.ph"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.ph"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.pl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.pl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.pt"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.pt"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.pw"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.pw"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.sc"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.sc"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.se"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.se"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.sk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.sk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.tl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.tl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.uz"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.uz"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.vn"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.vn"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.tech.yt"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.tech.yt"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.ag"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.ag"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.as"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.as"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.at"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.at"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.bg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.bg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.ch"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.ch"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.cm"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.cm"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.dj"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.dj"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.es"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.es"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.fr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.fr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.gm"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.gm"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.gy"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.gy"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.hm"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.hm"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.hu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.hu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.je"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.je"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.lt"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.lt"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.mx"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.mx"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.ph"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.ph"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.pw"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.pw"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.sk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.sk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.tf"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.tf"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.to"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.to"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.tv"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.tv"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.ug"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.ug"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm.xyz.vg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm.xyz.vg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-es.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-es.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-fr.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-fr.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-id.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-id.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-ja.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-ja.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-ko.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-ko.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-tr.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-tr.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-vi.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-vi.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-eu.dev"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-eu.dev"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-es.tech"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-es.tech"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-ja.tech"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-ja.tech"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-ko.tech"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-ko.tech"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-pt.tech"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-pt.tech"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="it-swarm-vi.tech"]:upward(.xpd)
+www.google.*##.C8nzq[href*="it-swarm-vi.tech"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.cn"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.cn"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.es"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.es"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.eu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.eu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.fr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.fr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.id"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.id"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.kr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.kr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.lk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.lk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.mx"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.mx"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.ph"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.ph"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.pk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.pk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.uk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.uk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.us"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.us"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.vg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.vg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.vn"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.vn"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.ws"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.ws"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.ba"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.ba"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.br"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.br"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.de"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.de"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.nl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.nl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.nu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.nu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.ph"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.ph"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.tv"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.tv"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.ua"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.ua"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.vg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.vg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.com.ws"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.com.ws"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.ai"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.ai"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.am"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.am"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.at"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.at"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.be"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.be"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.cm"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.cm"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.cx"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.cx"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.cz"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.cz"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.gg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.gg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.gp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.gp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.hn"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.hn"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.je"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.je"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.la"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.la"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.lt"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.lt"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.ms"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.ms"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.nf"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.nf"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.nl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.nl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.ph"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.ph"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.pt"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.pt"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.pw"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.pw"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.sg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.sg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.sh"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.sh"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.st"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.st"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.su"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.su"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.th"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.th"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.tj"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.tj"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.tt"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.tt"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.vg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.vg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.in.ws"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.in.ws"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.al"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.al"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.am"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.am"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.at"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.at"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.cc"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.cc"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.ch"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.ch"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="qastack.info.cl"]:upward(.xpd)
 www.google.*##.C8nzq[href*="qastack.info.cl"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="qastack.info.cm"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.cm"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.dk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.dk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.eu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.eu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.fo"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.fo"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.ga"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.ga"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.gd"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.gd"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.gs"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.gs"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.hr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.hr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.je"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.je"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.kg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.kg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.lk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.lk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.lu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.lu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.ma"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.ma"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.nu"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.nu"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.ph"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.ph"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.pn"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.pn"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="qastack.info.pt"]:upward(.xpd)
 www.google.*##.C8nzq[href*="qastack.info.pt"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.pw"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.pw"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.re"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.re"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.se"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.se"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.sg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.sg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.sk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.sk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.st"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.st"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.tk"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.tk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.tm"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.tm"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.to"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.to"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.tr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.tr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qastack.info.ws"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qastack.info.ws"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qa-stack.ph"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qa-stack.ph"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qa-stack.pl"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qa-stack.pl"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qa-stack.vg"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qa-stack.vg"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="qa-stack.ws"]:upward(.xpd)
+www.google.*##.C8nzq[href*="qa-stack.ws"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="2ch-ranking.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="2ch-ranking.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="2ch.live"]:upward(.xpd)
+www.google.*##.C8nzq[href*="2ch.live"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="2ch.pet"]:upward(.xpd)
+www.google.*##.C8nzq[href*="2ch.pet"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="2ch.sc"]:upward(.xpd)
+www.google.*##.C8nzq[href*="2ch.sc"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="2ch.vet"]:upward(.xpd)
+www.google.*##.C8nzq[href*="2ch.vet"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="2chmm.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="2chmm.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="2nn.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="2nn.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="5ch-ranking.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="5ch-ranking.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="5ch.pub"]:upward(.xpd)
+www.google.*##.C8nzq[href*="5ch.pub"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="calcal.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="calcal.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="ikioi2ch.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ikioi2ch.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="ikioi5ch.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ikioi5ch.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="nico-ran.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="nico-ran.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="nicoapple.sub.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="nicoapple.sub.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="nicochart.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="nicochart.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="nicoco.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="nicoco.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="nicovideo.me"]:upward(.xpd)
+www.google.*##.C8nzq[href*="nicovideo.me"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="nicozon.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="nicozon.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="sub-nicoapple.ssl-lolipop.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="sub-nicoapple.ssl-lolipop.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="altema.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="altema.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="game8.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="game8.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="gamerch.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="gamerch.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="gamewith.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="gamewith.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="gamy.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="gamy.jp"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="ha-navi.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ha-navi.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="jin115.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="jin115.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="japan2.wiki"]:upward(.xpd)
+www.google.*##.C8nzq[href*="japan2.wiki"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="linkfang.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="linkfang.org"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="melayukini.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="melayukini.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="nipponkaigi.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="nipponkaigi.net"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="wikiarabi.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="wikiarabi.org"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="wikiwand.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="wikiwand.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="proxybot.cc"]:upward(.xpd)
+www.google.*##.C8nzq[href*="proxybot.cc"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="proxyfly.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="proxyfly.org"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="4beacademy.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="4beacademy.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="achillemannara.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="achillemannara.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="aleaonlus.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="aleaonlus.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="alessandrototaro.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="alessandrototaro.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="andreafagioni.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="andreafagioni.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="annuncitelelavoro.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="annuncitelelavoro.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="appartamentilignanoviacarinzia.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="appartamentilignanoviacarinzia.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="arnosportservice.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="arnosportservice.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="betaniaroma.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="betaniaroma.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="bomode.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="bomode.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="brigantipaolo.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="brigantipaolo.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="caltapippo.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="caltapippo.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="cantierebaruffaldi.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="cantierebaruffaldi.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="consorziorebaude.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="consorziorebaude.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="cooparcadia.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="cooparcadia.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="crazysportevents.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="crazysportevents.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="cseclubgarden.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="cseclubgarden.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="cuchelschool.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="cuchelschool.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="designpet.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="designpet.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="dgtaz698.ecomedincanto.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="dgtaz698.ecomedincanto.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="diddyhome.fr"]:upward(.xpd)
+www.google.*##.C8nzq[href*="diddyhome.fr"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="ecomedincanto.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ecomedincanto.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="edilemazzocco.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="edilemazzocco.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="farmaciazarla.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="farmaciazarla.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="ferrum42kem.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ferrum42kem.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="festivalvocideuropa.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="festivalvocideuropa.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="francogaliano.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="francogaliano.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="italianfooding.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="italianfooding.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="modulosnc.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="modulosnc.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="monicagargiulo.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="monicagargiulo.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="ninaco.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ninaco.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="parchisalentointour.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="parchisalentointour.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="proklimatshop.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="proklimatshop.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="serenissimagranloggiaunitaditaliaignis.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="serenissimagranloggiaunitaditaliaignis.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="sportfiske.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="sportfiske.org"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="studiocoppolasarzana.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="studiocoppolasarzana.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="tappezzeriafusco.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="tappezzeriafusco.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="vitadamoglie.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="vitadamoglie.it"]:upward(.xpd)
