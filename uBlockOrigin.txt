@@ -129,6 +129,9 @@ www.google.*##.C8nzq[href*="developreference.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="edureka.co"]:upward(.xpd)
 www.google.*##.C8nzq[href*="edureka.co"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="elfishgene.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="elfishgene.com"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="exceptionshub.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="exceptionshub.com"]:upward(.xpd)
 
@@ -216,6 +219,9 @@ www.google.*##.C8nzq[href*="legkovopros.ru"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="living-sun.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="living-sun.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="mlog.club"]:upward(.xpd)
+www.google.*##.C8nzq[href*="mlog.club"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="newbedev.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="newbedev.com"]:upward(.xpd)
 
@@ -248,6 +254,9 @@ www.google.*##.C8nzq[href*="programqa.com"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="projectbackpack.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="projectbackpack.org"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="python.engineering"]:upward(.xpd)
+www.google.*##.C8nzq[href*="python.engineering"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="python2.net"]:upward(.xpd)
 www.google.*##.C8nzq[href*="python2.net"]:upward(.xpd)
@@ -359,6 +368,9 @@ www.google.*##.C8nzq[href*="titanwolf.org"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="try2explore.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="try2explore.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="tutorialguruji.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="tutorialguruji.com"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="tutorialmore.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="tutorialmore.com"]:upward(.xpd)

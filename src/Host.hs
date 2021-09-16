@@ -78,6 +78,7 @@ delavaio.com
 devadvisor.io
 developreference.com
 edureka.co
+elfishgene.com
 exceptionshub.com
 extutorial.com
 fixes.pub
@@ -107,6 +108,7 @@ kotaeta.com
 laptrinhx.com
 legkovopros.ru
 living-sun.com
+mlog.club
 newbedev.com
 nobis.work
 ojit.com
@@ -118,6 +120,7 @@ programmerstart.com
 programmerz.ru
 programqa.com
 projectbackpack.org
+python.engineering
 python2.net
 python5.com
 pythonq.com
@@ -155,6 +158,7 @@ thercb.org
 thinbug.com
 titanwolf.org
 try2explore.com
+tutorialguruji.com
 tutorialmore.com
 ubuntu.buildwebhost.com
 ubuntugeeks.com
