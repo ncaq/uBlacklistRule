@@ -6,8 +6,8 @@ module Host (HostGroup(..), makeHostGroups) where
 
 import           Code
 import           Import
-import qualified RIO.Text as T
 import qualified RIO.List as L
+import qualified RIO.Text as T
 
 -- | ホストのひとまとまり。
 data HostGroup
@@ -256,7 +256,9 @@ japan2.wiki
 linkfang.org
 melayukini.net
 nipponkaigi.net
+unionpedia.org
 wikiarabi.org
+wikinew.wiki
 wikiwand.com
 |]
 

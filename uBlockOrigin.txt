@@ -498,8 +498,14 @@ www.google.*##.C8nzq[href*="melayukini.net"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="nipponkaigi.net"]:upward(.xpd)
 www.google.*##.C8nzq[href*="nipponkaigi.net"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="unionpedia.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="unionpedia.org"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="wikiarabi.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="wikiarabi.org"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="wikinew.wiki"]:upward(.xpd)
+www.google.*##.C8nzq[href*="wikinew.wiki"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="wikiwand.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="wikiwand.com"]:upward(.xpd)

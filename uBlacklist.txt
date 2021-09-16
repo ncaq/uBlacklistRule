@@ -5654,7 +5654,9 @@
 *://*.linkfang.org/*
 *://*.melayukini.net/*
 *://*.nipponkaigi.net/*
+*://*.unionpedia.org/*
 *://*.wikiarabi.org/*
+*://*.wikinew.wiki/*
 *://*.wikiwand.com/*
 *://*.proxybot.cc/*
 *://*.proxyfly.org/*
