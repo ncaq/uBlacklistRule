@@ -393,6 +393,9 @@ www.google.*##.C8nzq[href*="uwenku.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="voidcc.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="voidcc.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="webdevqa.jp.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="webdevqa.jp.net"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="wenyanet.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="wenyanet.com"]:upward(.xpd)
 
