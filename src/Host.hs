@@ -99,6 +99,7 @@ issues-world.com
 iteramos.com
 javaer101.com
 jpcloud.net
+kaifa99.com
 kejisen.com
 knews.vip
 konnichiwasekai.com

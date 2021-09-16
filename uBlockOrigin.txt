@@ -192,6 +192,9 @@ www.google.*##.C8nzq[href*="javaer101.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="jpcloud.net"]:upward(.xpd)
 www.google.*##.C8nzq[href*="jpcloud.net"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="kaifa99.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="kaifa99.com"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="kejisen.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="kejisen.com"]:upward(.xpd)
 
