@@ -10,7 +10,6 @@ jobs:
           keys:
             - v1-stack-{{ checksum "stack.yaml.lock" }}-{{ checksum "package.yaml" }}
             - v1-stack-{{ checksum "stack.yaml.lock" }}-
-            - v1-stack-
       - run: stack --no-terminal setup
       - run: stack --no-terminal install --jobs 1 hlint
       - run: stack --no-terminal test --jobs 1 --no-run-tests
