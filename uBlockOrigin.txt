@@ -60,6 +60,9 @@ www.google.*##.C8nzq[href*="cloud6.net"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="cocoachina.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="cocoachina.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="code-404.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="code-404.net"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="code-adviser.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="code-adviser.com"]:upward(.xpd)
 
