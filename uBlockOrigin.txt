@@ -120,6 +120,9 @@ www.google.*##.C8nzq[href*="crypto-days.jp"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="csdn.net"]:upward(.xpd)
 www.google.*##.C8nzq[href*="csdn.net"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="daimajiaoliu.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="daimajiaoliu.com"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="de-vraag.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="de-vraag.com"]:upward(.xpd)
 
@@ -186,6 +189,9 @@ www.google.*##.C8nzq[href*="hi.qaru.tech"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="hu.qaru.tech"]:upward(.xpd)
 www.google.*##.C8nzq[href*="hu.qaru.tech"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="huati365.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="huati365.com"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="ichi.pro"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ichi.pro"]:upward(.xpd)
 
@@ -245,6 +251,9 @@ www.google.*##.C8nzq[href*="nobis.work"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="ojit.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ojit.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="orcode.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="orcode.com"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="overcoder.net"]:upward(.xpd)
 www.google.*##.C8nzq[href*="overcoder.net"]:upward(.xpd)

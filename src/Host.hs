@@ -75,6 +75,7 @@ codingdict.com
 coredump.biz
 crypto-days.jp
 csdn.net
+daimajiaoliu.com
 de-vraag.com
 debugcn.com
 delavaio.com
@@ -97,6 +98,7 @@ helloworldkb.com
 helpex.vn
 hi.qaru.tech
 hu.qaru.tech
+huati365.com
 ichi.pro
 ifaj-congress.org
 isolution.pro
@@ -117,6 +119,7 @@ mlog.club
 newbedev.com
 nobis.work
 ojit.com
+orcode.com
 overcoder.net
 panaindustrial.com
 point808.com
