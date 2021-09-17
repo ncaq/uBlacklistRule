@@ -159,6 +159,9 @@ www.google.*##.C8nzq[href*="githubmemory.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="gitmemory.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="gitmemory.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="gtainspections.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="gtainspections.com"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="helloworldkb.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="helloworldkb.com"]:upward(.xpd)
 
