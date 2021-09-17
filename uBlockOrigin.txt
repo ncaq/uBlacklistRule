@@ -237,6 +237,9 @@ www.google.*##.C8nzq[href*="ojit.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="overcoder.net"]:upward(.xpd)
 www.google.*##.C8nzq[href*="overcoder.net"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="panaindustrial.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="panaindustrial.com"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="point808.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="point808.com"]:upward(.xpd)
 

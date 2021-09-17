@@ -114,6 +114,7 @@ newbedev.com
 nobis.work
 ojit.com
 overcoder.net
+panaindustrial.com
 point808.com
 progi.pro
 prograide.com
