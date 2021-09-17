@@ -48,6 +48,9 @@ www.google.*##.C8nzq[href*="buginfo.tech"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="bugsdb.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="bugsdb.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="cfadnc.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="cfadnc.org"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="ciupacabra.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ciupacabra.com"]:upward(.xpd)
 
