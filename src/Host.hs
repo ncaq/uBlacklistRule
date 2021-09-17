@@ -85,6 +85,7 @@ elfishgene.com
 exceptionshub.com
 extutorial.com
 fixes.pub
+geek-qa.imtqy.com
 geek-tips.imtqy.com
 geeks-world.imtqy.com
 generacodice.com

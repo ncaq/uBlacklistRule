@@ -150,6 +150,9 @@ www.google.*##.C8nzq[href*="extutorial.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="fixes.pub"]:upward(.xpd)
 www.google.*##.C8nzq[href*="fixes.pub"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="geek-qa.imtqy.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="geek-qa.imtqy.com"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="geek-tips.imtqy.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="geek-tips.imtqy.com"]:upward(.xpd)
 
