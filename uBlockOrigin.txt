@@ -558,8 +558,17 @@ www.google.*##.C8nzq[href*="annuncitelelavoro.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="appartamentilignanoviacarinzia.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="appartamentilignanoviacarinzia.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="aristidecaruso.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="aristidecaruso.it"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="arnosportservice.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="arnosportservice.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="artefunerariadiligas.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="artefunerariadiligas.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="augmentum-plumbi.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="augmentum-plumbi.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="betaniaroma.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="betaniaroma.it"]:upward(.xpd)
@@ -579,11 +588,23 @@ www.google.*##.C8nzq[href*="caltapippo.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="cantierebaruffaldi.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="cantierebaruffaldi.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="casataz.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="casataz.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="caterinafucili.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="caterinafucili.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="centroippicoiplatani.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="centroippicoiplatani.it"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="consorziorebaude.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="consorziorebaude.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="cooparcadia.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="cooparcadia.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="cortinovisrl.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="cortinovisrl.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="crazysportevents.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="crazysportevents.it"]:upward(.xpd)
@@ -621,8 +642,14 @@ www.google.*##.C8nzq[href*="festivalvocideuropa.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="francogaliano.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="francogaliano.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="halloweentorino.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="halloweentorino.it"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="italianfooding.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="italianfooding.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="methossolutions.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="methossolutions.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="modulosnc.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="modulosnc.it"]:upward(.xpd)
@@ -630,17 +657,35 @@ www.google.*##.C8nzq[href*="modulosnc.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="monicagargiulo.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="monicagargiulo.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="musiscuola.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="musiscuola.it"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="ninaco.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ninaco.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="obmxklubben.dk"]:upward(.xpd)
 www.google.*##.C8nzq[href*="obmxklubben.dk"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="officinacordero.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="officinacordero.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="oleificiolama.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="oleificiolama.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="ospedaliprivatiforli.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ospedaliprivatiforli.it"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="parchisalentointour.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="parchisalentointour.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="proklimatshop.ru"]:upward(.xpd)
 www.google.*##.C8nzq[href*="proklimatshop.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="rosapellami.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="rosapellami.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="scuoladisportcoaching.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="scuoladisportcoaching.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="serenissimagranloggiaunitaditaliaignis.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="serenissimagranloggiaunitaditaliaignis.it"]:upward(.xpd)
@@ -656,3 +701,6 @@ www.google.*##.C8nzq[href*="tappezzeriafusco.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="vitadamoglie.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="vitadamoglie.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="yurestaurant.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="yurestaurant.it"]:upward(.xpd)
