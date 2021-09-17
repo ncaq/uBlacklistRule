@@ -54,6 +54,9 @@ www.google.*##.C8nzq[href*="cfadnc.org"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="ciupacabra.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ciupacabra.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="clearwatergardenclub.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="clearwatergardenclub.org"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="cloud.tencent.com/developer/ask"]:upward(.xpd)
 www.google.*##.C8nzq[href*="cloud.tencent.com/developer/ask"]:upward(.xpd)
 
