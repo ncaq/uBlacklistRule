@@ -381,6 +381,9 @@ www.google.*##.C8nzq[href*="thinbug.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="titanwolf.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="titanwolf.org"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="tlcpv.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="tlcpv.org"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="try2explore.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="try2explore.com"]:upward(.xpd)
 
