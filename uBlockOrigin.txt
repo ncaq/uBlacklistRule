@@ -564,6 +564,9 @@ www.google.*##.C8nzq[href*="wikiarabi.org"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="wikinew.wiki"]:upward(.xpd)
 www.google.*##.C8nzq[href*="wikinew.wiki"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="wikiqube.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="wikiqube.net"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="wikiwand.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="wikiwand.com"]:upward(.xpd)
 

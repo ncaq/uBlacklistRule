@@ -278,6 +278,7 @@ nipponkaigi.net
 unionpedia.org
 wikiarabi.org
 wikinew.wiki
+wikiqube.net
 wikiwand.com
 |]
 

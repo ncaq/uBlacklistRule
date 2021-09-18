@@ -5676,6 +5676,7 @@
 *://*.unionpedia.org/*
 *://*.wikiarabi.org/*
 *://*.wikinew.wiki/*
+*://*.wikiqube.net/*
 *://*.wikiwand.com/*
 *://*.proxybot.cc/*
 *://*.proxyfly.org/*
