@@ -576,17 +576,32 @@ www.google.*##.C8nzq[href*="proxybot.cc"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="proxyfly.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="proxyfly.org"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="007okno.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="007okno.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="360comunication.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="360comunication.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="4beacademy.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="4beacademy.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="505tankist.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="505tankist.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="7815671.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="7815671.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="89081813030.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="89081813030.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="achillemannara.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="achillemannara.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="adiprodit.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="adiprodit.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="admashine.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="admashine.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="agriturismoalrefolo.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="agriturismoalrefolo.it"]:upward(.xpd)
@@ -603,6 +618,12 @@ www.google.*##.C8nzq[href*="alessandropecoraro.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="alessandrototaro.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="alessandrototaro.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="alexanderkorolkov.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="alexanderkorolkov.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="aliance.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="aliance.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="andreafagioni.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="andreafagioni.it"]:upward(.xpd)
 
@@ -614,6 +635,9 @@ www.google.*##.C8nzq[href*="apollohairdesign.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="appartamentilignanoviacarinzia.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="appartamentilignanoviacarinzia.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="argidro.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="argidro.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="aristidecaruso.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="aristidecaruso.it"]:upward(.xpd)
@@ -636,20 +660,38 @@ www.google.*##.C8nzq[href*="augmentum-plumbi.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="avviso22018.siciliafse1420.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="avviso22018.siciliafse1420.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="baltpr.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="baltpr.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="beelinei.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="beelinei.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="berecycling.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="berecycling.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="betaniaroma.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="betaniaroma.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="beyoganow.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="beyoganow.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="blueweld.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="blueweld.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="bmxklubben.dk"]:upward(.xpd)
 www.google.*##.C8nzq[href*="bmxklubben.dk"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="bojonerentacar.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="bojonerentacar.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="bomode.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="bomode.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="brigantipaolo.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="brigantipaolo.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="bruschatkachelny.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="bruschatkachelny.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="cadcentroartedanza.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="cadcentroartedanza.it"]:upward(.xpd)
@@ -669,8 +711,20 @@ www.google.*##.C8nzq[href*="caterinafucili.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="centroippicoiplatani.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="centroippicoiplatani.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="cg.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="cg.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="chzorka.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="chzorka.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="cityshin.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="cityshin.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="cogestinformatica.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="cogestinformatica.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="conceptfoam.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="conceptfoam.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="consorziorebaude.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="consorziorebaude.it"]:upward(.xpd)
@@ -684,6 +738,9 @@ www.google.*##.C8nzq[href*="cortinovisrl.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="crazysportevents.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="crazysportevents.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="credo.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="credo.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="cseclubgarden.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="cseclubgarden.it"]:upward(.xpd)
 
@@ -692,6 +749,9 @@ www.google.*##.C8nzq[href*="ctsoldemo.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="cuchelschool.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="cuchelschool.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="deluxtrade.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="deluxtrade.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="designpet.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="designpet.it"]:upward(.xpd)
@@ -702,11 +762,26 @@ www.google.*##.C8nzq[href*="dgtaz698.ecomedincanto.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="diddyhome.fr"]:upward(.xpd)
 www.google.*##.C8nzq[href*="diddyhome.fr"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="domvgorah.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="domvgorah.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="dudakids.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="dudakids.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="ecomedincanto.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ecomedincanto.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="edilemazzocco.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="edilemazzocco.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="education.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="education.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="electrician.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="electrician.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="esmalte.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="esmalte.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="estateinmontagna.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="estateinmontagna.it"]:upward(.xpd)
@@ -732,14 +807,41 @@ www.google.*##.C8nzq[href*="festivalvocideuropa.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="fiscalformula.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="fiscalformula.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="fkdent.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="fkdent.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="forumedia.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="forumedia.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="francogaliano.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="francogaliano.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="fundament163.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="fundament163.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="giveeme.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="giveeme.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="gloves.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="gloves.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="gusi.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="gusi.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="halloweentorino.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="halloweentorino.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="hc.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="hc.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="higoldceramichecaltagirone.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="higoldceramichecaltagirone.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="igras.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="igras.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="iknzr.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="iknzr.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="ilmioprovino.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ilmioprovino.it"]:upward(.xpd)
@@ -753,11 +855,32 @@ www.google.*##.C8nzq[href*="irapido.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="italianfooding.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="italianfooding.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="jumpevolution.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="jumpevolution.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="kissswish.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="kissswish.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="ladabmhatch.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ladabmhatch.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="lecoccinelle-eventi.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="lecoccinelle-eventi.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="lev33.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="lev33.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="line.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="line.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="lucagisticiimpianti.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="lucagisticiimpianti.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="magazine.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="magazine.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="makeup.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="makeup.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="maniabilitate.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="maniabilitate.it"]:upward(.xpd)
@@ -767,6 +890,9 @@ www.google.*##.C8nzq[href*="mattiaambrami.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="methossolutions.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="methossolutions.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="mfaux.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="mfaux.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="mioshi.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="mioshi.it"]:upward(.xpd)
@@ -780,14 +906,26 @@ www.google.*##.C8nzq[href*="modulosnc.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="monicagargiulo.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="monicagargiulo.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="montanadance.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="montanadance.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="mosedu.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="mosedu.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="musiscuola.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="musiscuola.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="naplevat.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="naplevat.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="ninaco.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ninaco.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="novachem.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="novachem.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="ns500.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ns500.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="obmxklubben.dk"]:upward(.xpd)
 www.google.*##.C8nzq[href*="obmxklubben.dk"]:upward(.xpd)
@@ -801,14 +939,50 @@ www.google.*##.C8nzq[href*="officinemalessandria.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="oleificiolama.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="oleificiolama.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="olgakuts.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="olgakuts.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="opt.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="opt.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="optioncapitalgroup.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="optioncapitalgroup.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="ordenmasterov.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ordenmasterov.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="oseni.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="oseni.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="ospedaliprivatiforli.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ospedaliprivatiforli.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="parchisalentointour.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="parchisalentointour.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="perm.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="perm.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="portalrb.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="portalrb.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="postelclub.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="postelclub.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="pp.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="pp.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="profimed74.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="profimed74.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="proklimatshop.ru"]:upward(.xpd)
 www.google.*##.C8nzq[href*="proklimatshop.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="prometey.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="prometey.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="rezort.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="rezort.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="ril.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ril.it"]:upward(.xpd)
@@ -819,6 +993,15 @@ www.google.*##.C8nzq[href*="rosapellami.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="rotolonicartaroma.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="rotolonicartaroma.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="s.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="s.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="saksmet.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="saksmet.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="sbnaj.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="sbnaj.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="scuoladisportcoaching.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="scuoladisportcoaching.it"]:upward(.xpd)
 
@@ -828,14 +1011,29 @@ www.google.*##.C8nzq[href*="selezioni-artigianatoveneto.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="serenissimagranloggiaunitaditaliaignis.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="serenissimagranloggiaunitaditaliaignis.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="sib.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="sib.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="siciliafse1420.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="siciliafse1420.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="spb.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="spb.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="sportfiske.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="sportfiske.org"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="strana.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="strana.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="studiocoppolasarzana.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="studiocoppolasarzana.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="style.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="style.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="sushi.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="sushi.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="tappezzeriafusco.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="tappezzeriafusco.it"]:upward(.xpd)
@@ -846,14 +1044,32 @@ www.google.*##.C8nzq[href*="teambikevalconca.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="theredhair.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="theredhair.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="tieressen.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="tieressen.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="trandt3.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="trandt3.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="unavocefuoricampo.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="unavocefuoricampo.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="verleih.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="verleih.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="victorycup.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="victorycup.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="viktoria52.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="viktoria52.ru"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="vitadamoglie.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="vitadamoglie.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="vl.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="vl.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="winskin.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="winskin.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="yurestaurant.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="yurestaurant.it"]:upward(.xpd)
