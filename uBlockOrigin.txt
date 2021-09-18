@@ -543,6 +543,9 @@ www.google.*##.C8nzq[href*="ha-navi.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="jin115.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="jin115.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="janghan.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="janghan.net"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="japan2.wiki"]:upward(.xpd)
 www.google.*##.C8nzq[href*="japan2.wiki"]:upward(.xpd)
 

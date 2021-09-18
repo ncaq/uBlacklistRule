@@ -5669,6 +5669,7 @@
 *://*.esuteru.com/*
 *://*.ha-navi.com/*
 *://*.jin115.com/*
+*://*.janghan.net/*
 *://*.japan2.wiki/*
 *://*.linkfang.org/*
 *://*.melayukini.net/*
