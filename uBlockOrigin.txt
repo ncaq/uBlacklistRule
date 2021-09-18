@@ -588,11 +588,17 @@ www.google.*##.C8nzq[href*="achillemannara.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="adiprodit.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="adiprodit.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="agriturismoalrefolo.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="agriturismoalrefolo.it"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="ahamse.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ahamse.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="aleaonlus.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="aleaonlus.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="alessandropecoraro.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="alessandropecoraro.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="alessandrototaro.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="alessandrototaro.it"]:upward(.xpd)
@@ -617,6 +623,9 @@ www.google.*##.C8nzq[href*="arnosportservice.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="artefunerariadiligas.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="artefunerariadiligas.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="artigianatoveneto.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="artigianatoveneto.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="asisettoresoftair.i"]:upward(.xpd)
 www.google.*##.C8nzq[href*="asisettoresoftair.i"]:upward(.xpd)
@@ -678,6 +687,9 @@ www.google.*##.C8nzq[href*="crazysportevents.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="cseclubgarden.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="cseclubgarden.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="ctsoldemo.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ctsoldemo.it"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="cuchelschool.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="cuchelschool.it"]:upward(.xpd)
 
@@ -695,6 +707,12 @@ www.google.*##.C8nzq[href*="ecomedincanto.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="edilemazzocco.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="edilemazzocco.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="estateinmontagna.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="estateinmontagna.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="eventi.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="eventi.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="exnovoband.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="exnovoband.it"]:upward(.xpd)
@@ -750,6 +768,9 @@ www.google.*##.C8nzq[href*="mattiaambrami.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="methossolutions.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="methossolutions.it"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="mioshi.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="mioshi.it"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="missp.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="missp.it"]:upward(.xpd)
 
@@ -764,6 +785,9 @@ www.google.*##.C8nzq[href*="musiscuola.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="ninaco.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ninaco.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="novachem.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="novachem.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="obmxklubben.dk"]:upward(.xpd)
 www.google.*##.C8nzq[href*="obmxklubben.dk"]:upward(.xpd)
@@ -786,6 +810,9 @@ www.google.*##.C8nzq[href*="parchisalentointour.it"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="proklimatshop.ru"]:upward(.xpd)
 www.google.*##.C8nzq[href*="proklimatshop.ru"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="ril.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="ril.it"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="rosapellami.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="rosapellami.it"]:upward(.xpd)
 
@@ -800,6 +827,9 @@ www.google.*##.C8nzq[href*="selezioni-artigianatoveneto.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="serenissimagranloggiaunitaditaliaignis.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="serenissimagranloggiaunitaditaliaignis.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="siciliafse1420.it"]:upward(.xpd)
+www.google.*##.C8nzq[href*="siciliafse1420.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="sportfiske.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="sportfiske.org"]:upward(.xpd)
@@ -827,3 +857,6 @@ www.google.*##.C8nzq[href*="vitadamoglie.it"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="yurestaurant.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="yurestaurant.it"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="]"]:upward(.xpd)
+www.google.*##.C8nzq[href*="]"]:upward(.xpd)

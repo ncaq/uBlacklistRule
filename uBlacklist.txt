@@ -5684,8 +5684,10 @@
 *://*.4beacademy.it/*
 *://*.achillemannara.it/*
 *://*.adiprodit.it/*
+*://*.agriturismoalrefolo.it/*
 *://*.ahamse.it/*
 *://*.aleaonlus.it/*
+*://*.alessandropecoraro.it/*
 *://*.alessandrototaro.it/*
 *://*.andreafagioni.it/*
 *://*.annuncitelelavoro.it/*
@@ -5694,6 +5696,7 @@
 *://*.aristidecaruso.it/*
 *://*.arnosportservice.it/*
 *://*.artefunerariadiligas.it/*
+*://*.artigianatoveneto.it/*
 *://*.asisettoresoftair.i/*
 *://*.augmentum-plumbi.it/*
 *://*.avviso22018.siciliafse1420.it/*
@@ -5714,12 +5717,15 @@
 *://*.cortinovisrl.it/*
 *://*.crazysportevents.it/*
 *://*.cseclubgarden.it/*
+*://*.ctsoldemo.it/*
 *://*.cuchelschool.it/*
 *://*.designpet.it/*
 *://*.dgtaz698.ecomedincanto.it/*
 *://*.diddyhome.fr/*
 *://*.ecomedincanto.it/*
 *://*.edilemazzocco.it/*
+*://*.estateinmontagna.it/*
+*://*.eventi.it/*
 *://*.exnovoband.it/*
 *://*.farmaciazarla.it/*
 *://*.fattoriaascaniocruciani.it/*
@@ -5738,11 +5744,13 @@
 *://*.maniabilitate.it/*
 *://*.mattiaambrami.it/*
 *://*.methossolutions.it/*
+*://*.mioshi.it/*
 *://*.missp.it/*
 *://*.modulosnc.it/*
 *://*.monicagargiulo.it/*
 *://*.musiscuola.it/*
 *://*.ninaco.it/*
+*://*.novachem.it/*
 *://*.obmxklubben.dk/*
 *://*.officinacordero.it/*
 *://*.officinemalessandria.it/*
@@ -5750,11 +5758,13 @@
 *://*.ospedaliprivatiforli.it/*
 *://*.parchisalentointour.it/*
 *://*.proklimatshop.ru/*
+*://*.ril.it/*
 *://*.rosapellami.it/*
 *://*.rotolonicartaroma.it/*
 *://*.scuoladisportcoaching.it/*
 *://*.selezioni-artigianatoveneto.it/*
 *://*.serenissimagranloggiaunitaditaliaignis.it/*
+*://*.siciliafse1420.it/*
 *://*.sportfiske.org/*
 *://*.studiocoppolasarzana.it/*
 *://*.tappezzeriafusco.it/*
@@ -5764,3 +5774,4 @@
 *://*.verleih.it/*
 *://*.vitadamoglie.it/*
 *://*.yurestaurant.it/*
+*://*.]/*
