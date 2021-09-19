@@ -1,20 +1,17 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes       #-}
-{- |
-Ubo = uBlock Origin
--}
-module Ubo (writeUboTxt) where
+module UBlockOrigin (writeUBlockOriginTxt) where
 
-import           RIO.Text as T
 import           Import
+import           RIO.Text as T
 
--- | uBlockOrigin.txtをワーキングディレクトリに書き込みます。
-writeUboTxt :: [Text] -> RIO App ()
-writeUboTxt hosts = writeFileUtf8 "uBlockOrigin.txt" . stripTextFile . (uboHeader <>) . T.unlines $ toUboRule <$> hosts
+-- | `uBlockOrigin.txt`をワーキングディレクトリに書き込みます。
+writeUBlockOriginTxt :: [Text] -> RIO App ()
+writeUBlockOriginTxt hosts = writeFileUtf8 "uBlockOrigin.txt" . stripTextFile . (header <>) . T.unlines $ toRule <$> hosts
 
-uboHeader :: Text
-uboHeader = [r|
+header :: Text
+header = [r|
 [uBlock Origin]
 ! Title: uBlacklistRule for Firefox for Android
 ! Description: Rules for uBlacklist will be converted to uBlock Origin rules for environments where uBlacklist is not available.
@@ -25,8 +22,8 @@ uboHeader = [r|
 
 |]
 
-toUboRule :: Text -> Text
-toUboRule host = T.unlines
+toRule :: Text -> Text
+toRule host = T.unlines
   -- 通常のFirefox for Android向けの画面で必要。
   [ "www.google.*##.kCrYT > a[href*=\"" <> host <> "\"]:upward(.xpd)"
   -- Google Search Fixerなどを使って、Chrome向けの画面を出している時に必要。

@@ -3,12 +3,12 @@ module Run (run) where
 
 import           Host
 import           Import
-import qualified RIO.List as L
-import           Ubl
-import           Ubo
+import qualified RIO.List     as L
+import           UBlacklist
+import           UBlockOrigin
 
 run :: RIO App ()
 run = do
   let hostGroups = makeHostGroups
-  writeUblListTxt (L.concat $ hostGroupFull <$> hostGroups)
-  writeUboTxt     (L.concat $ hostGroupInfix <$> hostGroups)
+  writeUBlacklistTxt   (L.concat $ hostGroupFull  <$> hostGroups)
+  writeUBlockOriginTxt (L.concat $ hostGroupInfix <$> hostGroups)
