@@ -86,6 +86,7 @@ elfishgene.com
 exceptionshub.com
 extutorial.com
 fixes.pub
+gajet.club
 geek-qa.imtqy.com
 geek-tips.imtqy.com
 geeks-world.imtqy.com
@@ -105,6 +106,7 @@ isolution.pro
 issue.life
 issues-world.com
 iteramos.com
+itnews.org
 javaer101.com
 jpcloud.net
 kaifa99.com

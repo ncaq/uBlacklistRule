@@ -153,6 +153,9 @@ www.google.*##.C8nzq[href*="extutorial.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="fixes.pub"]:upward(.xpd)
 www.google.*##.C8nzq[href*="fixes.pub"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="gajet.club"]:upward(.xpd)
+www.google.*##.C8nzq[href*="gajet.club"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="geek-qa.imtqy.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="geek-qa.imtqy.com"]:upward(.xpd)
 
@@ -209,6 +212,9 @@ www.google.*##.C8nzq[href*="issues-world.com"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="iteramos.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="iteramos.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="itnews.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="itnews.org"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="javaer101.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="javaer101.com"]:upward(.xpd)
