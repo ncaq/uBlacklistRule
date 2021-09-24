@@ -54,6 +54,9 @@ www.google.*##.C8nzq[href*="cfadnc.org"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="ciupacabra.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ciupacabra.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="classmethod.dev"]:upward(.xpd)
+www.google.*##.C8nzq[href*="classmethod.dev"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="clearwatergardenclub.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="clearwatergardenclub.org"]:upward(.xpd)
 
@@ -138,11 +141,17 @@ www.google.*##.C8nzq[href*="devadvisor.io"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="developreference.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="developreference.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="docow.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="docow.com"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="edureka.co"]:upward(.xpd)
 www.google.*##.C8nzq[href*="edureka.co"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="elfishgene.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="elfishgene.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="euromar2012.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="euromar2012.org"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="exceptionshub.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="exceptionshub.com"]:upward(.xpd)
@@ -201,6 +210,9 @@ www.google.*##.C8nzq[href*="ichi.pro"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="ifaj-congress.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ifaj-congress.org"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="includestdio.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="includestdio.com"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="isolution.pro"]:upward(.xpd)
 www.google.*##.C8nzq[href*="isolution.pro"]:upward(.xpd)
 
@@ -245,6 +257,9 @@ www.google.*##.C8nzq[href*="legkovopros.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="living-sun.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="living-sun.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="lycaeum.dev"]:upward(.xpd)
+www.google.*##.C8nzq[href*="lycaeum.dev"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="mlog.club"]:upward(.xpd)
 www.google.*##.C8nzq[href*="mlog.club"]:upward(.xpd)
@@ -342,6 +357,9 @@ www.google.*##.C8nzq[href*="rupython.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="sanchezsalvador.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="sanchezsalvador.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="siwib.org"]:upward(.xpd)
+www.google.*##.C8nzq[href*="siwib.org"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="softonic.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="softonic.com"]:upward(.xpd)
 
@@ -350,6 +368,9 @@ www.google.*##.C8nzq[href*="softonic.jp"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="soinside.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="soinside.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="stackfinder.net"]:upward(.xpd)
+www.google.*##.C8nzq[href*="stackfinder.net"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="stacknoob.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="stacknoob.com"]:upward(.xpd)
@@ -378,6 +399,12 @@ www.google.*##.C8nzq[href*="stackscn.com"]:upward(.xpd)
 www.google.*##.kCrYT > a[href*="steakrecords.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="steakrecords.com"]:upward(.xpd)
 
+www.google.*##.kCrYT > a[href*="superduperartscamp.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="superduperartscamp.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="superduperartscamp.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="superduperartscamp.com"]:upward(.xpd)
+
 www.google.*##.kCrYT > a[href*="suttonedfoundation.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="suttonedfoundation.org"]:upward(.xpd)
 
@@ -395,6 +422,9 @@ www.google.*##.C8nzq[href*="thercb.org"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="thinbug.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="thinbug.com"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="timeglobal.cn"]:upward(.xpd)
+www.google.*##.C8nzq[href*="timeglobal.cn"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="titanwolf.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="titanwolf.org"]:upward(.xpd)
@@ -422,6 +452,9 @@ www.google.*##.C8nzq[href*="uefir.com"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="usersuper.ru"]:upward(.xpd)
 www.google.*##.C8nzq[href*="usersuper.ru"]:upward(.xpd)
+
+www.google.*##.kCrYT > a[href*="utyatnishna.ru"]:upward(.xpd)
+www.google.*##.C8nzq[href*="utyatnishna.ru"]:upward(.xpd)
 
 www.google.*##.kCrYT > a[href*="uwenku.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="uwenku.com"]:upward(.xpd)
