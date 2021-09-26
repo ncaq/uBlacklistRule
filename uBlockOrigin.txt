@@ -2065,8 +2065,3 @@ www.google.*##.kCrYT > a[href*="yurestaurant.it"]:upward(.xpd)
 www.google.*##.C8nzq[href*="yurestaurant.it"]:upward(.xpd)
 www.google.*##.xpdopen .sXtWJb[href*="yurestaurant.it"]:upward(.xpdopen)
 www.google.*##.aI1xUe .sXtWJb[href*="yurestaurant.it"]:upward(.aI1xUe)
-
-www.google.*##.kCrYT > a[href*="]"]:upward(.xpd)
-www.google.*##.C8nzq[href*="]"]:upward(.xpd)
-www.google.*##.xpdopen .sXtWJb[href*="]"]:upward(.xpdopen)
-www.google.*##.aI1xUe .sXtWJb[href*="]"]:upward(.aI1xUe)

@@ -5902,4 +5902,3 @@
 *://*.vl.ru/*
 *://*.winskin.ru/*
 *://*.yurestaurant.it/*
-*://*.]/*
