@@ -28,6 +28,9 @@ toRule host = T.unlines
   [ "www.google.*##.kCrYT > a[href*=\"" <> host <> "\"]:upward(.xpd)"
   -- Google Search Fixerなどを使って、Chrome向けの画面を出している時に必要。
   , "www.google.*##.C8nzq[href*=\"" <> host <> "\"]:upward(.xpd)"
+  -- スニペット表示なども消します。
+  , "www.google.*##.xpdopen .sXtWJb[href*=\"" <> host <> "\"]:upward(.xpdopen)"
+  , "www.google.*##.aI1xUe .sXtWJb[href*=\"" <> host <> "\"]:upward(.aI1xUe)"
   ]
 
 -- | 通常の`strip`だとテキストファイルとして必要な末尾改行も削除してしまうのでそれを取り付け直す。
