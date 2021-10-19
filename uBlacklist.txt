@@ -5692,6 +5692,7 @@
 *://*.wikiarabi.org/*
 *://*.wikinew.wiki/*
 *://*.wikiqube.net/*
+*://*.wikituscany.com/*
 *://*.wikiwand.com/*
 *://*.proxybot.cc/*
 *://*.proxyfly.org/*

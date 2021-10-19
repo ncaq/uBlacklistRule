@@ -1016,6 +1016,11 @@ www.google.*##.C8nzq[href*="wikiqube.net"]:upward(.xpd)
 www.google.*##.xpdopen .sXtWJb[href*="wikiqube.net"]:upward(.xpdopen)
 www.google.*##.aI1xUe .sXtWJb[href*="wikiqube.net"]:upward(.aI1xUe)
 
+www.google.*##.kCrYT > a[href*="wikituscany.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="wikituscany.com"]:upward(.xpd)
+www.google.*##.xpdopen .sXtWJb[href*="wikituscany.com"]:upward(.xpdopen)
+www.google.*##.aI1xUe .sXtWJb[href*="wikituscany.com"]:upward(.aI1xUe)
+
 www.google.*##.kCrYT > a[href*="wikiwand.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="wikiwand.com"]:upward(.xpd)
 www.google.*##.xpdopen .sXtWJb[href*="wikiwand.com"]:upward(.xpdopen)

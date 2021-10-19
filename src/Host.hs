@@ -294,6 +294,7 @@ unionpedia.org
 wikiarabi.org
 wikinew.wiki
 wikiqube.net
+wikituscany.com
 wikiwand.com
 |]
 
