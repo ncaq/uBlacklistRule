@@ -861,6 +861,11 @@ www.google.*##.C8nzq[href*="2chmm.com"]:upward(.xpd)
 www.google.*##.xpdopen .sXtWJb[href*="2chmm.com"]:upward(.xpdopen)
 www.google.*##.aI1xUe .sXtWJb[href*="2chmm.com"]:upward(.aI1xUe)
 
+www.google.*##.kCrYT > a[href*="2nf2.rdy.jp"]:upward(.xpd)
+www.google.*##.C8nzq[href*="2nf2.rdy.jp"]:upward(.xpd)
+www.google.*##.xpdopen .sXtWJb[href*="2nf2.rdy.jp"]:upward(.xpdopen)
+www.google.*##.aI1xUe .sXtWJb[href*="2nf2.rdy.jp"]:upward(.aI1xUe)
+
 www.google.*##.kCrYT > a[href*="2nn.jp"]:upward(.xpd)
 www.google.*##.C8nzq[href*="2nn.jp"]:upward(.xpd)
 www.google.*##.xpdopen .sXtWJb[href*="2nn.jp"]:upward(.xpdopen)
@@ -885,6 +890,11 @@ www.google.*##.kCrYT > a[href*="calcal.net"]:upward(.xpd)
 www.google.*##.C8nzq[href*="calcal.net"]:upward(.xpd)
 www.google.*##.xpdopen .sXtWJb[href*="calcal.net"]:upward(.xpdopen)
 www.google.*##.aI1xUe .sXtWJb[href*="calcal.net"]:upward(.aI1xUe)
+
+www.google.*##.kCrYT > a[href*="comedydouga.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="comedydouga.com"]:upward(.xpd)
+www.google.*##.xpdopen .sXtWJb[href*="comedydouga.com"]:upward(.xpdopen)
+www.google.*##.aI1xUe .sXtWJb[href*="comedydouga.com"]:upward(.aI1xUe)
 
 www.google.*##.kCrYT > a[href*="ikioi2ch.net"]:upward(.xpd)
 www.google.*##.C8nzq[href*="ikioi2ch.net"]:upward(.xpd)

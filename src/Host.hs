@@ -243,11 +243,13 @@ ch = fromFull $ T.lines $ T.strip [r|
 2ch.sc
 2ch.vet
 2chmm.com
+2nf2.rdy.jp
 2nn.jp
 5ch-ranking.com
 5ch.pub
 bbspink.icu
 calcal.net
+comedydouga.com
 ikioi2ch.net
 ikioi5ch.net
 |]
