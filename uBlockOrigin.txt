@@ -366,6 +366,11 @@ www.google.*##.C8nzq[href*="issue.life"]:upward(.xpd)
 www.google.*##.xpdopen .sXtWJb[href*="issue.life"]:upward(.xpdopen)
 www.google.*##.aI1xUe .sXtWJb[href*="issue.life"]:upward(.aI1xUe)
 
+www.google.*##.kCrYT > a[href*="issueexplorer.com"]:upward(.xpd)
+www.google.*##.C8nzq[href*="issueexplorer.com"]:upward(.xpd)
+www.google.*##.xpdopen .sXtWJb[href*="issueexplorer.com"]:upward(.xpdopen)
+www.google.*##.aI1xUe .sXtWJb[href*="issueexplorer.com"]:upward(.aI1xUe)
+
 www.google.*##.kCrYT > a[href*="issues-world.com"]:upward(.xpd)
 www.google.*##.C8nzq[href*="issues-world.com"]:upward(.xpd)
 www.google.*##.xpdopen .sXtWJb[href*="issues-world.com"]:upward(.xpdopen)
