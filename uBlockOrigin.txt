@@ -996,6 +996,11 @@ www.google.*##.C8nzq[href*="japan2.wiki"]:upward(.xpd)
 www.google.*##.xpdopen .sXtWJb[href*="japan2.wiki"]:upward(.xpdopen)
 www.google.*##.aI1xUe .sXtWJb[href*="japan2.wiki"]:upward(.aI1xUe)
 
+www.google.*##.kCrYT > a[href*="jpan.wiki"]:upward(.xpd)
+www.google.*##.C8nzq[href*="jpan.wiki"]:upward(.xpd)
+www.google.*##.xpdopen .sXtWJb[href*="jpan.wiki"]:upward(.xpdopen)
+www.google.*##.aI1xUe .sXtWJb[href*="jpan.wiki"]:upward(.aI1xUe)
+
 www.google.*##.kCrYT > a[href*="linkfang.org"]:upward(.xpd)
 www.google.*##.C8nzq[href*="linkfang.org"]:upward(.xpd)
 www.google.*##.xpdopen .sXtWJb[href*="linkfang.org"]:upward(.xpdopen)

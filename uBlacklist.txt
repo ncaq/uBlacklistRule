@@ -5688,6 +5688,7 @@
 *://*.jin115.com/*
 *://*.janghan.net/*
 *://*.japan2.wiki/*
+*://*.jpan.wiki/*
 *://*.linkfang.org/*
 *://*.melayukini.net/*
 *://*.nipponkaigi.net/*

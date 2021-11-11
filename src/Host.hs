@@ -290,6 +290,7 @@ wikipedia :: HostGroup
 wikipedia = fromFull $ T.lines $ T.strip [r|
 janghan.net
 japan2.wiki
+jpan.wiki
 linkfang.org
 melayukini.net
 nipponkaigi.net
