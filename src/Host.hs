@@ -104,6 +104,7 @@ helpex.vn
 hi.qaru.tech
 hu.qaru.tech
 huati365.com
+hub.fastgit.org
 ichi.pro
 ifaj-congress.org
 includestdio.com
