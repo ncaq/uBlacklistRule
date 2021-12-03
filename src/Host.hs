@@ -45,6 +45,7 @@ answer-id.com
 artfit-prk.com
 askdev.info
 athabasca-foto.com
+baksi.xyz
 bar-stools-plus.com
 base64.work
 bestecode.com
@@ -96,6 +97,8 @@ geek-tips.imtqy.com
 geeks-world.imtqy.com
 generacodice.com
 ghcc.net
+github-dotcom.gateway.web.tr
+githubhelp.com
 githubmemory.com
 gitmemory.com
 gtainspections.com
@@ -352,6 +355,7 @@ berecycling.ru
 betaniaroma.it
 betarenovables.cl
 beyoganow.it
+blog.artwolf.in
 blueweld.ru
 bmxklubben.dk
 bojonerentacar.ru
