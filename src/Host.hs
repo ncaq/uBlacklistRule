@@ -148,6 +148,7 @@ python5.com
 pythonq.com
 qa-help.ru
 qa.1r1g.com
+qapicks.com
 qaru.site
 qathai.com
 quabr.com
