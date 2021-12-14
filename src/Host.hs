@@ -40,6 +40,7 @@ singleTechSites = fromFull $ T.lines $ T.strip [r|
 365airsoft.com
 366service.com
 4meahc.com
+796t.com
 888wenti.com
 answer-id.com
 artfit-prk.com
@@ -59,6 +60,7 @@ clearwatergardenclub.org
 cloud.tencent.com/developer/ask
 cloud6.net
 cndgn.com
+cnpython.com
 cocoachina.com
 code-404.net
 code-adviser.com
@@ -70,21 +72,27 @@ codefaq.ru
 codeflow.site
 codegrepper.com
 codehero.jp
+codengineering.ru
 codenong.com
 coder.work
+coderedirect.com
 coderoad.ru
+codersatellite.com
 codetd.com
 codingdict.com
 coredump.biz
 crypto-days.jp
 csdn.net
 daimajiaoliu.com
+daplus.net
 de-vraag.com
 debugcn.com
 delavaio.com
 devadvisor.io
 developreference.com
 docow.com
+docway.net
+dovov.com
 edureka.co
 elfishgene.com
 euromar2012.org
@@ -115,9 +123,14 @@ isolution.pro
 issue.life
 issueexplorer.com
 issues-world.com
+it-gundan.net
+itbloger.tistory.com
 iteramos.com
 itnews.org
+itread01.com
+izziswift.com
 javaer101.com
+jb51.cc
 jpcloud.net
 kaifa99.com
 kejisen.com
@@ -128,6 +141,8 @@ laptrinhx.com
 legkovopros.ru
 living-sun.com
 lycaeum.dev
+mianquan.net
+mianshigee.com
 mlog.club
 newbedev.com
 nobis.work
@@ -151,6 +166,7 @@ qa.1r1g.com
 qapicks.com
 qaru.site
 qathai.com
+qedev.com
 quabr.com
 quares.ru
 question-it.com
@@ -176,13 +192,15 @@ stackoverrun.com
 stackscn.com
 steakrecords.com
 superduperartscamp.com
-superduperartscamp.com
 suttonedfoundation.org
 switch-case.com
 switch-case.ru
+t.codebug.vip
 tech-ja.netlify.app
+techfeed.net
 thercb.org
 thinbug.com
+ti-enxame.com
 timeglobal.cn
 titanwolf.org
 tlcpv.org
@@ -203,6 +221,7 @@ wenyanet.com
 while-do.com
 xbuba.com
 zhouni.net
+zweryfikowac.pl
 |]
 
 -- | `it-mure.jp.net` 系のサイト。
