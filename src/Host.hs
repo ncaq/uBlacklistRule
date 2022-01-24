@@ -102,6 +102,7 @@ fixes.pub
 gajet.club
 geek-qa.imtqy.com
 geek-tips.imtqy.com
+geekcxy.com
 geeks-world.imtqy.com
 generacodice.com
 ghcc.net
@@ -132,6 +133,7 @@ izziswift.com
 javaer101.com
 jb51.cc
 jpcloud.net
+jpcodeqa.com
 kaifa99.com
 kejisen.com
 knews.vip
