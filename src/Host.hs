@@ -43,7 +43,9 @@ singleTechSites = fromFull $ T.lines $ T.strip [r|
 796t.com
 888wenti.com
 answer-id.com
+array.cyou
 artfit-prk.com
+article.docway.net
 askdev.info
 athabasca-foto.com
 baksi.xyz
@@ -223,6 +225,7 @@ webdevqa.jp.net
 wenyanet.com
 while-do.com
 xbuba.com
+younggeeks.in
 zhouni.net
 zweryfikowac.pl
 |]
