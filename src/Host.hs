@@ -42,6 +42,7 @@ singleTechSites = fromFull $ T.lines $ T.strip [r|
 4meahc.com
 796t.com
 888wenti.com
+ajaxhispano.com
 answer-id.com
 array.cyou
 artfit-prk.com
@@ -152,6 +153,7 @@ newbedev.com
 nobis.work
 ojit.com
 orcode.com
+ostack.cn
 overcoder.net
 panaindustrial.com
 point808.com
@@ -185,6 +187,7 @@ siwib.org
 softonic.com
 softonic.jp
 soinside.com
+sqlite.in
 stackfinder.net
 stacknoob.com
 stackoom.com
