@@ -5,6 +5,7 @@
 *://*.888wenti.com/*
 *://*.ajaxhispano.com/*
 *://*.answer-id.com/*
+*://*.answerlib.com/*
 *://*.array.cyou/*
 *://*.artfit-prk.com/*
 *://*.article.docway.net/*

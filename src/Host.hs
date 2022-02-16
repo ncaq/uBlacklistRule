@@ -44,6 +44,7 @@ singleTechSites = fromFull $ T.lines $ T.strip [r|
 888wenti.com
 ajaxhispano.com
 answer-id.com
+answerlib.com
 array.cyou
 artfit-prk.com
 article.docway.net
