@@ -74,6 +74,7 @@ codefaq.info
 codefaq.ru
 codeflow.site
 codegrepper.com
+codeguides.site
 codehero.jp
 codengineering.ru
 codenong.com
@@ -101,6 +102,7 @@ elfishgene.com
 euromar2012.org
 exceptionshub.com
 extutorial.com
+firstlightsalon.in
 fixes.pub
 gajet.club
 geek-qa.imtqy.com
