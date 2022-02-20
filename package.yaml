@@ -16,6 +16,8 @@ dependencies:
   - base >= 4.11 && < 10
   - rio >= 0.1.12.0
   # library
+  - convertible
+  - file-embed
   - iso3166-country-codes
   - iso639
   - raw-strings-qq

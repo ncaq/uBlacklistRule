@@ -109,8 +109,7 @@ Haskellプログラムでデータを生成する場合、
 Issue, Pull Requestを是非ともお待ちしております。
 
 Issueだけ建てるのも歓迎しますし、
-[uBlacklistRule/Host.hs at master · ncaq/uBlacklistRule](https://github.com/ncaq/uBlacklistRule/blob/master/src/Host.hs)
-などに書き込んでくださるのも歓迎いたします。
+PRを作ってくださるのも歓迎いたします。
 
 # 関連リンク
 
