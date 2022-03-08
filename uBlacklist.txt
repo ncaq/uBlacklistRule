@@ -107,6 +107,7 @@
 *://*.konnichiwasekai.com/*
 *://*.kotaeta.com/*
 *://*.laptrinhx.com/*
+*://*.learntutorials.net/*
 *://*.legkovopros.ru/*
 *://*.living-sun.com/*
 *://*.lycaeum.dev/*
