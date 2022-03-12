@@ -11,8 +11,8 @@ jobs:
             - v1-stack-{{ checksum "stack.yaml.lock" }}-{{ checksum "package.yaml" }}
             - v1-stack-{{ checksum "stack.yaml.lock" }}-
       - run: stack --no-terminal setup
-      - run: stack --no-terminal install --jobs 1 hlint
-      - run: stack --no-terminal test --jobs 1 --no-run-tests
+      - run: stack --no-terminal --jobs 1 install hlint
+      - run: stack --no-terminal --jobs 1 test --no-run-tests
       - save_cache:
           name: Cache Dependencies for Stack
           key: v1-stack-{{ checksum "stack.yaml.lock" }}-{{ checksum "package.yaml" }}
