@@ -16,6 +16,7 @@
 *://*.base64.work/*
 *://*.bestecode.com/*
 *://*.bleepcoder.com/*
+*://*.blingin.in/*
 *://*.buginfo.tech/*
 *://*.bugsdb.com/*
 *://*.cfadnc.org/*
@@ -109,6 +110,7 @@
 *://*.laptrinhx.com/*
 *://*.learntutorials.net/*
 *://*.legkovopros.ru/*
+*://*.litigationtoday.com/*
 *://*.living-sun.com/*
 *://*.lycaeum.dev/*
 *://*.mianquan.net/*
