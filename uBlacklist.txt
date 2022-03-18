@@ -5774,6 +5774,7 @@
 *://*.asisettoresoftair.i/*
 *://*.attac.cl/*
 *://*.augmentum-plumbi.it/*
+*://*.australianopen2015live.com/*
 *://*.avviso22018.siciliafse1420.it/*
 *://*.baltpr.ru/*
 *://*.beelinei.ru/*
@@ -5828,6 +5829,7 @@
 *://*.elcarpincho.cl/*
 *://*.electrician.ru/*
 *://*.escueladedeportes.cl/*
+*://*.escworking.com/*
 *://*.esmalte.ru/*
 *://*.estateinmontagna.it/*
 *://*.eventi.it/*
@@ -5849,6 +5851,7 @@
 *://*.hc.ru/*
 *://*.hidratate.cl/*
 *://*.higoldceramichecaltagirone.it/*
+*://*.honeysta.net/*
 *://*.hospitalantofagasta.cl/*
 *://*.idearteacademy.cl/*
 *://*.igras.ru/*
@@ -5867,6 +5870,7 @@
 *://*.lejournaldec.cl/*
 *://*.lev33.ru/*
 *://*.line.ru/*
+*://*.localwebsystems.com/*
 *://*.losangelesudec.cl/*
 *://*.lucagisticiimpianti.it/*
 *://*.lvn.cl/*
@@ -5939,6 +5943,7 @@
 *://*.sushi.ru/*
 *://*.tappezzeriafusco.it/*
 *://*.teambikevalconca.it/*
+*://*.thedailydad.org/*
 *://*.theredhair.it/*
 *://*.tieressen.ru/*
 *://*.trandt3.ru/*
