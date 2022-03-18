@@ -19,6 +19,7 @@ bleepcoder.com
 blingin.in
 buginfo.tech
 bugsdb.com
+bullforyou.com
 cfadnc.org
 ciupacabra.com
 classmethod.dev
@@ -61,6 +62,7 @@ docow.com
 docway.net
 dovov.com
 drunkentengu.com
+edupro.id
 edureka.co
 elfishgene.com
 euromar2012.org
