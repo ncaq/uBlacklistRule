@@ -5810,6 +5810,7 @@
 *://*.consorziorebaude.it/*
 *://*.constructorweb.cl/*
 *://*.cooparcadia.it/*
+*://*.coorsfortworth.com/*
 *://*.cortinaslincort.cl/*
 *://*.cortinovisrl.it/*
 *://*.crazysportevents.it/*
