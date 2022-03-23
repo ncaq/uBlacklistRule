@@ -96,6 +96,7 @@ issue.life
 issueexplorer.com
 issues-world.com
 it-gundan.net
+it.wenda123.org
 itbloger.tistory.com
 iteramos.com
 itnews.org
@@ -140,6 +141,7 @@ python5.com
 pythonq.com
 qa-help.ru
 qa.1r1g.com
+qa.icopy.site
 qapicks.com
 qaru.site
 qathai.com
