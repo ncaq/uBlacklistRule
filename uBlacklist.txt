@@ -70,6 +70,7 @@
 *://*.extutorial.com/*
 *://*.firstlightsalon.in/*
 *://*.fixes.pub/*
+*://*.fogsbane.dev/*
 *://*.gajet.club/*
 *://*.geek-qa.imtqy.com/*
 *://*.geek-tips.imtqy.com/*
