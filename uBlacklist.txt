@@ -16,6 +16,7 @@
 *://*.base64.work/*
 *://*.bestecode.com/*
 *://*.bleepcoder.com/*
+*://*.bleepcoder.jp/*
 *://*.blingin.in/*
 *://*.buginfo.tech/*
 *://*.bugsdb.com/*
