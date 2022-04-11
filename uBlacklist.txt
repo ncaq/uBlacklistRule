@@ -83,6 +83,7 @@
 *://*.github-dotcom.gateway.web.tr/*
 *://*.githubhelp.com/*
 *://*.githubhot.com/*
+*://*.githublab.com/*
 *://*.githubmemory.com/*
 *://*.gitmemory.com/*
 *://*.gtainspections.com/*
