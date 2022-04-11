@@ -127,6 +127,7 @@
 *://*.lycaeum.dev/*
 *://*.mianquan.net/*
 *://*.mianshigee.com/*
+*://*.mlink.in/*
 *://*.mlog.club/*
 *://*.newbedev.com/*
 *://*.nobis.work/*
