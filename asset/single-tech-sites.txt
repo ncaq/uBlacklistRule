@@ -16,12 +16,14 @@ baksi.xyz
 bar-stools-plus.com
 base64.work
 bestecode.com
+binarydevelop.com
 bleepcoder.com
 bleepcoder.jp
 blingin.in
 buginfo.tech
 bugsdb.com
 bullforyou.com
+cans.pro
 cfadnc.org
 ciupacabra.com
 classmethod.dev
@@ -58,7 +60,9 @@ daplus.net
 de-vraag.com
 debugcn.com
 delavaio.com
+desarrollo-web-br.com
 devadvisor.io
+develop-bugs.com
 developreference.com
 docow.com
 docway.net
@@ -73,6 +77,7 @@ extutorial.com
 firstlightsalon.in
 fixes.pub
 fogsbane.dev
+fooobar.com
 gajet.club
 geek-qa.imtqy.com
 geek-tips.imtqy.com
@@ -90,17 +95,21 @@ gtainspections.com
 helloworldkb.com
 helpex.vn
 hi.qaru.tech
+hot-time.tistory.com
 hu.qaru.tech
 huati365.com
 hub.fastgit.org
 ichi.pro
 ifaj-congress.org
 includestdio.com
+ipgirl.com
 isolution.pro
 issue.life
 issueexplorer.com
 issues-world.com
 it-gundan.net
+it-mot-dan-vi.com
+it-roy-ru.com
 it.wenda123.org
 itbloger.tistory.com
 iteramos.com
@@ -109,6 +118,7 @@ itread01.com
 izziswift.com
 jablogs.com
 javaer101.com
+javaroad.cn
 jb51.cc
 jike.in
 jpcloud.net
@@ -139,6 +149,7 @@ panaindustrial.com
 point808.com
 progi.pro
 prograide.com
+programmation-web-qr.com
 programmerstart.com
 programmerz.ru
 programqa.com
@@ -152,6 +163,7 @@ qa.1r1g.com
 qa.icopy.site
 qapicks.com
 qaru.site
+qastack.net.bd
 qathai.com
 qedev.com
 quabr.com
@@ -181,6 +193,7 @@ stackscn.com
 steakrecords.com
 superduperartscamp.com
 suttonedfoundation.org
+sviluppo-web-qa.it
 switch-case.com
 switch-case.ru
 t.codebug.vip
@@ -200,6 +213,7 @@ ubuntu.buildwebhost.com
 ubuntugeeks.com
 uebu-kaihatsu.jp.net
 uefir.com
+ulab.unipo.sk
 usersuper.ru
 utyatnishna.ru
 uwenku.com
