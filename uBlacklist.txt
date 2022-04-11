@@ -82,6 +82,7 @@
 *://*.ghcc.net/*
 *://*.github-dotcom.gateway.web.tr/*
 *://*.githubhelp.com/*
+*://*.githubhot.com/*
 *://*.githubmemory.com/*
 *://*.gitmemory.com/*
 *://*.gtainspections.com/*
