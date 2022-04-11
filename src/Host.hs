@@ -67,6 +67,7 @@ qastack = HostGroup
   where full = L.nub $ concat
           [ ("qastack." <>) <$> codes
           , ("qastack.com." <>) <$> codes
+          , ("qastack.net." <>) <$> codes
           , ("qastack.in." <>) <$> codes
           , ("qastack.info." <>) <$> codes
           , ("qa-stack." <>) <$> codes
