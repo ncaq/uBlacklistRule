@@ -134,6 +134,7 @@
 *://*.legkovopros.ru/*
 *://*.litigationtoday.com/*
 *://*.living-sun.com/*
+*://*.localcoder.org/*
 *://*.lycaeum.dev/*
 *://*.mianquan.net/*
 *://*.mianshigee.com/*
@@ -224,6 +225,7 @@
 *://*.webpuroguramingu-zhi-wen-ying-dashisutemu.com/*
 *://*.wenyanet.com/*
 *://*.while-do.com/*
+*://*.wujigu.com/*
 *://*.xbuba.com/*
 *://*.younggeeks.in/*
 *://*.zhouni.net/*
