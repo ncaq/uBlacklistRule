@@ -197,6 +197,7 @@
 *://*.switch-case.com/*
 *://*.switch-case.ru/*
 *://*.t.codebug.vip/*
+*://*.tech-in-japan.github.io/*
 *://*.tech-ja.netlify.app/*
 *://*.techfeed.net/*
 *://*.thercb.org/*
