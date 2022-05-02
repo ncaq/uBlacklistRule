@@ -33,7 +33,7 @@ makeHostGroups = tech <> [ch, video, game, ghard, wikipedia, proxy, malware]
 
 -- | 技術系スパムサイト全て。
 tech :: [HostGroup]
-tech = [singleTechSites, itMure, itSwarm, qastack, issuecloser]
+tech = [singleTechSites, itMure, itSwarm, qastack, issuecloser, coderQuestion]
 
 -- | 規則性があまり無いぼぼ単発の技術系コピーサイト。
 singleTechSites :: HostGroup
@@ -81,6 +81,17 @@ issuecloser = HostGroup
   }
   where full = let topLevelDomains = ["com", "dev", "net", "tech", "xyz"]
                in L.nub (["issuecloser-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
+
+-- | `coder-question.com` 系のサイト。
+coderQuestion :: HostGroup
+coderQuestion = HostGroup
+  { hostGroupFull = full
+  , hostGroupInfix = ["coder-question"]
+  }
+  where full = let topLevelDomains = ["com", "dev", "net", "tech", "xyz"]
+               in L.nub $
+                  (["coder-question." <> domain | domain <- topLevelDomains <> codes]) <>
+                  (["coder-question-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
 
 -- | 5chコピペサイト。
 -- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。
