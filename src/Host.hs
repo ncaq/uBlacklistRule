@@ -29,7 +29,7 @@ fromFull ts = HostGroup { hostGroupFull = ts, hostGroupInfix = ts }
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHostGroups :: [HostGroup]
-makeHostGroups = tech <> [ch, video, game, ghard, wikipedia, proxy, malware]
+makeHostGroups = tech <> [ch, video, ghard, wikipedia, proxy, malware]
 
 -- | 技術系スパムサイト全て。
 tech :: [HostGroup]
@@ -136,16 +136,6 @@ nicoco.net
 nicovideo.me
 nicozon.net
 sub-nicoapple.ssl-lolipop.jp
-|]
-
--- | ゲーム攻略コピペサイト。
-game :: HostGroup
-game = fromFull $  T.lines $ T.strip [r|
-altema.jp
-game8.jp
-gamerch.com
-gamewith.jp
-gamy.jp
 |]
 
 -- | ゲハブログ。

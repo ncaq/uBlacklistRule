@@ -11588,11 +11588,6 @@
 *://*.nicovideo.me/*
 *://*.nicozon.net/*
 *://*.sub-nicoapple.ssl-lolipop.jp/*
-*://*.altema.jp/*
-*://*.game8.jp/*
-*://*.gamerch.com/*
-*://*.gamewith.jp/*
-*://*.gamy.jp/*
 *://*.esuteru.com/*
 *://*.ha-navi.com/*
 *://*.jin115.com/*
