@@ -1,3 +1,4 @@
+*://*.1r1g.cn/*
 *://*.365airsoft.com/*
 *://*.366service.com/*
 *://*.4meahc.com/*
@@ -6,6 +7,7 @@
 *://*.ajaxhispano.com/*
 *://*.answer-id.com/*
 *://*.answerlib.com/*
+*://*.apthow.com/*
 *://*.arip-photo.org/*
 *://*.array.cyou/*
 *://*.artfit-prk.com/*
@@ -20,6 +22,7 @@
 *://*.bleepcoder.com/*
 *://*.bleepcoder.jp/*
 *://*.blingin.in/*
+*://*.bootpanic.com/*
 *://*.buginfo.tech/*
 *://*.bugsdb.com/*
 *://*.bullforyou.com/*
@@ -63,12 +66,14 @@
 *://*.de-vraag.com/*
 *://*.debugcn.com/*
 *://*.delavaio.com/*
+*://*.desarrollo-web-br-bd.com/*
 *://*.desarrollo-web-br.com/*
 *://*.devadvisor.io/*
 *://*.develop-bugs.com/*
 *://*.developreference.com/*
 *://*.docow.com/*
 *://*.docway.net/*
+*://*.dokry.com/*
 *://*.dovov.com/*
 *://*.drunkentengu.com/*
 *://*.edupro.id/*
@@ -176,6 +181,7 @@
 *://*.removemalware-jp.com/*
 *://*.riptutorial.com/*
 *://*.risposta.org/*
+*://*.rotadev.com/*
 *://*.runebook.dev/*
 *://*.rupython.com/*
 *://*.sanchezsalvador.com/*
@@ -187,6 +193,8 @@
 *://*.stackfinder.net/*
 *://*.stacknoob.com/*
 *://*.stackoom.com/*
+*://*.stackovercoder.com.de/*
+*://*.stackovercoder.id/*
 *://*.stackoverfill.com/*
 *://*.stackovergo.com/*
 *://*.stackovernet.com/*
@@ -199,6 +207,7 @@
 *://*.sviluppo-web-qa.it/*
 *://*.switch-case.com/*
 *://*.switch-case.ru/*
+*://*.sysadminde.com/*
 *://*.t.codebug.vip/*
 *://*.tech-in-japan.github.io/*
 *://*.tech-ja.netlify.app/*
@@ -225,12 +234,14 @@
 *://*.visual-foxpro-programmer.com/*
 *://*.voidcc.com/*
 *://*.web-dev-qa.com/*
+*://*.web-gaebal-jilmun-dabbyeon-db.com/*
 *://*.webdevqa.jp.net/*
 *://*.webpuroguramingu-zhi-wen-ying-dashisutemu.com/*
 *://*.wenyanet.com/*
 *://*.while-do.com/*
 *://*.wujigu.com/*
 *://*.xbuba.com/*
+*://*.yo.zgserver.com/*
 *://*.younggeeks.in/*
 *://*.zhouni.net/*
 *://*.zweryfikowac.pl/*
