@@ -233,6 +233,7 @@
 *://*.vfwpost8762.org/*
 *://*.visual-foxpro-programmer.com/*
 *://*.voidcc.com/*
+*://*.web-dev-qa-db-ja.com/*
 *://*.web-dev-qa.com/*
 *://*.web-gaebal-jilmun-dabbyeon-db.com/*
 *://*.webdevqa.jp.net/*
