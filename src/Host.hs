@@ -33,7 +33,7 @@ makeHostGroups = tech <> [ch, video, ghard, wikipedia, proxy, malware]
 
 -- | 技術系スパムサイト全て。
 tech :: [HostGroup]
-tech = [singleTechSites, itMure, itSwarm, qastack, issuecloser, coderQuestion, coderSolution, loudounValley]
+tech = [singleTechSites, itMure, itSwarm, qastack, issuecloser, coderQuestion, coderSolution]
 
 -- | 規則性があまり無いぼぼ単発の技術系コピーサイト。
 singleTechSites :: HostGroup
@@ -103,13 +103,6 @@ coderSolution = HostGroup
                in L.nub $
                   (["coder-solution." <> domain | domain <- topLevelDomains <> codes]) <>
                   (["coder-solution-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
-
--- | `ja.loudoun-valley.com`系のサイト。
-loudounValley :: HostGroup
-loudounValley = HostGroup
-  { hostGroupFull = ["loudoun-valley.com"]
-  , hostGroupInfix = ["loudoun-valley"]
-  }
 
 -- | 5chコピペサイト。
 -- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。

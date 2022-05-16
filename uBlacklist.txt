@@ -143,6 +143,7 @@
 *://*.litigationtoday.com/*
 *://*.living-sun.com/*
 *://*.localcoder.org/*
+*://*.loudoun-valley.com/*
 *://*.lycaeum.dev/*
 *://*.mianquan.net/*
 *://*.mianshigee.com/*
@@ -11567,7 +11568,6 @@
 *://*.coder-solution-zm.xyz/*
 *://*.coder-solution-zu.xyz/*
 *://*.coder-solution-zw.xyz/*
-*://*.loudoun-valley.com/*
 *://*.2ch-ranking.net/*
 *://*.2ch.live/*
 *://*.2ch.pet/*
