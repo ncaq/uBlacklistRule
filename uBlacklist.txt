@@ -99,6 +99,7 @@
 *://*.githublab.com/*
 *://*.githubmemory.com/*
 *://*.gitmemory.com/*
+*://*.google-yandex.info/*
 *://*.gtainspections.com/*
 *://*.helloworldkb.com/*
 *://*.helpex.vn/*
