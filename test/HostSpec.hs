@@ -24,27 +24,25 @@ newtype Item
 spec :: Spec
 spec = do
   describe "makeHostGroups" $ do
+    let hostGroups = makeHostGroups
     describe "whiteList" $ do
       it "uBlacklist基準でブロックしていないか" $
-        mapM_ (\hostGroup -> whiteList `shouldNotContain` hostGroupFull hostGroup) makeHostGroups
+        mapM_ (\hostGroup -> whiteList `shouldNotContain` hostGroupFull hostGroup) hostGroups
       it "uBlock Origin基準でブロックしていないか" $
-        mapM_
-        (mapM_
-         (\infixOne ->
-            mapM_
-            (\white ->
-               (infixOne, white) `shouldNotSatisfy` uncurry T.isInfixOf)
-            whiteList) .
-         hostGroupInfix)
-        makeHostGroups
+        sequence_
+        [ (infixOne, white) `shouldNotSatisfy` uncurry T.isInfixOf
+        | hostGroup <- hostGroups
+        , infixOne <- hostGroupInfix hostGroup
+        , white <- whiteList
+        ]
     it "Stack Exchangeが公式に運用しているホストをブロックしていないか" $ do
       stackExchangeSites <- liftIO getStackExchangeSites
-      mapM_ (\hostGroup -> stackExchangeSites `shouldNotContain` hostGroupFull hostGroup) makeHostGroups
+      mapM_ (\hostGroup -> stackExchangeSites `shouldNotContain` hostGroupFull hostGroup) hostGroups
 
 -- | ブロックしてはいけないURLたち。
 whiteList :: [Text]
 whiteList =
-  [ "https://docs.ruby-lang.org/ja/latest/library/openssl.html" -- 一回誤爆した前科がある
+  [ "https://docs.ruby-lang.org/ja/latest/library/openssl.html" -- 一回誤爆した。
   , "https://segmentfault.com" -- 一見StackOverflowのコピーサイトにしか見えないが、一応内容はオリジナルらしい。
   ]
 
