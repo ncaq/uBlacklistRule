@@ -29,7 +29,7 @@ fromFull ts = HostGroup { hostGroupFull = ts, hostGroupInfix = ts }
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHostGroups :: [HostGroup]
-makeHostGroups = tech <> [ch, video, ghard, wikipedia, proxy, malware]
+makeHostGroups = tech <> [ch, video, ghard, wikipedia, proxy]
 
 -- | 技術系スパムサイト全て。
 tech :: [HostGroup]
@@ -169,7 +169,3 @@ proxy = fromFull $ T.lines $ T.strip [r|
 proxybot.cc
 proxyfly.org
 |]
-
--- | 検索ワードだけを散りばめて、詐欺サイトなどに飛ばすサイト。
-malware :: HostGroup
-malware = fromFull $ T.lines $ convert $(embedFile "asset/malware.txt")
