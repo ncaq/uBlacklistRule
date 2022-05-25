@@ -75,6 +75,7 @@
 *://*.docow.com/*
 *://*.docway.net/*
 *://*.dokry.com/*
+*://*.dokumen.tips/*
 *://*.dovov.com/*
 *://*.drunkentengu.com/*
 *://*.edupro.id/*
