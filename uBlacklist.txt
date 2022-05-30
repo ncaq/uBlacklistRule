@@ -112,6 +112,7 @@
 *://*.hub.fastgit.org/*
 *://*.ichi.pro/*
 *://*.ifaj-congress.org/*
+*://*.igiftidea.com/*
 *://*.includestdio.com/*
 *://*.ipgirl.com/*
 *://*.isolution.pro/*
@@ -154,6 +155,7 @@
 *://*.mlog.club/*
 *://*.newbedev.com/*
 *://*.nobis.work/*
+*://*.ogeek.cn/*
 *://*.ojit.com/*
 *://*.orcode.com/*
 *://*.ostack.cn/*
