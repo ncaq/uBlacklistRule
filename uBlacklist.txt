@@ -195,6 +195,7 @@
 *://*.softonic.com/*
 *://*.softonic.jp/*
 *://*.soinside.com/*
+*://*.solvusoft.com/*
 *://*.sqlite.in/*
 *://*.stackfinder.net/*
 *://*.stacknoob.com/*
