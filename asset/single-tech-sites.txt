@@ -94,6 +94,7 @@ geek-tips.imtqy.com
 geekcxy.com
 geeks-world.imtqy.com
 generacodice.com
+getridbug.com
 ghcc.net
 github-dotcom.gateway.web.tr
 githubhelp.com
@@ -123,6 +124,7 @@ it-gundan.net
 it-mot-dan-vi.com
 it-roy-ru.com
 it.wenda123.org
+it1352.com
 itbloger.tistory.com
 iteramos.com
 itnews.org
@@ -142,6 +144,7 @@ knews.vip
 konnichiwasekai.com
 kotaeta.com
 laptrinhx.com
+learnfk.com
 learntutorials.net
 legkovopros.ru
 litigationtoday.com
@@ -149,6 +152,7 @@ living-sun.com
 localcoder.org
 loudoun-valley.com
 lycaeum.dev
+mediatagtw.com
 mianquan.net
 mianshigee.com
 mlink.in
@@ -160,7 +164,9 @@ ojit.com
 orcode.com
 ostack.cn
 overcoder.net
+overstack.in
 panaindustrial.com
+peaku.co
 point808.com
 progi.pro
 prograide.com
