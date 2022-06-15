@@ -84,6 +84,7 @@
 *://*.elfishgene.com/*
 *://*.euromar2012.org/*
 *://*.exceptionshub.com/*
+*://*.exchangetuts.com/*
 *://*.extutorial.com/*
 *://*.firstlightsalon.in/*
 *://*.fixes.pub/*
