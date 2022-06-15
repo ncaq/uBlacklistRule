@@ -252,6 +252,7 @@
 *://*.vfwpost8762.org/*
 *://*.visual-foxpro-programmer.com/*
 *://*.voidcc.com/*
+*://*.wake-up-neo.com/*
 *://*.web-dev-qa-db-ja.com/*
 *://*.web-dev-qa.com/*
 *://*.web-gaebal-jilmun-dabbyeon-db.com/*
