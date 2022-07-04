@@ -24,6 +24,7 @@
 *://*.bleepcoder.jp/*
 *://*.blingin.in/*
 *://*.bootpanic.com/*
+*://*.br.atsit.in/*
 *://*.buginfo.tech/*
 *://*.bugsdb.com/*
 *://*.bullforyou.com/*
