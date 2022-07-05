@@ -224,6 +224,7 @@
 *://*.stackoverrun.com/*
 *://*.stackscn.com/*
 *://*.steakrecords.com/*
+*://*.string.quest/*
 *://*.superduperartscamp.com/*
 *://*.suttonedfoundation.org/*
 *://*.sviluppo-web-qa.it/*
