@@ -178,6 +178,7 @@
 *://*.point808.com/*
 *://*.progi.pro/*
 *://*.prograide.com/*
+*://*.programbugs.com/*
 *://*.programmation-web-qr.com/*
 *://*.programmerstart.com/*
 *://*.programmerz.ru/*
