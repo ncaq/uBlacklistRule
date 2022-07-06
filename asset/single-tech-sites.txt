@@ -132,6 +132,7 @@ it-roy-ru.com
 it.wenda123.org
 it1352.com
 itbloger.tistory.com
+itecnote.com
 iteramos.com
 itnews.org
 itread01.com
@@ -258,6 +259,7 @@ vfwpost8762.org
 visual-foxpro-programmer.com
 voidcc.com
 wake-up-neo.com
+web-dev-qa-db-esp.com
 web-dev-qa-db-ja.com
 web-dev-qa.com
 web-gaebal-jilmun-dabbyeon-db.com
