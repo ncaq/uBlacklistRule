@@ -6,6 +6,7 @@
 796t.com
 888wenti.com
 ajaxhispano.com
+androidbugfix.com
 answer-id.com
 answerlib.com
 apthow.com
@@ -13,6 +14,8 @@ arip-photo.org
 array.cyou
 artfit-prk.com
 article.docway.net
+ask-dev.ru
+askcodez.com
 askdev.info
 athabasca-foto.com
 baksi.xyz
@@ -87,6 +90,7 @@ euromar2012.org
 exceptionshub.com
 exchangetuts.com
 extutorial.com
+faqcode4u.com
 firstlightsalon.in
 fixes.pub
 fogsbane.dev
@@ -114,6 +118,7 @@ hot-time.tistory.com
 hu.qaru.tech
 huati365.com
 hub.fastgit.org
+iacademyplus.com
 ichi.pro
 icode.best
 ifaj-congress.org
@@ -135,6 +140,7 @@ itbloger.tistory.com
 itecnote.com
 iteramos.com
 itnews.org
+itranslater.com
 itread01.com
 izziswift.com
 jablogs.com
@@ -142,6 +148,7 @@ javaer101.com
 javaroad.cn
 jb51.cc
 jike.in
+jonic.cn
 jpcloud.net
 jpcodeqa.com
 jpdebug.com
@@ -191,6 +198,7 @@ pythonfixing.com
 pythonq.com
 qa-help.ru
 qa.1r1g.com
+qa.55276.net
 qa.icopy.site
 qapicks.com
 qaru.site
@@ -273,5 +281,6 @@ wujigu.com
 xbuba.com
 yo.zgserver.com
 younggeeks.in
+zainale.net
 zhouni.net
 zweryfikowac.pl
