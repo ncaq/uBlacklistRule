@@ -204,6 +204,7 @@
 *://*.qaru.site/*
 *://*.qathai.com/*
 *://*.qedev.com/*
+*://*.qna.habr.com/*
 *://*.quabr.com/*
 *://*.quares.ru/*
 *://*.question-it.com/*
