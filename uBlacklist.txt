@@ -236,6 +236,7 @@
 *://*.stackscn.com/*
 *://*.steakrecords.com/*
 *://*.string.quest/*
+*://*.super-unix.com/*
 *://*.superduperartscamp.com/*
 *://*.suttonedfoundation.org/*
 *://*.sviluppo-web-qa.it/*
