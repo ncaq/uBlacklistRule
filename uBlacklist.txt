@@ -103,6 +103,7 @@
 *://*.generacodice.com/*
 *://*.getridbug.com/*
 *://*.ghcc.net/*
+*://*.gitanswer.net/*
 *://*.github-dotcom.gateway.web.tr/*
 *://*.githubhelp.com/*
 *://*.githubhot.com/*
