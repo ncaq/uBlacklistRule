@@ -9,6 +9,7 @@
 *://*.androidbugfix.com/*
 *://*.answer-id.com/*
 *://*.answerlib.com/*
+*://*.anycodings.com/*
 *://*.apthow.com/*
 *://*.arip-photo.org/*
 *://*.array.cyou/*
