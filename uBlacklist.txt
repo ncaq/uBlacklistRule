@@ -251,6 +251,7 @@
 *://*.tagsqa.com/*
 *://*.tech-in-japan.github.io/*
 *://*.tech-ja.netlify.app/*
+*://*.techacademy.jp/*
 *://*.techfeed.net/*
 *://*.thercb.org/*
 *://*.thinbug.com/*
