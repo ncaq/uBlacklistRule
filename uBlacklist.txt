@@ -270,6 +270,7 @@
 *://*.uebu-kaihatsu.jp.net/*
 *://*.uefir.com/*
 *://*.ulab.unipo.sk/*
+*://*.uptodown.com/*
 *://*.usersuper.ru/*
 *://*.utyatnishna.ru/*
 *://*.uwenku.com/*
