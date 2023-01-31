@@ -288,6 +288,7 @@
 *://*.wenyanet.com/*
 *://*.whereismyanswer.com/*
 *://*.while-do.com/*
+*://*.windowsbulletin.com/*
 *://*.wujigu.com/*
 *://*.xbuba.com/*
 *://*.yo.zgserver.com/*
