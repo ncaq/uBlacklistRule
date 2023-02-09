@@ -47,6 +47,7 @@
 *://*.code-adviser.com/*
 *://*.code-examples.net/*
 *://*.code.i-harness.com/*
+*://*.codeantenna.com/*
 *://*.codeday.me/*
 *://*.codefaq.info/*
 *://*.codefaq.ru/*
