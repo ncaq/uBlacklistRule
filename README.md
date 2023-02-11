@@ -16,7 +16,9 @@ Google Chrome(Desktop版)を利用している場合は、
 向けの、
 [uBlock Origin](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)
 で利用するためのルールはこちらです。
+
 <https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlockOrigin.txt>
+
 Firefox for Androidで、
 [Google Search Fixer](https://addons.mozilla.org/ja/firefox/addon/google-search-fixer/)
 を有効にした状態でしかテストしていません。
