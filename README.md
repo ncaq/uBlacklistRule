@@ -8,14 +8,18 @@
 
 <https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt>
 
-Google Chrome(Desktop版)を利用している場合は [こちら](https://iorate.github.io/ublacklist/subscribe?name=ncaq-uBlacklistRule&url=https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt) をクリックすることで、購読する直前までの操作をスキップすることが出来ます。
+Google Chrome(Desktop版)を利用している場合は、
+[こちら](https://iorate.github.io/ublacklist/subscribe?name=ncaq-uBlacklistRule&url=https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt)
+をクリックすることで、購読する直前までの操作をスキップすることが出来ます。
 
-Firefox for Android向けの、
+[Firefox for Android](https://www.mozilla.org/ja/firefox/browsers/mobile/android/)
+向けの、
 [uBlock Origin](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)
 で利用するためのルールはこちらです。
-Firefox for Androidでしかテストしていません。
-
 <https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlockOrigin.txt>
+Firefox for Androidで、
+[Google Search Fixer](https://addons.mozilla.org/ja/firefox/addon/google-search-fixer/)
+を有効にした状態でしかテストしていません。
 
 # 何故既にルールを共有するリポジトリがあるのに新しく作ったのか
 
@@ -52,6 +56,19 @@ Firefox for Androidでしかテストしていません。
 機械翻訳が低品質すぎて理解不能なのですが、
 これをブロックしてしまうと本家ニュース記事にたどり着くのが困難になるので、
 あえてブロックしていません。
+
+## 拡張子解説サイト
+
+ファイル拡張子に関するページを機械で大量生成しているサイト。
+
+まともに解説しているならば良いのですが、
+大抵は間違っているかテキストエディタか拡張子判別ソフトみたいなものを宣伝しているだけです。
+
+普通に検索して拡張子が意味するファイルの種別が分かれば、
+そこから検索し直したほうが早いし正確。
+もしくはテキストファイルとして開いて内容を確認するか、
+`file`コマンドを使えば良いです。
+拡張子と明示的に検索しなくても出てくることが多く有害。
 
 ## コピペサイト
 
@@ -126,7 +143,8 @@ PRを作ってくださるのも歓迎いたします。
 
 # 関連リンク
 
-* [uBlacklistを使ってポケモン徹底攻略やStack OverflowのコピペサイトをGoogle検索から除外しましょう - ncaq](https://www.ncaq.net/2019/12/18/19/18/05/)
+* [iorate/ublacklist: Blocks specific sites from appearing in Google search results](https://github.com/iorate/uBlacklist)
 * [uBlacklist - iorate.github.io](https://iorate.github.io/ublacklist/)
-* [iorate/uBlacklist: Blocks specific sites from appearing in Google search results](https://github.com/iorate/uBlacklist)
+* [Subscriptions | uBlacklist](https://iorate.github.io/ublacklist/subscriptions)
+* [uBlacklistを使ってポケモン徹底攻略やStack OverflowのコピペサイトをGoogle検索から除外しましょう - ncaq](https://www.ncaq.net/2019/12/18/19/18/05/)
 * [アフィカスリスト作成所 - なんJ AdGuard部 Wiki*](https://wikiwiki.jp/nanj-adguard/%E3%82%A2%E3%83%95%E3%82%A3%E3%82%AB%E3%82%B9%E3%83%AA%E3%82%B9%E3%83%88%E4%BD%9C%E6%88%90%E6%89%80)
