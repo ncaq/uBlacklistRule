@@ -29,7 +29,7 @@ fromFull ts = HostGroup { hostGroupFull = ts, hostGroupInfix = ts }
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHostGroups :: [HostGroup]
-makeHostGroups = tech <> [ch, video, ghard, wikipedia, proxy]
+makeHostGroups = tech <> [extensionExplanationSite, ch, video, ghard, wikipedia, proxy]
 
 -- | 技術系スパムサイト全て。
 tech :: [HostGroup]
@@ -103,6 +103,10 @@ coderSolution = HostGroup
                in L.nub $
                   (["coder-solution." <> domain | domain <- topLevelDomains <> codes]) <>
                   (["coder-solution-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
+
+-- | 拡張子解説サイト。
+extensionExplanationSite :: HostGroup
+extensionExplanationSite = fromFull $ T.lines $ convert $(embedFile "asset/extension-explanation-site.txt")
 
 -- | 5chコピペサイト。
 -- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。
