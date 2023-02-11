@@ -10,7 +10,8 @@
 
 Google Chrome(Desktop版)を利用している場合は、
 [こちら](https://iorate.github.io/ublacklist/subscribe?name=ncaq-uBlacklistRule&url=https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt)
-をクリックすることで、購読する直前までの操作をスキップすることが出来ます。
+をクリックすることで、
+購読する直前までの操作をスキップすることが出来ます。
 
 [Firefox for Android](https://www.mozilla.org/ja/firefox/browsers/mobile/android/)
 向けの、
