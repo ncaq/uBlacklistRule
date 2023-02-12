@@ -17,7 +17,7 @@ data HostGroup
     -- 冗長。
     -- うまく取り扱ってくれるuBlacklist向け。
     hostGroupFull  :: [Text]
-    -- | ホストをなるべく簡潔にinfixを表したもの。
+    -- | ホストをなるべく簡潔にinfixで表したもの。
     -- uBlock Originなどデータ量が多いと処理できないもの向け。
   , hostGroupInfix :: [Text]
   }
@@ -37,7 +37,7 @@ tech = [singleTechSites, itMure, itSwarm, qastack, issuecloser, coderQuestion, c
 
 -- | 規則性があまり無いぼぼ単発の技術系コピーサイト。
 singleTechSites :: HostGroup
-singleTechSites = fromFull $ T.lines $ convert $(embedFile "asset/single-tech-sites.txt")
+singleTechSites = fromFull $ T.lines $(embedStringFile "asset/single-tech-site.txt")
 
 -- | `it-mure.jp.net` 系のサイト。
 itMure :: HostGroup
@@ -106,70 +106,25 @@ coderSolution = HostGroup
 
 -- | 拡張子解説サイト。
 extensionExplanationSite :: HostGroup
-extensionExplanationSite = fromFull $ T.lines $ convert $(embedFile "asset/extension-explanation-site.txt")
+extensionExplanationSite = fromFull $ T.lines $(embedStringFile "asset/extension-explanation-site.txt")
 
 -- | 5chコピペサイト。
 -- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。
 ch :: HostGroup
-ch = fromFull $ T.lines $ T.strip [r|
-2ch-ranking.net
-2ch.live
-2ch.pet
-2ch.review
-2ch.sc
-2ch.vet
-2chmm.com
-2nf2.rdy.jp
-2nn.jp
-5ch-ranking.com
-5ch.pub
-bbspink.icu
-calcal.net
-comedydouga.com
-ikioi2ch.net
-ikioi5ch.net
-|]
+ch = fromFull $ T.lines $(embedStringFile "asset/ch-site.txt")
 
 -- | 動画をiframeで埋め込んで流したり、メタ情報で検索に引っ掛けてくるもの。
 video :: HostGroup
-video = fromFull $ T.lines $ T.strip [r|
-nico-ran.jp
-nicoapple.sub.jp
-nicochart.jp
-nicoco.net
-nicovideo.me
-nicozon.net
-sub-nicoapple.ssl-lolipop.jp
-|]
+video = fromFull $ T.lines $(embedStringFile "asset/video-site.txt")
 
 -- | ゲハブログ。
 ghard :: HostGroup
-ghard = fromFull $ T.lines $ T.strip [r|
-esuteru.com
-ha-navi.com
-jin115.com
-|]
+ghard = fromFull $ T.lines $(embedStringFile "asset/ghard-site.txt")
 
 -- | Wikipediaのコピーサイト。
 wikipedia :: HostGroup
-wikipedia = fromFull $ T.lines $ T.strip [r|
-janghan.net
-japan2.wiki
-jpan.wiki
-linkfang.org
-melayukini.net
-nipponkaigi.net
-unionpedia.org
-wikiarabi.org
-wikinew.wiki
-wikiqube.net
-wikituscany.com
-wikiwand.com
-|]
+wikipedia = fromFull $ T.lines $(embedStringFile "asset/wikipedia-site.txt")
 
 -- | webプロキシ。
 proxy :: HostGroup
-proxy = fromFull $ T.lines $ T.strip [r|
-proxybot.cc
-proxyfly.org
-|]
+proxy = fromFull $ T.lines $(embedStringFile "asset/proxy-site.txt")
