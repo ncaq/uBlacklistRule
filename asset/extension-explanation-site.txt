@@ -10,9 +10,13 @@ fileextension.info
 fileinfo.com
 fileinfo.jp
 filemagic.com
+filesuffix.com
 filetypeadvisor.com
 filetypes.jp
 fileviewpro.com
+filext.com
+hotfe.org
+htofe.com
 submitfile.com
 thefile.org
 whatext.com
