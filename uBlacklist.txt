@@ -29,6 +29,7 @@
 *://*.blingin.in/*
 *://*.bootpanic.com/*
 *://*.br.atsit.in/*
+*://*.buaq.net/*
 *://*.buginfo.tech/*
 *://*.bugsdb.com/*
 *://*.bullforyou.com/*
@@ -70,6 +71,7 @@
 *://*.crypto-days.jp/*
 *://*.csdn.net/*
 *://*.daimajiaoliu.com/*
+*://*.damogame.cn/*
 *://*.daplus.net/*
 *://*.de-vraag.com/*
 *://*.debugcn.com/*
@@ -105,6 +107,7 @@
 *://*.geekcxy.com/*
 *://*.geeks-world.imtqy.com/*
 *://*.generacodice.com/*
+*://*.getit01.com/*
 *://*.getridbug.com/*
 *://*.ghcc.net/*
 *://*.gitanswer.net/*
@@ -158,6 +161,7 @@
 *://*.jpcloud.net/*
 *://*.jpcodeqa.com/*
 *://*.jpdebug.com/*
+*://*.juejin.cn/*
 *://*.kaifa99.com/*
 *://*.kejisen.com/*
 *://*.knews.vip/*
@@ -217,6 +221,7 @@
 *://*.quares.ru/*
 *://*.question-it.com/*
 *://*.railstoolkit.com/*
+*://*.read01.com/*
 *://*.removemalware-jp.com/*
 *://*.repoarchive.com/*
 *://*.reviversoft.com/*
@@ -226,6 +231,7 @@
 *://*.runebook.dev/*
 *://*.rupython.com/*
 *://*.sanchezsalvador.com/*
+*://*.schoenheitsklinik-berlin.com/*
 *://*.siwib.org/*
 *://*.softonic.com/*
 *://*.softonic.jp/*
