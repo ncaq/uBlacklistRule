@@ -171,6 +171,7 @@
 *://*.learnfk.com/*
 *://*.learntutorials.net/*
 *://*.legkovopros.ru/*
+*://*.lightrun.com/*
 *://*.litigationtoday.com/*
 *://*.living-sun.com/*
 *://*.localcoder.org/*
