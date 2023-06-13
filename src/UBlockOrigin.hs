@@ -3,8 +3,9 @@
 {-# LANGUAGE QuasiQuotes       #-}
 module UBlockOrigin (writeUBlockOriginTxt) where
 
+import           Data.String.Here
 import           Import
-import           RIO.Text as T
+import           RIO.Text         as T
 
 -- | `uBlockOrigin.txt`をワーキングディレクトリに書き込みます。
 writeUBlockOriginTxt :: [Text] -> RIO App ()
@@ -22,12 +23,12 @@ header = [r|
 
 |]
 
+-- | Firefox for Android向けのルール。
+-- 基本的にGoogle Search Fixerなどを使っていることを想定しています。
+-- Googleの仕様変更によって壊れやすいので注意。
 toRule :: Text -> Text
 toRule host =
-  -- 通常のFirefox for Android向け、
-  -- Google Search Fixerなどを使って、Chrome向けの画面を出している時、
-  -- 検索スニペットなどまとめて消去します。
-  "www.google.*##.xpd:has([href*=\"" <> host <> "\"])"
+  [i|www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="${host}"][data-ved]:upward(3)|]
 
 -- | 通常の`strip`だとテキストファイルとして必要な末尾改行も削除してしまうのでそれを取り付け直す。
 -- 効率のことは考えていないコードです。
