@@ -11626,6 +11626,7 @@
 *://*.coder-solution-zm.xyz/*
 *://*.coder-solution-zu.xyz/*
 *://*.coder-solution-zw.xyz/*
+*://*.com.br/*
 *://*.ccfa.info/*
 *://*.extension.info/*
 *://*.extensionfile.net/*
