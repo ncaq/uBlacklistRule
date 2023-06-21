@@ -11664,11 +11664,13 @@
 *://*.4g63evo.net/*
 *://*.5ch-ranking.com/*
 *://*.5ch.pub/*
+*://*.5chmap.com/*
 *://*.bbspink.icu/*
 *://*.calcal.net/*
 *://*.comedydouga.com/*
 *://*.ikioi2ch.net/*
 *://*.ikioi5ch.net/*
+*://*.logpo.jp/*
 *://*.nico-ran.jp/*
 *://*.nicoapple.sub.jp/*
 *://*.nicochart.jp/*
