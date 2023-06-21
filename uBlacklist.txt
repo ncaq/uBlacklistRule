@@ -11661,6 +11661,7 @@
 *://*.2chmm.com/*
 *://*.2nf2.rdy.jp/*
 *://*.2nn.jp/*
+*://*.4g63evo.net/*
 *://*.5ch-ranking.com/*
 *://*.5ch.pub/*
 *://*.bbspink.icu/*
