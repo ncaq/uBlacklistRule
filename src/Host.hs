@@ -29,7 +29,7 @@ fromFull ts = HostGroup { hostGroupFull = ts, hostGroupInfix = ts }
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHostGroups :: [HostGroup]
-makeHostGroups = tech <> [thirdLevelDomain, extensionExplanationSite, ch, video, ghard, wikipedia, proxy]
+makeHostGroups = tech <> [thirdLevelDomain, phishing, extensionExplanationSite, ch, video, ghard, wikipedia, proxy]
 
 -- | 技術系スパムサイト全て。
 tech :: [HostGroup]
@@ -109,6 +109,11 @@ coderSolution = HostGroup
 -- これまでスパム的なもの以外にマトモに使われている例を結局見たことがありませんでした。
 thirdLevelDomain :: HostGroup
 thirdLevelDomain = fromFull $ T.lines $(embedStringFile "asset/third-level-domain.txt")
+
+-- | フィッシングサイト。
+-- キリがない気もしますが、追加できるものは追懐しておきます。
+phishing :: HostGroup
+phishing = fromFull $ T.lines $(embedStringFile "asset/phishing.txt")
 
 -- | 拡張子解説サイト。
 extensionExplanationSite :: HostGroup
