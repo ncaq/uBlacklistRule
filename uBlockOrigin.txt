@@ -6,6 +6,7 @@
 ! License: MIT
 ! Thanks: https://github.com/hirorpt/ubo-stackoverflow-translation
 
+www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="com.ar"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="com.bo"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="com.br"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="com.ve"][data-ved]:upward(3)
