@@ -29,7 +29,53 @@ fromFull ts = HostGroup { hostGroupFull = ts, hostGroupInfix = ts }
 
 -- | 全てのホスト対象のURLリストを生成します。
 makeHostGroups :: [HostGroup]
-makeHostGroups = tech <> [thirdLevelDomain, phishing, extensionExplanationSite, ch, video, ghard, wikipedia, proxy]
+makeHostGroups =
+  [ thirdLevelDomain
+  , ch
+  , ghard
+  , video
+  , extensionExplanationSite
+  , wikipedia
+  , proxy
+  , phishing
+  ] <>
+  tech
+
+-- | `foo.com.br`のようなサードレベルドメイン。
+-- マトモに使ってる例があるかもしれないと思って躊躇いましたが、
+-- これまでスパム的なもの以外にマトモに使われている例を結局見たことがありませんでした。
+thirdLevelDomain :: HostGroup
+thirdLevelDomain = fromFull $ T.lines $(embedStringFile "asset/third-level-domain.txt")
+
+-- | 5chコピペサイト。
+-- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。
+ch :: HostGroup
+ch = fromFull $ T.lines $(embedStringFile "asset/ch-site.txt")
+
+-- | ゲハブログ。
+ghard :: HostGroup
+ghard = fromFull $ T.lines $(embedStringFile "asset/ghard-site.txt")
+
+-- | 拡張子解説サイト。
+extensionExplanationSite :: HostGroup
+extensionExplanationSite = fromFull $ T.lines $(embedStringFile "asset/extension-explanation-site.txt")
+
+-- | 動画をiframeで埋め込んで流したり、メタ情報で検索に引っ掛けてくるもの。
+video :: HostGroup
+video = fromFull $ T.lines $(embedStringFile "asset/video-site.txt")
+
+-- | Wikipediaのコピーサイト。
+wikipedia :: HostGroup
+wikipedia = fromFull $ T.lines $(embedStringFile "asset/wikipedia-site.txt")
+
+-- | webプロキシ。
+proxy :: HostGroup
+proxy = fromFull $ T.lines $(embedStringFile "asset/proxy-site.txt")
+
+-- | フィッシングサイト。
+-- キリがない気もしますが、追加できるものは追懐しておきます。
+phishing :: HostGroup
+phishing = fromFull $ T.lines $(embedStringFile "asset/phishing.txt")
 
 -- | 技術系スパムサイト全て。
 tech :: [HostGroup]
@@ -58,7 +104,7 @@ itSwarm = HostGroup
                   (["it-swarm." <> domain <> "." <> code | domain <- topLevelDomains, code <- codes]) <>
                   (["it-swarm-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
 
--- | `qastack.jp` 系のサイト。
+-- | `qastack.jp`系のサイト。
 qastack :: HostGroup
 qastack = HostGroup
   { hostGroupFull = full
@@ -73,7 +119,7 @@ qastack = HostGroup
           , ("qa-stack." <>) <$> codes
           ]
 
--- | issuecloser-jp.comなど。
+-- | `issuecloser-jp.com`など。
 issuecloser :: HostGroup
 issuecloser = HostGroup
   { hostGroupFull = full
@@ -82,7 +128,7 @@ issuecloser = HostGroup
   where full = let topLevelDomains = ["com", "dev", "net", "tech", "xyz"]
                in L.nub (["issuecloser-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
 
--- | `coder-question.com` 系のサイト。
+-- | `coder-question.com`系のサイト。
 coderQuestion :: HostGroup
 coderQuestion = HostGroup
   { hostGroupFull = full
@@ -93,7 +139,7 @@ coderQuestion = HostGroup
                   (["coder-question." <> domain | domain <- topLevelDomains <> codes]) <>
                   (["coder-question-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
 
--- | `coder-solution.com` 系のサイト。
+-- | `coder-solution.com`系のサイト。
 coderSolution :: HostGroup
 coderSolution = HostGroup
   { hostGroupFull = full
@@ -103,39 +149,3 @@ coderSolution = HostGroup
                in L.nub $
                   (["coder-solution." <> domain | domain <- topLevelDomains <> codes]) <>
                   (["coder-solution-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
-
--- | `foo.com.br`のようなサードレベルドメイン。
--- マトモに使ってる例があるかもしれないと思って躊躇いましたが、
--- これまでスパム的なもの以外にマトモに使われている例を結局見たことがありませんでした。
-thirdLevelDomain :: HostGroup
-thirdLevelDomain = fromFull $ T.lines $(embedStringFile "asset/third-level-domain.txt")
-
--- | フィッシングサイト。
--- キリがない気もしますが、追加できるものは追懐しておきます。
-phishing :: HostGroup
-phishing = fromFull $ T.lines $(embedStringFile "asset/phishing.txt")
-
--- | 拡張子解説サイト。
-extensionExplanationSite :: HostGroup
-extensionExplanationSite = fromFull $ T.lines $(embedStringFile "asset/extension-explanation-site.txt")
-
--- | 5chコピペサイト。
--- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。
-ch :: HostGroup
-ch = fromFull $ T.lines $(embedStringFile "asset/ch-site.txt")
-
--- | 動画をiframeで埋め込んで流したり、メタ情報で検索に引っ掛けてくるもの。
-video :: HostGroup
-video = fromFull $ T.lines $(embedStringFile "asset/video-site.txt")
-
--- | ゲハブログ。
-ghard :: HostGroup
-ghard = fromFull $ T.lines $(embedStringFile "asset/ghard-site.txt")
-
--- | Wikipediaのコピーサイト。
-wikipedia :: HostGroup
-wikipedia = fromFull $ T.lines $(embedStringFile "asset/wikipedia-site.txt")
-
--- | webプロキシ。
-proxy :: HostGroup
-proxy = fromFull $ T.lines $(embedStringFile "asset/proxy-site.txt")
