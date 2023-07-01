@@ -74,6 +74,8 @@
 *://*.bluebirdvaluation.com/*
 *://*.capitalliving.co.uk/*
 *://*.cbt.sdmpsalatiga.sch.id/*
+*://*.gbk.id/*
+*://*.geminos.ai/*
 *://*.julysportcenter.com/*
 *://*.klinika-svjetlost.ba/*
 *://*.prontocs.co.za/*
