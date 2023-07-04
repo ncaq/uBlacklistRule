@@ -1,7 +1,3 @@
-{-# LANGUAGE DeriveAnyClass    #-}
-{-# LANGUAGE DeriveGeneric     #-}
-{-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE OverloadedStrings #-}
 module HostSpec (spec) where
 
 import           Data.Aeson
@@ -14,12 +10,16 @@ import           Test.Hspec
 newtype Sites
   = Sites
   { items :: [Item]
-  } deriving (Eq, Ord, Read, Show, Generic, FromJSON)
+  }
+  deriving (Eq, Ord, Read, Show, Generic)
+instance FromJSON Sites
 
 newtype Item
   = Item
   { site_url :: Text
-  } deriving (Eq, Ord, Read, Show, Generic, FromJSON)
+  }
+  deriving (Eq, Ord, Read, Show, Generic)
+instance FromJSON Item
 
 spec :: Spec
 spec = do

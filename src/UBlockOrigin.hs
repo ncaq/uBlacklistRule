@@ -1,6 +1,4 @@
-{-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE QuasiQuotes       #-}
+{-# LANGUAGE QuasiQuotes #-}
 module UBlockOrigin (writeUBlockOriginTxt) where
 
 import           Data.String.Here
