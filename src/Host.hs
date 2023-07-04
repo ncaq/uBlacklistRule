@@ -1,8 +1,6 @@
-{-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE QuasiQuotes       #-}
-{-# LANGUAGE StrictData        #-}
-{-# LANGUAGE TemplateHaskell   #-}
+{-# LANGUAGE QuasiQuotes     #-}
+{-# LANGUAGE StrictData      #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Host (HostGroup(..), makeHostGroups) where
 
 import           Code

@@ -1,5 +1,3 @@
-{-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE OverloadedStrings #-}
 module UBlacklist (writeUBlacklistTxt) where
 
 import           Import

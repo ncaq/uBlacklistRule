@@ -1,4 +1,3 @@
-{-# LANGUAGE NoImplicitPrelude #-}
 module Import (module I) where
 
 import           Data.Convertible  as I

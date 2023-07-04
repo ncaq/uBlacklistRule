@@ -2,20 +2,20 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: haskell:8.10
+      - image: haskell:9.2.8
     steps:
       - checkout
       - restore_cache:
           name: Restore Cached Dependencies for Stack
           keys:
-            - v2-stack-{{ checksum "stack.yaml.lock" }}-{{ checksum "package.yaml" }}
-            - v2-stack-{{ checksum "stack.yaml.lock" }}-
+            - v1-stack-{{ checksum "stack.yaml.lock" }}-{{ checksum "package.yaml" }}
+            - v1-stack-{{ checksum "stack.yaml.lock" }}-
       - run: stack --no-terminal setup
       - run: stack --no-terminal --jobs 1 install hlint
       - run: stack --no-terminal --jobs 1 test --no-run-tests
       - save_cache:
           name: Cache Dependencies for Stack
-          key: v2-stack-{{ checksum "stack.yaml.lock" }}-{{ checksum "package.yaml" }}
+          key: v1-stack-{{ checksum "stack.yaml.lock" }}-{{ checksum "package.yaml" }}
           paths:
             - ~/.stack
             - .stack-work
