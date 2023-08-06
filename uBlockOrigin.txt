@@ -25,9 +25,11 @@ www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] >
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="ikioi2ch.net"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="ikioi5ch.net"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="logpo.jp"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="esuteru.com"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="ha-navi.com"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="jin115.com"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="nico-ran.jp"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="nicoapple.sub.jp"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="nicochart.jp"][data-ved]:upward(3)
@@ -35,6 +37,7 @@ www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] >
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="nicovideo.me"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="nicozon.net"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="sub-nicoapple.ssl-lolipop.jp"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="ccfa.info"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="extension.info"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="extensionfile.net"][data-ved]:upward(3)
@@ -58,6 +61,7 @@ www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] >
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="submitfile.com"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="thefile.org"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="whatext.com"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="janghan.net"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="japan2.wiki"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="jpan.wiki"][data-ved]:upward(3)
@@ -70,8 +74,10 @@ www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] >
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="wikiqube.net"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="wikituscany.com"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="wikiwand.com"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="proxybot.cc"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="proxyfly.org"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="alhedayacentre.ca"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="bennettheymanlaw.com"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="bluebirdvaluation.com"][data-ved]:upward(3)
@@ -88,6 +94,7 @@ www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] >
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="sole-corp.co.jp"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="suzihandicapanimal.net"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="ugel14oyon.gob.pe"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="com.aa"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="com.ab"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="com.ad"][data-ved]:upward(3)
@@ -1703,6 +1710,7 @@ www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] >
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="org.zm"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="org.zu"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="org.zw"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="1r1g.cn"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="365airsoft.com"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="366service.com"][data-ved]:upward(3)
@@ -2011,10 +2019,16 @@ www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] >
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="zhblog.net"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="zhouni.net"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="zweryfikowac.pl"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="it-mure"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="it-swarm"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="qastack"][data-ved]:upward(3)
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="qa-stack"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="issuecloser"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="coder-question"][data-ved]:upward(3)
+
 www.google.*###main div > div[data-hveid]:not([class]) div[class] > div[class] > a[href*="coder-solution"][data-ved]:upward(3)

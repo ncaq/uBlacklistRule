@@ -6,6 +6,7 @@ import           Import
 import           Network.HTTP.Simple
 import qualified RIO.Text            as T
 import           Test.Hspec
+import           Type
 
 newtype Sites
   = Sites

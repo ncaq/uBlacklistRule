@@ -1,25 +1,12 @@
 {-# LANGUAGE QuasiQuotes     #-}
-{-# LANGUAGE StrictData      #-}
 {-# LANGUAGE TemplateHaskell #-}
-module Host (HostGroup(..), makeHostGroups) where
+module Host (makeHostGroups) where
 
 import           Code
 import           Import
 import qualified RIO.List as L
 import qualified RIO.Text as T
-
--- | ホストのひとまとまり。
-data HostGroup
-  = HostGroup
-  { -- | ホストをシンプルに全体を表したもの。
-    -- 冗長。
-    -- うまく取り扱ってくれるuBlacklist向け。
-    hostGroupFull  :: [Text]
-    -- | ホストをなるべく簡潔にinfixで表したもの。
-    -- uBlock Originなどデータ量が多いと処理できないもの向け。
-  , hostGroupInfix :: [Text]
-  }
-  deriving (Eq, Ord, Show, Read)
+import           Type
 
 -- | 簡潔に表す方法が無い場合に諦めてそのままfullもinfixも作ってしまう。
 fromFull :: [Text] -> HostGroup

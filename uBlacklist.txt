@@ -1,3 +1,10 @@
+title/^無題$/
+
+title/^待つ。$/
+
+title/^Index of \/Linux/
+title/^Index of \/pub/
+
 *://*.2ch-ranking.net/*
 *://*.2ch.live/*
 *://*.2ch.pet/*
@@ -17,9 +24,11 @@
 *://*.ikioi2ch.net/*
 *://*.ikioi5ch.net/*
 *://*.logpo.jp/*
+
 *://*.esuteru.com/*
 *://*.ha-navi.com/*
 *://*.jin115.com/*
+
 *://*.nico-ran.jp/*
 *://*.nicoapple.sub.jp/*
 *://*.nicochart.jp/*
@@ -27,6 +36,7 @@
 *://*.nicovideo.me/*
 *://*.nicozon.net/*
 *://*.sub-nicoapple.ssl-lolipop.jp/*
+
 *://*.ccfa.info/*
 *://*.extension.info/*
 *://*.extensionfile.net/*
@@ -50,6 +60,7 @@
 *://*.submitfile.com/*
 *://*.thefile.org/*
 *://*.whatext.com/*
+
 *://*.janghan.net/*
 *://*.japan2.wiki/*
 *://*.jpan.wiki/*
@@ -62,8 +73,10 @@
 *://*.wikiqube.net/*
 *://*.wikituscany.com/*
 *://*.wikiwand.com/*
+
 *://*.proxybot.cc/*
 *://*.proxyfly.org/*
+
 *://*.alhedayacentre.ca/*
 *://*.bennettheymanlaw.com/*
 *://*.bluebirdvaluation.com/*
@@ -80,6 +93,7 @@
 *://*.sole-corp.co.jp/*
 *://*.suzihandicapanimal.net/*
 *://*.ugel14oyon.gob.pe/*
+
 *://*.com.aa/*
 *://*.com.ab/*
 *://*.com.ad/*
@@ -1695,6 +1709,7 @@
 *://*.org.zm/*
 *://*.org.zu/*
 *://*.org.zw/*
+
 *://*.1r1g.cn/*
 *://*.365airsoft.com/*
 *://*.366service.com/*
@@ -2003,6 +2018,7 @@
 *://*.zhblog.net/*
 *://*.zhouni.net/*
 *://*.zweryfikowac.pl/*
+
 *://*.it-mure.aa.net/*
 *://*.it-mure.ab.net/*
 *://*.it-mure.ad.net/*
@@ -2326,6 +2342,7 @@
 *://*.it-mure.zm.net/*
 *://*.it-mure.zu.net/*
 *://*.it-mure.zw.net/*
+
 *://*.it-swarm.com/*
 *://*.it-swarm.edu/*
 *://*.it-swarm.gov/*
@@ -4269,6 +4286,7 @@
 *://*.it-swarm-zm.org/*
 *://*.it-swarm-zu.org/*
 *://*.it-swarm-zw.org/*
+
 *://*.qastack.aa/*
 *://*.qastack.ab/*
 *://*.qastack.ad/*
@@ -5561,6 +5579,7 @@
 *://*.qa-stack.zm/*
 *://*.qa-stack.zu/*
 *://*.qa-stack.zw/*
+
 *://*.issuecloser-aa.com/*
 *://*.issuecloser-ab.com/*
 *://*.issuecloser-ad.com/*
@@ -7176,6 +7195,7 @@
 *://*.issuecloser-zm.org/*
 *://*.issuecloser-zu.org/*
 *://*.issuecloser-zw.org/*
+
 *://*.coder-question.com/*
 *://*.coder-question.edu/*
 *://*.coder-question.gov/*
@@ -9119,6 +9139,7 @@
 *://*.coder-question-zm.org/*
 *://*.coder-question-zu.org/*
 *://*.coder-question-zw.org/*
+
 *://*.coder-solution.com/*
 *://*.coder-solution.edu/*
 *://*.coder-solution.gov/*
@@ -11062,3 +11083,4 @@
 *://*.coder-solution-zm.org/*
 *://*.coder-solution-zu.org/*
 *://*.coder-solution-zw.org/*
+
