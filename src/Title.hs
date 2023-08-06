@@ -31,6 +31,18 @@ redirectPattern = Title [[r|^待つ。$|]]
 -- 誤爆が怖いためまずはGNU/Linuxディストリビューション系に多く見られる特徴に絞ってみます。
 indexOfPattern :: Title
 indexOfPattern = Title <$> T.lines $ T.strip [r|
+^Ftp - \/pub
 ^Index of \/Linux
+^Index of \/debian
+^Index of \/ftp
+^Index of \/gentoo
+^Index of \/mirror
+^Index of \/packages
 ^Index of \/pub
+^Index of \/ubuntu
+^ftp:\/\/ftp\.
+^ftp\/
+^https?:\/\/ftp\.
+^of \/ftp
+^of \/pub
 |]
