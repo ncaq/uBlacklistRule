@@ -4,10 +4,13 @@ module UBlockOrigin (writeUBlockOriginTxt) where
 import           Data.String.Here
 import           Import
 import           RIO.Text         as T
+import           Type
 
 -- | `uBlockOrigin.txt`をワーキングディレクトリに書き込みます。
-writeUBlockOriginTxt :: [Text] -> RIO env ()
-writeUBlockOriginTxt hosts = writeFileUtf8 "uBlockOrigin.txt" . stripTextFile . (header <>) . T.unlines $ toRule <$> hosts
+writeUBlockOriginTxt :: [HostGroup] -> RIO env ()
+writeUBlockOriginTxt hostGroups =
+  writeFileUtf8 "uBlockOrigin.txt" . stripTextFile . (header <>) $
+  T.unlines (T.unlines . fmap toRule . hostGroupInfix <$> hostGroups)
 
 header :: Text
 header = [r|

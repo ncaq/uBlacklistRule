@@ -3,6 +3,7 @@ module Main (main) where
 import           Import
 import           RIO.Process
 import           Run
+import           Type
 
 main :: IO ()
 main = do
