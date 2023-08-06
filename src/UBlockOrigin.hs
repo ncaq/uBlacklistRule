@@ -6,7 +6,7 @@ import           Import
 import           RIO.Text         as T
 
 -- | `uBlockOrigin.txt`をワーキングディレクトリに書き込みます。
-writeUBlockOriginTxt :: [Text] -> RIO App ()
+writeUBlockOriginTxt :: [Text] -> RIO env ()
 writeUBlockOriginTxt hosts = writeFileUtf8 "uBlockOrigin.txt" . stripTextFile . (header <>) . T.unlines $ toRule <$> hosts
 
 header :: Text
