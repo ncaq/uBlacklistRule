@@ -1,7 +1,0 @@
-com.ar
-com.bo
-com.br
-com.ve
-com.vn
-gov.br
-org.br

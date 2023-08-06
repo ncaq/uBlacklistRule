@@ -28,22 +28,16 @@ fromFull ts = HostGroup { hostGroupFull = ts, hostGroupInfix = ts }
 -- | 全てのホスト対象のURLリストを生成します。
 makeHostGroups :: [HostGroup]
 makeHostGroups =
-  [ thirdLevelDomain
-  , ch
+  [ ch
   , ghard
   , video
   , extensionExplanationSite
   , wikipedia
   , proxy
   , phishing
+  , thirdLevelDomain
   ] <>
   tech
-
--- | `foo.com.br`のようなサードレベルドメイン。
--- マトモに使ってる例があるかもしれないと思って躊躇いましたが、
--- これまでスパム的なもの以外にマトモに使われている例を結局見たことがありませんでした。
-thirdLevelDomain :: HostGroup
-thirdLevelDomain = fromFull $ T.lines $(embedStringFile "asset/third-level-domain.txt")
 
 -- | 5chコピペサイト。
 -- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。
@@ -83,24 +77,32 @@ tech = [singleTechSites, itMure, itSwarm, qastack, issuecloser, coderQuestion, c
 singleTechSites :: HostGroup
 singleTechSites = fromFull $ T.lines $(embedStringFile "asset/single-tech-site.txt")
 
--- | `it-mure.jp.net` 系のサイト。
+-- | 通常サブドメインに使わないトップレベルドメインのリスト。
+topLevelDomain :: [Text]
+topLevelDomain = T.lines $(embedStringFile "asset/top-level-domain.txt")
+
+-- | `foo.com.br`のようなサードレベルドメイン利用のサイト。
+-- マトモに使ってる例があるかもしれないと思って躊躇いましたが、
+-- これまでスパム的なもの以外にマトモに使われている例を結局見たことがありませんでした。
+thirdLevelDomain :: HostGroup
+thirdLevelDomain = fromFull $ L.nub ([domain <> "." <> code | domain <- topLevelDomain, code <- codes])
+
+-- | `it-mure.jp.net`系のサイト。
 itMure :: HostGroup
 itMure = HostGroup
   { hostGroupFull = L.nub $ (\code -> "it-mure." <> code <> ".net") <$> codes
   , hostGroupInfix = ["it-mure"]
   }
 
--- | `it-swarm.` 系のサイト。
+-- | `it-swarm.`系のサイト。
 itSwarm :: HostGroup
 itSwarm = HostGroup
   { hostGroupFull = full
   , hostGroupInfix = ["it-swarm"]
   }
-  where full = let topLevelDomains = ["com", "dev", "net", "tech", "xyz"]
-               in L.nub $
-                  (["it-swarm." <> domain | domain <- topLevelDomains <> codes]) <>
-                  (["it-swarm." <> domain <> "." <> code | domain <- topLevelDomains, code <- codes]) <>
-                  (["it-swarm-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
+  where full = L.nub $
+          (["it-swarm." <> domain | domain <- topLevelDomain <> codes]) <>
+          (["it-swarm-" <> code <> "." <> domain | domain <- topLevelDomain, code <- codes])
 
 -- | `qastack.jp`系のサイト。
 qastack :: HostGroup
@@ -110,8 +112,6 @@ qastack = HostGroup
   }
   where full = L.nub $ concat
           [ ("qastack." <>) <$> codes
-          , ("qastack.com." <>) <$> codes
-          , ("qastack.net." <>) <$> codes
           , ("qastack.in." <>) <$> codes
           , ("qastack.info." <>) <$> codes
           , ("qa-stack." <>) <$> codes
@@ -123,8 +123,7 @@ issuecloser = HostGroup
   { hostGroupFull = full
   , hostGroupInfix = ["issuecloser"]
   }
-  where full = let topLevelDomains = ["com", "dev", "net", "tech", "xyz"]
-               in L.nub (["issuecloser-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
+  where full = L.nub (["issuecloser-" <> code <> "." <> domain | domain <- topLevelDomain, code <- codes])
 
 -- | `coder-question.com`系のサイト。
 coderQuestion :: HostGroup
@@ -132,10 +131,9 @@ coderQuestion = HostGroup
   { hostGroupFull = full
   , hostGroupInfix = ["coder-question"]
   }
-  where full = let topLevelDomains = ["com", "dev", "net", "tech", "xyz"]
-               in L.nub $
-                  (["coder-question." <> domain | domain <- topLevelDomains <> codes]) <>
-                  (["coder-question-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
+  where full = L.nub $
+          (["coder-question." <> domain | domain <- topLevelDomain <> codes]) <>
+          (["coder-question-" <> code <> "." <> domain | domain <- topLevelDomain, code <- codes])
 
 -- | `coder-solution.com`系のサイト。
 coderSolution :: HostGroup
@@ -143,7 +141,6 @@ coderSolution = HostGroup
   { hostGroupFull = full
   , hostGroupInfix = ["coder-solution"]
   }
-  where full = let topLevelDomains = ["com", "dev", "net", "tech", "xyz"]
-               in L.nub $
-                  (["coder-solution." <> domain | domain <- topLevelDomains <> codes]) <>
-                  (["coder-solution-" <> code <> "." <> domain | domain <- topLevelDomains, code <- codes])
+  where full = L.nub $
+          (["coder-solution." <> domain | domain <- topLevelDomain <> codes]) <>
+          (["coder-solution-" <> code <> "." <> domain | domain <- topLevelDomain, code <- codes])
