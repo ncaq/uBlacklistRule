@@ -18,10 +18,11 @@ makeHostGroups =
   [ ch
   , ghard
   , video
-  , extensionExplanationSite
+  , extensionExplanation
   , wikipedia
   , proxy
   , phishing
+  , gtranslate
   , thirdLevelDomain
   ] <>
   tech
@@ -36,8 +37,8 @@ ghard :: HostGroup
 ghard = fromFull $ T.lines $(embedStringFile "asset/ghard-site.txt")
 
 -- | 拡張子解説サイト。
-extensionExplanationSite :: HostGroup
-extensionExplanationSite = fromFull $ T.lines $(embedStringFile "asset/extension-explanation-site.txt")
+extensionExplanation :: HostGroup
+extensionExplanation = fromFull $ T.lines $(embedStringFile "asset/extension-explanation-site.txt")
 
 -- | 動画をiframeで埋め込んで流したり、メタ情報で検索に引っ掛けてくるもの。
 video :: HostGroup
@@ -58,17 +59,27 @@ phishing = fromFull $ T.lines $(embedStringFile "asset/phishing.txt")
 
 -- | 技術系スパムサイト全て。
 tech :: [HostGroup]
-tech = [singleTechSites, itMure, itSwarm, qastack, issuecloser, coderQuestion, coderSolution]
+tech = [singleTech, itMure, itSwarm, qastack, issuecloser, coderQuestion, coderSolution]
 
 -- | 規則性があまり無いぼぼ単発の技術系コピーサイト。
-singleTechSites :: HostGroup
-singleTechSites = fromFull $ T.lines $(embedStringFile "asset/single-tech-site.txt")
+singleTech :: HostGroup
+singleTech = fromFull $ T.lines $(embedStringFile "asset/single-tech-site.txt")
 
 -- | 通常サブドメインに使わないトップレベルドメインのリスト。
 topLevelDomain :: [Text]
 topLevelDomain = T.lines $(embedStringFile "asset/top-level-domain.txt")
 
--- | `foo.com.br`のようなサードレベルドメイン利用のサイト。
+-- | [GTranslate](https://ja.gtranslate.io/)を使った低品質な機械翻訳サイト。
+-- 数値が変数に化けるのが特徴です。
+-- 翻訳元のコンテンツがオリジナルの場合、
+-- オリジナルに飛ぶための引っ掛かりとして価値はあるかと思って、
+-- これまでブロックしてきませんでしたが、
+-- このような低品質なコンテンツを配信するサイトに情報元として大した価値はないことに気がついてきたため、
+-- ブロックします。
+gtranslate :: HostGroup
+gtranslate = fromFull $ T.lines $(embedStringFile "asset/gtranslate-site.txt")
+
+-- | `com.br`のようなトップレベルドメインに偽装したサードレベルドメインを利用しているサイト。
 -- マトモに使ってる例があるかもしれないと思って躊躇いましたが、
 -- これまでスパム的なもの以外にマトモに使われている例を結局見たことがありませんでした。
 thirdLevelDomain :: HostGroup
