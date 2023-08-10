@@ -10,37 +10,28 @@
 
 Google Chrome(Desktop版)を利用している場合は、
 [こちら](https://iorate.github.io/ublacklist/subscribe?name=ncaq-uBlacklistRule&url=https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt)
-をクリックすることで、
-購読する直前までの操作をスキップすることが出来ます。
+をクリックすることで、購読する直前までの操作をスキップすることが出来ます。
 
-[Firefox for Android](https://www.mozilla.org/ja/firefox/browsers/mobile/android/)
-向けの、
-[uBlock Origin](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)
-で利用するためのルールはこちらです。
+[Firefox for Android](https://www.mozilla.org/ja/firefox/browsers/mobile/android/)向けの、
+[uBlock Origin](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)で利用するためのルールはこちらにあります。
 
 <https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlockOrigin.txt>
 
-Firefox for Androidで、
-[Google Search Fixer](https://addons.mozilla.org/ja/firefox/addon/google-search-fixer/)
-を有効にした状態でしかテストしていません。
+Firefox for Androidで、[Google Search Fixer](https://addons.mozilla.org/ja/firefox/addon/google-search-fixer/)を有効にした状態でしかテストしていません。
 
 # 何故既にルールを共有するリポジトリがあるのに新しく作ったのか
 
-[arosh/ublacklist-stackoverflow-translation: Stack Overflow の機械翻訳サイトの除外用フィルタ](https://github.com/arosh/ublacklist-stackoverflow-translation)
-などすばらしい先駆者様が居ます。
+[arosh/ublacklist-stackoverflow-translation: Stack Overflow の機械翻訳サイトの除外用フィルタ](https://github.com/arosh/ublacklist-stackoverflow-translation)などすばらしい先駆者様が居ます。
 
-ただこのリポジトリの対象はあくまで機械翻訳サイトのみなので、
-もっと広くブロックする自前のルールを作っていました。
+ただこのリポジトリの対象はあくまで機械翻訳サイトのみなので、もっと広くブロックする自前のルールを作っていました。
 
-メンテナンスが結構大変になってきたので、
-生成ツール付きで独立リポジトリとして公開することにしました。
+メンテナンスが結構大変になってきたので、生成ツール付きで独立リポジトリとして公開することにしました。
 
 # ブロックするサイト
 
 ## 技術系スパムサイト
 
-[Stack Overflow](https://stackoverflow.com/)
-などから機械翻訳した内容を大量生成するサイトです。
+[Stack Overflow](https://stackoverflow.com/)などから機械翻訳した内容を大量生成するサイトです。
 
 翻訳してないで単にコピーしているサイトも対象です。
 
@@ -49,22 +40,17 @@ Firefox for Androidで、
 <https://blog.desdelinux.net/>
 の日本語版などは明らかに低品質な機械翻訳を乱発しています。
 
-しかし、
-これらのサイトは英語版は別にどこからかコピーしているわけではないようです。
-あくまで英語版のニュースをオリジナルで執筆して、
-機械翻訳にかけているようです。
+しかし、これらのサイトは英語版は別にどこからかコピーしているわけではないようです。
+あくまで英語版のニュースをオリジナルで執筆して、機械翻訳にかけているようです。
 推測ですが。
 
-機械翻訳が低品質すぎて理解不能なのですが、
-これをブロックしてしまうと本家ニュース記事にたどり着くのが困難になるので、
-あえてブロックしていません。
+機械翻訳が低品質すぎて理解不能なのですが、これをブロックしてしまうと本家ニュース記事にたどり着くのが困難になるので、あえてブロックしていません。
 
 ## 拡張子解説サイト
 
 ファイル拡張子に関するページを機械で大量生成しているサイト。
 
-まともに解説しているならば良いのですが、
-大抵は間違っているかテキストエディタか拡張子判別ソフトみたいなものを宣伝しているだけです。
+まともに解説しているならば良いのですが、大抵は間違っているかテキストエディタか拡張子判別ソフトみたいなものを宣伝しているだけです。
 
 普通に検索して拡張子が意味するファイルの種別が分かればそこから検索し直したほうが早いし正確。
 もしくはテキストファイルとして開いて内容を確認するか`file`コマンドを使えば良いです。
@@ -80,8 +66,7 @@ webプロキシなども対象です。
 
 ## 5chのコピーサイト
 
-[５ちゃんねる](https://5ch.net/)などから内容をコピーした、
-**機械生成の割合が高い**サイトです。
+[５ちゃんねる](https://5ch.net/)などから内容をコピーした、**機械生成の割合が高い**サイトです。
 
 ### 全てをブロックしない理由
 
@@ -98,8 +83,7 @@ webプロキシなども対象です。
 
 ## ゲハブログ
 
-主にゲームに関するネガティブなデマを多く含む情報を撒き散らすことでPVを稼ぐサイトは、
-ゲームを楽しむ上で障害になるので除外します。
+主にゲームに関するネガティブなデマを多く含む情報を撒き散らすことでPVを稼ぐサイトは、ゲームを楽しむ上で障害になるので除外します。
 
 ## その他検索の役に立たないサイト
 
@@ -122,23 +106,16 @@ uBlacklistの現在のバージョンではルールに正規表現を使うこ�
 その理由は複数あります。
 
 1つめの理由。
-このサイトがどのルールでブロックされているか確認したい時に、
-単純なテキストの並びならgrepなどですぐに検索できますが、
-正規表現はどのルールがマッチするかどうか確認するツールを作るのが必要です。
-それは面倒です。
+このサイトがどのルールでブロックされているか確認したい時に単純なテキストの並びならgrepなどですぐに検索できますが、正規表現はどのルールがマッチするかどうか確認するツールを作るのが必要です。
 
 2つめの理由。
-テキストデータをそのまま作るだけなら正規表現で無駄な繰り返しを除外するのは大いに有用ですが、
-Haskellプログラムでデータを生成する場合、
-正規表現より書きやすく除外出来るので、
-わざわざ正規表現を使う意義があまり無いためです。
+テキストデータをそのまま作るだけなら正規表現で無駄な繰り返しを除外するのは大いに有用ですが、Haskellプログラムでデータを生成する場合は正規表現より書きやすく除外出来るので、わざわざ正規表現を使う意義があまり無いためです。
 
 # このサイトが載ってないのはおかしい/このサイトが載っているのはおかしい
 
 IssueやPull Requestを是非ともお待ちしております。
 
-Issueだけ建てるのも歓迎しますし、
-PRを作ってくださるのも歓迎いたします。
+Issueだけ建てるのも歓迎しますし、PRを作ってくださるのも歓迎いたします。
 
 # 関連リンク
 
