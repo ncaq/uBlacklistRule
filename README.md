@@ -4,6 +4,8 @@
 
 # 購読
 
+## uBlacklist
+
 こちらから最新版の購読が可能です。
 
 <https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt>
@@ -12,14 +14,18 @@ Google Chrome(Desktop版)を利用している場合は、
 [こちら](https://iorate.github.io/ublacklist/subscribe?name=ncaq-uBlacklistRule&url=https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlacklist.txt)
 をクリックすることで、購読する直前までの操作をスキップすることが出来ます。
 
+## uBlock Origin(Android)
+
 [Firefox for Android](https://www.mozilla.org/ja/firefox/browsers/mobile/android/)向けの、
 [uBlock Origin](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)で利用するためのルールはこちらにあります。
 
 <https://raw.githubusercontent.com/ncaq/uBlacklistRule/master/uBlockOrigin.txt>
 
-Firefox for Androidで、[Google Search Fixer](https://addons.mozilla.org/ja/firefox/addon/google-search-fixer/)を有効にした状態でしかテストしていません。
+おそらく[Google Search Fixer](https://addons.mozilla.org/ja/firefox/addon/google-search-fixer/)を使っていても使っていなくても動くはずです。
+今私はGoogle Search Fixerを使っていませんが、使っていた時にも動いていました。
+動かない場合は報告をお願いします。
 
-# 何故既にルールを共有するリポジトリがあるのに新しく作ったのか
+# 何故既にルールを共有するリポジトリがあるのに新しく作ったのか?
 
 [arosh/ublacklist-stackoverflow-translation: Stack Overflow の機械翻訳サイトの除外用フィルタ](https://github.com/arosh/ublacklist-stackoverflow-translation)などすばらしい先駆者様が居ます。
 
@@ -113,9 +119,15 @@ uBlacklistの現在のバージョンではルールに正規表現を使うこ�
 
 # このサイトが載ってないのはおかしい/このサイトが載っているのはおかしい
 
-IssueやPull Requestを是非ともお待ちしております。
+[Issue](https://github.com/ncaq/uBlacklistRule/issues)や[Pull request](https://github.com/ncaq/uBlacklistRule/pulls)を是非ともお待ちしております。
 
 Issueだけ建てるのも歓迎しますし、PRを作ってくださるのも歓迎いたします。
+
+> `example.com`はブロックするべき
+
+というようなタイトル一行だけのIssueでも問題ありません。
+
+ただし取り込むことは確約できません。
 
 # 関連リンク
 
