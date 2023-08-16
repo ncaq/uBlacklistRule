@@ -3,6 +3,7 @@
 module Title (titlePattern) where
 
 import           Import
+import qualified RIO.List as L
 import qualified RIO.Text as T
 import           Type
 
@@ -30,19 +31,38 @@ redirectPattern = Title [[r|^待つ。$|]]
 -- 全て除去しても良いかもしれませんが、
 -- 誤爆が怖いためまずはGNU/Linuxディストリビューション系に多く見られる特徴に絞ってみます。
 indexOfPattern :: Title
-indexOfPattern = Title <$> T.lines $ T.strip [r|
-^Ftp - \/pub
-^Index of \/Linux
-^Index of \/debian
-^Index of \/ftp
-^Index of \/gentoo
-^Index of \/mirror
-^Index of \/packages
-^Index of \/pub
-^Index of \/ubuntu
-^ftp:\/\/ftp\.
-^ftp\/
-^https?:\/\/ftp\.
-^of \/ftp
-^of \/pub
+indexOfPattern =
+  let u = ('^' `T.cons`) <$> startIndexOfAsUrl
+      a = ["^" <> p <> " \\/" <> d| p <- autoIndexOfPrefix, d <- startDir]
+  in Title $ L.sort (u <> a)
+
+-- | URLをそのまま表したようなタイトルです。
+startIndexOfAsUrl :: [Text]
+startIndexOfAsUrl = T.lines $ T.strip [r|
+ftp:\/\/ftp\.
+ftp\/
+https?:\/\/ftp\.
+|]
+
+
+-- | ブロック対象とするauto indexっぽいページのタイトルの開始部分です。
+autoIndexOfPrefix :: [Text]
+autoIndexOfPrefix = T.lines $ T.strip [r|
+Ftp
+Ftp -
+Index of
+of
+|]
+
+-- | ブロック対象とするディレクトリの開始パスです。
+startDir :: [Text]
+startDir = T.lines $ T.strip [r|
+Linux
+debian
+ftp
+gentoo
+mirror
+packages
+pub
+ubuntu
 |]

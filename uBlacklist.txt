@@ -2,7 +2,22 @@ title/^無題$/
 
 title/^待つ。$/
 
+title/^Ftp - \/Linux/
+title/^Ftp - \/debian/
+title/^Ftp - \/ftp/
+title/^Ftp - \/gentoo/
+title/^Ftp - \/mirror/
+title/^Ftp - \/packages/
 title/^Ftp - \/pub/
+title/^Ftp - \/ubuntu/
+title/^Ftp \/Linux/
+title/^Ftp \/debian/
+title/^Ftp \/ftp/
+title/^Ftp \/gentoo/
+title/^Ftp \/mirror/
+title/^Ftp \/packages/
+title/^Ftp \/pub/
+title/^Ftp \/ubuntu/
 title/^Index of \/Linux/
 title/^Index of \/debian/
 title/^Index of \/ftp/
@@ -14,8 +29,14 @@ title/^Index of \/ubuntu/
 title/^ftp:\/\/ftp\./
 title/^ftp\//
 title/^https?:\/\/ftp\./
+title/^of \/Linux/
+title/^of \/debian/
 title/^of \/ftp/
+title/^of \/gentoo/
+title/^of \/mirror/
+title/^of \/packages/
 title/^of \/pub/
+title/^of \/ubuntu/
 
 *://*.2ch-ranking.net/*
 *://*.2ch.live/*
