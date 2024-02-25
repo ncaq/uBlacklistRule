@@ -16,6 +16,10 @@ Google Chrome(Desktop版)を利用している場合は、
 
 ## uBlock Origin(Android)
 
+> [!WARNING]
+> [uBlacklistがFirefox for Androidでも使えるようになった](https://addons.mozilla.org/ja/android/addon/ublacklist/)ため推奨しません。
+> 特にメンテナンスコストがかからないうちはわざわざ廃止しませんが真面目にメンテナンスすることは今後ありません。
+
 [Firefox for Android](https://www.mozilla.org/ja/firefox/browsers/mobile/android/)向けの、
 [uBlock Origin](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)で利用するためのルールはこちらにあります。
 
