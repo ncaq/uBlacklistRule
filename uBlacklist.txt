@@ -38,6 +38,19 @@ title/^of \/packages/
 title/^of \/pub/
 title/^of \/ubuntu/
 
+*://*.cfd/*
+*://*.click/*
+*://*.fyi/*
+*://*.ga/*
+*://*.hair/*
+*://*.link/*
+*://*.live/*
+*://*.lol/*
+*://*.men/*
+*://*.ml/*
+*://*.online/*
+*://*.top/*
+
 *://*.2ch-ranking.net/*
 *://*.2ch.live/*
 *://*.2ch.pet/*
