@@ -53,7 +53,7 @@ proxy :: HostGroup
 proxy = fromFull $ T.lines $(embedStringFile "asset/proxy-site.txt")
 
 -- | フィッシングサイト。
--- キリがない気もしますが、追加できるものは追懐しておきます。
+-- キリがない気もしますが、追加できるものは追加しておきます。
 phishing :: HostGroup
 phishing = fromFull $ T.lines $(embedStringFile "asset/phishing.txt")
 
