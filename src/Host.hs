@@ -12,6 +12,10 @@ import           Type
 fromFull :: [Text] -> HostGroup
 fromFull ts = HostGroup { hostGroupFull = ts, hostGroupInfix = ts }
 
+-- | ドメインを指定してブロックする際にはuBlock Originのルールを`fromFull`と同じように作ると誤爆の危険性が高いためドットを要求する。
+fromFullDomain :: [Text] -> HostGroup
+fromFullDomain ts = HostGroup { hostGroupFull = ts, hostGroupInfix = ("." <>) <$> ts }
+
 -- | 全てのホスト対象のURLリストを生成します。
 makeHostGroups :: [HostGroup]
 makeHostGroups =
@@ -33,7 +37,7 @@ makeHostGroups =
 -- 体感でスパム率の高いものを追加しているのと、
 -- [The Spamhaus Project - The Top 10 Most Abused TLDs](https://www.spamhaus.org/statistics/tlds/)を参考にしています。
 abuseLikelyTopLevelDomain :: HostGroup
-abuseLikelyTopLevelDomain = fromFull $ T.lines $(embedStringFile "asset/abuse-likely-top-level-domain-site.txt")
+abuseLikelyTopLevelDomain = fromFullDomain $ T.lines $(embedStringFile "asset/abuse-likely-top-level-domain-site.txt")
 
 -- | 5chコピペサイト。
 -- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。
