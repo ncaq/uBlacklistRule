@@ -66,8 +66,8 @@ singleTech :: HostGroup
 singleTech = fromFull $ T.lines $(embedStringFile "asset/single-tech-site.txt")
 
 -- | 通常サブドメインに使わないトップレベルドメインのリスト。
-topLevelDomain :: [Text]
-topLevelDomain = T.lines $(embedStringFile "asset/top-level-domain.txt")
+topLevelOnlyDomain :: [Text]
+topLevelOnlyDomain = T.lines $(embedStringFile "asset/top-level-only-domain.txt")
 
 -- | [GTranslate](https://ja.gtranslate.io/)を使った低品質な機械翻訳サイト。
 -- 数値が変数に化けるのが特徴です。
@@ -83,7 +83,7 @@ gtranslate = fromFull $ T.lines $(embedStringFile "asset/gtranslate-site.txt")
 -- マトモに使ってる例があるかもしれないと思って躊躇いましたが、
 -- これまでスパム的なもの以外にマトモに使われている例を結局見たことがありませんでした。
 thirdLevelDomain :: HostGroup
-thirdLevelDomain = fromFull $ L.nub ([domain <> "." <> code | domain <- topLevelDomain, code <- codes])
+thirdLevelDomain = fromFull $ L.nub ([domain <> "." <> code | domain <- topLevelOnlyDomain, code <- codes])
 
 -- | `it-mure.jp.net`系のサイト。
 itMure :: HostGroup
@@ -99,8 +99,8 @@ itSwarm = HostGroup
   , hostGroupInfix = ["it-swarm"]
   }
   where full = L.nub $
-          (["it-swarm." <> domain | domain <- topLevelDomain <> codes]) <>
-          (["it-swarm-" <> code <> "." <> domain | domain <- topLevelDomain, code <- codes])
+          (["it-swarm." <> domain | domain <- topLevelOnlyDomain <> codes]) <>
+          (["it-swarm-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
 
 -- | `qastack.jp`系のサイト。
 qastack :: HostGroup
@@ -121,7 +121,7 @@ issuecloser = HostGroup
   { hostGroupFull = full
   , hostGroupInfix = ["issuecloser"]
   }
-  where full = L.nub (["issuecloser-" <> code <> "." <> domain | domain <- topLevelDomain, code <- codes])
+  where full = L.nub (["issuecloser-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
 
 -- | `coder-question.com`系のサイト。
 coderQuestion :: HostGroup
@@ -130,8 +130,8 @@ coderQuestion = HostGroup
   , hostGroupInfix = ["coder-question"]
   }
   where full = L.nub $
-          (["coder-question." <> domain | domain <- topLevelDomain <> codes]) <>
-          (["coder-question-" <> code <> "." <> domain | domain <- topLevelDomain, code <- codes])
+          (["coder-question." <> domain | domain <- topLevelOnlyDomain <> codes]) <>
+          (["coder-question-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
 
 -- | `coder-solution.com`系のサイト。
 coderSolution :: HostGroup
@@ -140,5 +140,5 @@ coderSolution = HostGroup
   , hostGroupInfix = ["coder-solution"]
   }
   where full = L.nub $
-          (["coder-solution." <> domain | domain <- topLevelDomain <> codes]) <>
-          (["coder-solution-" <> code <> "." <> domain | domain <- topLevelDomain, code <- codes])
+          (["coder-solution." <> domain | domain <- topLevelOnlyDomain <> codes]) <>
+          (["coder-solution-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
