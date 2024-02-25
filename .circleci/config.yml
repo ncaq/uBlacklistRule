@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: haskell:9.6.3
+      - image: haskell:9.6.4
     steps:
       - checkout
       - restore_cache:
