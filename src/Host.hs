@@ -15,7 +15,8 @@ fromFull ts = HostGroup { hostGroupFull = ts, hostGroupInfix = ts }
 -- | 全てのホスト対象のURLリストを生成します。
 makeHostGroups :: [HostGroup]
 makeHostGroups =
-  [ ch
+  [ abuseLikelyTopLevelDomain
+  , ch
   , ghard
   , video
   , extensionExplanation
@@ -26,6 +27,13 @@ makeHostGroups =
   , thirdLevelDomain
   ] <>
   tech
+
+-- | 悪用されている可能性の高いドメイン。
+-- まとめてブロックしてしまって結構副作用も大きいですが、ストレスが高いので一掃します。
+-- 体感でスパム率の高いものを追加しているのと、
+-- [The Spamhaus Project - The Top 10 Most Abused TLDs](https://www.spamhaus.org/statistics/tlds/)を参考にしています。
+abuseLikelyTopLevelDomain :: HostGroup
+abuseLikelyTopLevelDomain = fromFull $ T.lines $(embedStringFile "asset/abuse-likely-top-level-domain-site.txt")
 
 -- | 5chコピペサイト。
 -- 全て追加するのではなく、インデックスとしても価値がないものを排除しています。
