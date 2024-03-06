@@ -75,12 +75,17 @@ title/^of \/ubuntu/
 *://*.ha-navi.com/*
 *://*.jin115.com/*
 
+*://*.akhbara24.news/*
+*://*.everand.com/*
+*://*.filkhabr.com/*
 *://*.nico-ran.jp/*
 *://*.nicoapple.sub.jp/*
 *://*.nicochart.jp/*
 *://*.nicoco.net/*
 *://*.nicovideo.me/*
 *://*.nicozon.net/*
+*://*.nogomi.ru/*
+*://*.saydalia.net/*
 *://*.sub-nicoapple.ssl-lolipop.jp/*
 
 *://*.ccfa.info/*
