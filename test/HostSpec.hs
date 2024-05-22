@@ -45,7 +45,8 @@ whiteList :: [Text]
 whiteList =
   [ "https://docs.ruby-lang.org/ja/latest/library/openssl.html" -- 一回誤爆した。
   , "https://segmentfault.com" -- 一見StackOverflowのコピーサイトにしか見えないが、一応内容はオリジナルらしい。
-  , "https://www.zhihu.com"    -- 内容はオリジナルらしい。
+  , "https://www.citizensadvice.org.uk/" -- イギリスの正常なサイトらしい。
+  , "https://www.zhihu.com" -- 内容はオリジナルらしい。
   ]
 
 -- | Stack Exchangeが公式に運用しているホスト一覧
