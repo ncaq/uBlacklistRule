@@ -28,7 +28,6 @@ makeHostGroups =
   , proxy
   , phishing
   , gtranslate
-  , thirdLevelDomain
   ] <>
   tech
 
@@ -90,12 +89,6 @@ topLevelOnlyDomain = T.lines $(embedStringFile "asset/top-level-only-domain.txt"
 -- ブロックします。
 gtranslate :: HostGroup
 gtranslate = fromFull $ T.lines $(embedStringFile "asset/gtranslate-site.txt")
-
--- | `com.br`のようなトップレベルドメインに偽装したサードレベルドメインを利用しているサイト。
--- マトモに使ってる例があるかもしれないと思って躊躇いましたが、
--- これまでスパム的なもの以外にマトモに使われている例を結局見たことがありませんでした。
-thirdLevelDomain :: HostGroup
-thirdLevelDomain = fromFull $ L.nub ([domain <> "." <> code | domain <- topLevelOnlyDomain, code <- codes])
 
 -- | `it-mure.jp.net`系のサイト。
 itMure :: HostGroup
