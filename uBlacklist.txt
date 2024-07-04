@@ -40,6 +40,8 @@ title/^of \/ubuntu/
 
 *://*.cfd/*
 *://*.click/*
+*://*.com.br/*
+*://*.com.mx/*
 *://*.fyi/*
 *://*.ga/*
 *://*.hair/*
