@@ -40,6 +40,7 @@ title/^of \/ubuntu/
 
 *://*.cfd/*
 *://*.click/*
+*://*.com.au/*
 *://*.com.br/*
 *://*.com.mx/*
 *://*.fyi/*
