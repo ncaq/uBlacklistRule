@@ -215,6 +215,7 @@ title/^of \/ubuntu/
 *://*.dhaka12.com/*
 *://*.diversitasfp.org/*
 *://*.dominicanhighschool.com/*
+*://*.docker.jp/*
 *://*.e-jinanbo.com/*
 *://*.economiajalisco.cucea.udg.mx/*
 *://*.efeegypt.org/*
@@ -7396,4 +7397,3 @@ title/^of \/ubuntu/
 *://*.coder-solution-zm.org/*
 *://*.coder-solution-zu.org/*
 *://*.coder-solution-zw.org/*
-
