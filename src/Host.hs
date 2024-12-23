@@ -22,6 +22,7 @@ makeHostGroups =
   [ abuseLikelyTopLevelDomain
   , ch
   , ghard
+  , clickbait
   , video
   , extensionExplanation
   , wikipedia
@@ -46,6 +47,12 @@ ch = fromFull $ T.lines $(embedStringFile "asset/ch-site.txt")
 -- | ゲハブログ。
 ghard :: HostGroup
 ghard = fromFull $ T.lines $(embedStringFile "asset/ghard-site.txt")
+
+-- | いわゆるclickbait。
+-- キャッチーなタイトルを出しておいてタイトルとあまり関係ない内容を提供して、
+-- アフィリエイトを稼ぐことだけを目的としているサイト。
+clickbait :: HostGroup
+clickbait = fromFull $ T.lines $(embedStringFile "asset/clickbait-site.txt")
 
 -- | 拡張子解説サイト。
 extensionExplanation :: HostGroup
