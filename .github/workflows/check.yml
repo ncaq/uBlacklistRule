@@ -1,0 +1,61 @@
+# コミットごとにチェックを行う。
+name: check
+
+on: push
+
+jobs:
+  stylish-haskell:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: haskell-actions/setup@v2
+        with:
+          enable-stack: true
+      - name: cache stack global
+        uses: actions/cache@v4
+        with:
+          path: ~/.stack
+          key: stylish-haskell-${{ runner.os }}-stack-global-${{ hashFiles('stack.yaml.lock') }}
+      - name: cache stack work
+        uses: actions/cache@v4
+        with:
+          path: .stack-work
+          key: stylish-haskell-${{ runner.os }}-stack-work-${{ hashFiles('stack.yaml.lock') }}
+      - run: stack install stylish-haskell
+      - run: stylish-haskell --inplace `git ls-files -- '*.hs' | grep -v Setup.hs`
+      - run: git --no-pager diff --exit-code
+  hlint:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: haskell-actions/hlint-setup@v2
+      - uses: haskell-actions/hlint-run@v2
+        with:
+          path: .
+          fail-on: suggestion
+  test-haskell:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: haskell-actions/setup@v2
+        with:
+          enable-stack: true
+      - name: cache stack global
+        uses: actions/cache@v4
+        with:
+          path: ~/.stack
+          key: test-haskell-${{ runner.os }}-stack-global-${{ hashFiles('stack.yaml.lock') }}-${{ hashFiles('package.yaml') }}
+          restore-keys: |
+            test-haskell-${{ runner.os }}-stack-global-${{ hashFiles('stack.yaml.lock') }}-
+            test-haskell-${{ runner.os }}-stack-global-
+      - name: cache stack work
+        uses: actions/cache@v4
+        with:
+          path: .stack-work
+          key: test-haskell-${{ runner.os }}-stack-work-${{ hashFiles('stack.yaml.lock') }}-${{ hashFiles('package.yaml') }}-${{ hashFiles('**/*.hs') }}
+          restore-keys: |
+            test-haskell-${{ runner.os }}-stack-work-${{ hashFiles('stack.yaml.lock') }}-${{ hashFiles('package.yaml') }}-
+            test-haskell-${{ runner.os }}-stack-work-${{ hashFiles('stack.yaml.lock') }}-
+            test-haskell-${{ runner.os }}-stack-work-
+      - run: stack build --no-terminal --pedantic --bench --no-run-benchmarks --test --no-run-tests
+      - run: stack build --no-terminal --pedantic --bench --no-run-benchmarks --test
