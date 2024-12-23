@@ -58,5 +58,6 @@ whiteList =
 -- [Usage of /sites [GET] - Stack Exchange API](https://api.stackexchange.com/docs/sites)
 getStackExchangeSites :: IO [Text]
 getStackExchangeSites = do
-  sites <- getResponseBody <$> httpJSON "https://api.stackexchange.com/2.2/sites?pagesize=10000"
+  let request = setRequestHeader "User-Agent" ["curl/7.81.1"] "https://api.stackexchange.com/2.3/sites?pagesize=10000"
+  sites <- getResponseBody <$> httpJSON request
   return $ T.dropPrefix "https://" . site_url <$> items sites
