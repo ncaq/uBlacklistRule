@@ -225,11 +225,13 @@ title/^of \/ubuntu/
 *://*.aestheticartistrymd.com/*
 *://*.africa.iclei.org/*
 *://*.agrohora.com.br/*
+*://*.airproxy.ca/*
 *://*.aisaika.info/*
 *://*.akson-masaz.pl/*
 *://*.alfamet.com.ve/*
 *://*.alhedayacentre.ca/*
 *://*.alphamareconstrutora.com.br/*
+*://*.amfilm.nl/*
 *://*.anatoliecantir.com/*
 *://*.antriavi.com/*
 *://*.argentinaoutfitters.com/*
@@ -276,7 +278,9 @@ title/^of \/ubuntu/
 *://*.d3m0.co.za/*
 *://*.dannunzio-fabiani.it/*
 *://*.dbefree.com/*
+*://*.defunmaison.com/*
 *://*.dennys.id/*
+*://*.devices.ignition633.org/*
 *://*.dhaka12.com/*
 *://*.diversitasfp.org/*
 *://*.dominicanhighschool.com/*
@@ -295,10 +299,12 @@ title/^of \/ubuntu/
 *://*.engager.app/*
 *://*.enticontrol.com/*
 *://*.epilepsynetwork.com.au/*
+*://*.ew-healthcare.itvibes.org/*
 *://*.farmamedica.mx/*
 *://*.farmtotablearava.co.il/*
 *://*.fitoterapiapsicosomaticaroma.it/*
 *://*.fjcorreia.com/*
+*://*.fr.mituning.com/*
 *://*.framar.gt/*
 *://*.fsf-se.com.br/*
 *://*.ft.unsoed.ac.id/*
@@ -312,6 +318,7 @@ title/^of \/ubuntu/
 *://*.glantaffinn.com/*
 *://*.glsecretariat.fr/*
 *://*.gokdeniztesisatyapi.com/*
+*://*.gpt.wid.jp/*
 *://*.graficasmartinez.com/*
 *://*.granabip.org/*
 *://*.grayelectricllc.com/*
@@ -323,9 +330,11 @@ title/^of \/ubuntu/
 *://*.hcorbj.com.br/*
 *://*.highland-coffee.jp/*
 *://*.hpmi.org.in/*
+*://*.hrefgo.com/*
 *://*.ibispaint.com/*
 *://*.ihene.com.br/*
 *://*.imadmoghnieh.org/*
+*://*.immobilien-zypern.com/*
 *://*.imsdevelopments.com/*
 *://*.incpbrasil.com.br/*
 *://*.ionenergy.co/*
@@ -356,7 +365,9 @@ title/^of \/ubuntu/
 *://*.little-feet.org.uk/*
 *://*.loewen-bludenz.at/*
 *://*.logistica3d.com.co/*
+*://*.lulamaindustrial.co.za/*
 *://*.lynxinst.com/*
+*://*.m-asociados.es/*
 *://*.madaraschool.org/*
 *://*.matharihospital.go.ke/*
 *://*.mbit.kdsg.gov.ng/*
@@ -377,6 +388,7 @@ title/^of \/ubuntu/
 *://*.newsrebeat.com/*
 *://*.newsroomtransparencytracker.com/*
 *://*.nobilismkt.com/*
+*://*.north-plus.net/*
 *://*.novanet.ec/*
 *://*.oam.com.mx/*
 *://*.old.bas.bg/*
@@ -421,6 +433,8 @@ title/^of \/ubuntu/
 *://*.silesiamedical.com.pl/*
 *://*.sisuvp.com/*
 *://*.skiidre.se/*
+*://*.snow-plus.net/*
+*://*.sogaku.jp/*
 *://*.soivre.org/*
 *://*.sokoonacademy.com/*
 *://*.sole-corp.co.jp/*
