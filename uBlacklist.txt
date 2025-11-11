@@ -866,6 +866,7 @@ title/^of \/ubuntu/
 *://*.learntutorials.net/*
 *://*.legkovopros.ru/*
 *://*.lightrun.com/*
+*://*.linux-jp.org/*
 *://*.litigationtoday.com/*
 *://*.living-sun.com/*
 *://*.localcoder.org/*
