@@ -1,5 +1,9 @@
-# Created by https://www.toptal.com/developers/gitignore/api/haskell
-# Edit at https://www.toptal.com/developers/gitignore?templates=haskell
+# Created by https://www.toptal.com/developers/gitignore/api/haskell,direnv
+# Edit at https://www.toptal.com/developers/gitignore?templates=haskell,direnv
+
+### direnv ###
+.direnv
+.envrc
 
 ### Haskell ###
 dist
@@ -26,6 +30,15 @@ cabal.project.local~
 .HTF/
 .ghc.environment.*
 
-# End of https://www.toptal.com/developers/gitignore/api/haskell
+# End of https://www.toptal.com/developers/gitignore/api/haskell,direnv
 
-uBlacklistRule.cabal
+# Haskell for Application
+
+*.cabal
+
+# Nix
+
+.direnv/
+/result
+
+.env*local

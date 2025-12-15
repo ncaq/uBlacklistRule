@@ -1,0 +1,7 @@
+indentation: 2
+column-limit: 120
+function-arrows: leading
+import-export-style: leading
+haddock-style: single-line
+sort-constraints: true
+sort-derived-classes: true
