@@ -1,1 +1,4 @@
 resolver: lts-22.44
+nix:
+  enable: true
+  packages: [pkg-config, zlib]
