@@ -89,6 +89,12 @@
           flake.packages # テストがないパッケージもビルドしてエラーを検出する。
           // flake.checks
           // {
+            # テスト実行でネットワークアクセスが必要なため、このderivationのみサンドボックスを無効にする。
+            "uBlacklistRule:test:uBlacklistRule-test" =
+              flake.checks."uBlacklistRule:test:uBlacklistRule-test".overrideAttrs
+                (_: {
+                  __noChroot = true;
+                });
             formatting = treefmtEval.config.build.check self;
           };
         formatter = treefmtEval.config.build.wrapper;
@@ -109,5 +115,7 @@
       "u-blacklist-rule.cachix.org-1:KQl91lyBwQa6a6Np6WLqstaRmRH+R4ogkLzG9IV4Sjk="
     ];
     allow-import-from-derivation = true;
+    # __noChroot = true を持つderivationのみサンドボックス外で実行する。
+    sandbox = "relaxed";
   };
 }
