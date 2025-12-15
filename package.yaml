@@ -101,7 +101,8 @@ tests:
       - aeson
       - hspec
       - http-conduit
-
+    build-tools:
+      - hspec-discover
     ghc-options:
       - -threaded
       - -rtsopts
