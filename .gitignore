@@ -1,9 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/haskell,direnv
-# Edit at https://www.toptal.com/developers/gitignore?templates=haskell,direnv
-
-### direnv ###
-.direnv
-.envrc
+# Created by https://www.toptal.com/developers/gitignore/api/haskell
+# Edit at https://www.toptal.com/developers/gitignore?templates=haskell
 
 ### Haskell ###
 dist
@@ -30,7 +26,7 @@ cabal.project.local~
 .HTF/
 .ghc.environment.*
 
-# End of https://www.toptal.com/developers/gitignore/api/haskell,direnv
+# End of https://www.toptal.com/developers/gitignore/api/haskell
 
 # Haskell for Application
 
