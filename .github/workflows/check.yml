@@ -12,6 +12,7 @@ jobs:
         with:
           extra_nix_config: |
             accept-flake-config = true
+            sandbox = relaxed
       - uses: cachix/cachix-action@v16
         with:
           name: u-blacklist-rule
