@@ -1,0 +1,20 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+max_line_length = 120
+
+[*.hs]
+indent_style = space
+indent_size = 2
+
+[*.md]
+# Markdownには最後にスペース2つ入れて強制改行するシンタックスがあるので末尾のスペースを許可。
+# 注意: なるべく強制改行は使わず、意味で段落して、改行位置はクライアントのデバイスに任せるべき。
+trim_trailing_whitespace = false
+# 順序付きリストをネストする時に、インデント幅を2にすると適切にパース出来ない事が多い(GitHubも)ので4にする。
+indent_size = 4

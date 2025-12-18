@@ -28,4 +28,13 @@ cabal.project.local~
 
 # End of https://www.toptal.com/developers/gitignore/api/haskell
 
-uBlacklistRule.cabal
+# Haskell for Application
+
+*.cabal
+
+# Nix
+
+.direnv/
+/result
+
+.env*local
