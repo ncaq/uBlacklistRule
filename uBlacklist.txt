@@ -801,6 +801,7 @@ title/^of \/ubuntu/
 *://*.geekcxy.com/*
 *://*.geeks-world.imtqy.com/*
 *://*.generacodice.com/*
+*://*.generative-ai.sejuku.net/*
 *://*.getit01.com/*
 *://*.getridbug.com/*
 *://*.ghcc.net/*
