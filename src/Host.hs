@@ -77,7 +77,7 @@ phishing = fromFull $ T.lines $(embedStringFile "asset/phishing.txt")
 
 -- | 技術系スパムサイト全て。
 tech :: [HostGroup]
-tech = [singleTech, itMure, itSwarm, qastack, issuecloser, coderQuestion, coderSolution]
+tech = [singleTech, itMure, itSwarm, qastack, issuecloser, coderQuestion, coderSolution, linuxTerminal]
 
 -- | 規則性があまり無いぼぼ単発の技術系コピーサイト。
 singleTech :: HostGroup
@@ -154,3 +154,10 @@ coderSolution = HostGroup
   where full = L.nub $
           (["coder-solution." <> domain | domain <- topLevelOnlyDomain <> codes]) <>
           (["coder-solution-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
+
+-- | `ja.linux-terminal.com`系のサイト。
+linuxTerminal :: HostGroup
+linuxTerminal = HostGroup
+  { hostGroupFull = L.nub $ (<> ".linux-terminal.com") <$> codes
+  , hostGroupInfix = ["linux-terminal"]
+  }
