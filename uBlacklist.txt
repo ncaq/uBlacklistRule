@@ -225,6 +225,7 @@ title/^of \/ubuntu/
 *://*.aestheticartistrymd.com/*
 *://*.africa.iclei.org/*
 *://*.agrohora.com.br/*
+*://*.aiclaude.jp/*
 *://*.airproxy.ca/*
 *://*.aisaika.info/*
 *://*.akson-masaz.pl/*
