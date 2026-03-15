@@ -106,15 +106,20 @@
 
   nixConfig = {
     extra-substituters = [
-      "https://cache.nixos.org"
-      "https://cache.iog.io"
-      "https://u-blacklist-rule.cachix.org"
+      "https://cache.nixos.org/"
+      "https://niks3-public.ncaq.net/"
+      "https://ncaq.cachix.org/"
+      "https://nix-community.cachix.org/"
+      "https://cache.iog.io/"
     ];
     extra-trusted-public-keys = [
+      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "niks3-public.ncaq.net-1:e/B9GomqDchMBmx3IW/TMQDF8sjUCQzEofKhpehXl04="
+      "ncaq.cachix.org-1:XF346GXI2n77SB5Yzqwhdfo7r0nFcZBaHsiiMOEljiE="
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
       "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="
-      "u-blacklist-rule.cachix.org-1:KQl91lyBwQa6a6Np6WLqstaRmRH+R4ogkLzG9IV4Sjk="
     ];
-    allow-import-from-derivation = true;
+    allow-import-from-derivation = true; # haskell.nixの仕様でshowやcheckで必要になる。
     # __noChroot = true を持つderivationのみサンドボックス外で実行する。
     sandbox = "relaxed";
   };
