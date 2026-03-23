@@ -1,20 +1,26 @@
-# コミットごとにチェックを行う。
 name: check
 
-on: push
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  merge_group:
+
+permissions:
+  contents: read # リポジトリコンテンツの読み取り
+  id-token: write # niks3 OIDC認証
 
 jobs:
-  check:
+  nix-fast-build:
     runs-on: ubuntu-24.04
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v6
-      - uses: cachix/install-nix-action@v31
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
-          extra_nix_config: |
-            accept-flake-config = true
+          persist-credentials: false
+      - uses: ./.github/actions/setup-nix
+        with:
+          extra-nix-config: |
             sandbox = relaxed
-      - uses: cachix/cachix-action@v16
-        with:
-          name: ncaq
-          authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
-      - run: nix flake check
+          cachix-auth-token: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+      - run: nix run '.#nix-fast-build' -- --option eval-cache false --option sandbox relaxed --no-link --skip-cached --no-nom
