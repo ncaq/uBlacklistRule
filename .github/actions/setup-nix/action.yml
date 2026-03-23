@@ -1,0 +1,50 @@
+name: Setup Nix
+description: Install Nix and configure caches
+
+inputs:
+  extra-nix-config:
+    description: Additional nix.conf settings to append
+    required: false
+    default: ""
+  cachix-name:
+    description: Cachix cache name
+    required: false
+    default: ncaq
+  cachix-auth-token:
+    description: Cachix authentication token
+    required: false
+    default: ""
+  niks3-endpoint:
+    description: niks3 server endpoint URL
+    required: false
+    default: "https://niks3-public.ncaq.net"
+
+runs:
+  using: composite
+  steps:
+    - uses: cachix/install-nix-action@4e002c8ec80594ecd40e759629461e26c8abed15 # v31
+      with:
+        # セルフホストランナーでうっかり外部からの悪意あるPRを実行許可してしまい、
+        # flake.nixの設定を受け入れると好きなキャッシュを入れられたりしてセキュリティリスクがあるため、
+        # GitHubホストランナーでのみflake.nixの設定を自動で受け入れるようにしています。
+        extra_nix_config: |
+          ${{ runner.environment == 'github-hosted' && 'accept-flake-config = true' || '' }}
+          ${{ inputs.extra-nix-config }}
+
+    - name: Setup Cachix cache
+      if: inputs.cachix-name != '' && inputs.cachix-auth-token != ''
+      uses: cachix/cachix-action@3ba601ff5bbb07c7220846facfa2cd81eeee15a1 # v16
+      with:
+        name: "${{ inputs.cachix-name }}"
+        authToken: "${{ inputs.cachix-auth-token }}"
+        # フォークからのPRのみキャッシュへのプッシュをスキップ
+        skipPush: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}
+
+    - name: Setup niks3 cache
+      uses: aleadag/niks3-action@ea2e7c1e92316f5da40a3b6fa867313a3e176fd3 # v0.4.2
+      with:
+        endpoint: "${{ inputs.niks3-endpoint }}"
+        use-oidc: true
+        push-flake-inputs: true
+        # フォークからのPRのみキャッシュへのプッシュをスキップ
+        skip-push: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}

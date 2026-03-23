@@ -40,6 +40,7 @@
                   stack = "latest";
                 };
                 buildInputs = with pkgs; [
+                  nix-fast-build
                   # Haskell
                   (writeScriptBin "haskell-language-server-wrapper" ''
                     #!${stdenv.shell}
@@ -100,6 +101,10 @@
         formatter = treefmtEval.config.build.wrapper;
         packages = flake.packages // {
           default = flake.packages."uBlacklistRule:exe:uBlacklistRule";
+          # flake.lockの管理バージョンをre-exportすることで安定した利用を促進。
+          inherit (pkgs)
+            nix-fast-build
+            ;
         };
       }
     );
