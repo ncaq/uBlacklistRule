@@ -22,7 +22,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: cachix/install-nix-action@4e002c8ec80594ecd40e759629461e26c8abed15 # v31
+    - uses: cachix/install-nix-action@4e002c8ec80594ecd40e759629461e26c8abed15 # v31.9.0
       with:
         # セルフホストランナーでうっかり外部からの悪意あるPRを実行許可してしまい、
         # flake.nixの設定を受け入れると好きなキャッシュを入れられたりしてセキュリティリスクがあるため、
@@ -40,11 +40,14 @@ runs:
         # フォークからのPRのみキャッシュへのプッシュをスキップ
         skipPush: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}
 
+    # niks3-action v0.4.2ではskip-pushがpost-build hookに反映されないバグがあり、
+    # push失敗時にビルド全体が巻き込まれて失敗する。
+    # secretが渡らないフォークPRではaction自体をスキップする。
+    # See: https://github.com/aleadag/niks3-action/issues/3
     - name: Setup niks3 cache
+      if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
       uses: aleadag/niks3-action@ea2e7c1e92316f5da40a3b6fa867313a3e176fd3 # v0.4.2
       with:
         endpoint: "${{ inputs.niks3-endpoint }}"
         use-oidc: true
         push-flake-inputs: true
-        # フォークからのPRのみキャッシュへのプッシュをスキップ
-        skip-push: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository }}
