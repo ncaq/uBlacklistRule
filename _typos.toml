@@ -1,0 +1,9 @@
+[default.extend-words]
+# Part of "RGBa" (Pillow's pre-multiplied alpha RGB mode)
+Ba = "Ba"
+# HSA is something AMD uses for their GPUs
+HSA = "HSA"
+# 社名。分割で認識されなくなります。
+Hashi = "Hashi"
+# Immediately Invoked Function Expression (IIFE)の略語。camelCase分割で"IIF"をtypoと判定する。
+IIF = "IIF"

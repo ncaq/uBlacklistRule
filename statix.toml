@@ -1,0 +1,3 @@
+disabled = [
+  "eta_reduction", # nixfmtによるフォーマットと衝突するため無効化。
+]

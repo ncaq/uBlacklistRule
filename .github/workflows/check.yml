@@ -6,16 +6,22 @@ on:
   pull_request:
   merge_group:
 
-permissions:
-  contents: read # リポジトリコンテンツの読み取り
-  id-token: write # niks3 OIDC認証
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   nix-fast-build:
+    name: nix-fast-build
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read # リポジトリコンテンツの読み取り
+      id-token: write # niks3 OIDC認証
     timeout-minutes: 120 # キャッシュがヒットしなくてGHCのビルドなどをすると時間がかかるため、タイムアウトを長めに設定。
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           persist-credentials: false
       - uses: ./.github/actions/setup-nix
