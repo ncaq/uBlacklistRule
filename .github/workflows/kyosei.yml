@@ -16,6 +16,6 @@ jobs:
     permissions:
       contents: read # Read repository contents for checkout
       id-token: write # GitHub App token exchange via OIDC (needed regardless of Claude API auth method)
-    uses: ncaq/kyosei-action/.github/workflows/review.yml@744fa3894b1210f5238e7ed65599959fd1a53bdf # v1.2.2
+    uses: ncaq/kyosei-action/.github/workflows/review.yml@60b1d2f437865f176811f21e5cc0c5417f50f390 # v1.5.0
     secrets:
       claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
