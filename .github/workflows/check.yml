@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           persist-credentials: false
-      - uses: ncaq/nix-composite-action@9ecb278bd92662648714839d5013ffcd37c7383f # v1.2.0
+      - uses: ncaq/nix-composite-action@5a61f70ad5b7d2f276732e14355b7fb2ddd4caaf # v1.3.0
         with:
           extra-nix-config: |
             sandbox = relaxed
