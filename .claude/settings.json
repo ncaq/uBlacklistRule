@@ -3,8 +3,7 @@
     "konoka": {
       "source": {
         "source": "github",
-        "repo": "ncaq/konoka",
-        "ref": "v8.0.1"
+        "repo": "ncaq/konoka"
       }
     }
   },
