@@ -609,7 +609,7 @@
         "haskellNix": "haskellNix",
         "nixpkgs": [
           "haskellNix",
-          "nixpkgs-2511"
+          "nixpkgs-unstable"
         ],
         "treefmt-nix": "treefmt-nix"
       }
@@ -648,8 +648,7 @@
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
-          "haskellNix",
-          "nixpkgs-2511"
+          "nixpkgs"
         ]
       },
       "locked": {

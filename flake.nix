@@ -1,12 +1,10 @@
 {
   inputs = {
-    nixpkgs.follows = "haskellNix/nixpkgs-2511";
+    nixpkgs.follows = "haskellNix/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
-      inputs = {
-        nixpkgs.follows = "haskellNix/nixpkgs-2511";
-      };
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     haskellNix.url = "github:input-output-hk/haskell.nix";
   };
