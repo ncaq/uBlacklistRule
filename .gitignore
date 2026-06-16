@@ -1,7 +1,17 @@
-# Created by https://www.toptal.com/developers/gitignore/api/haskell
-# Edit at https://www.toptal.com/developers/gitignore?templates=haskell
+# Nix
 
-### Haskell ###
+# Ignore build outputs from performing a nix-build or `nix build` command
+result
+result-*
+
+# Ignore automatically generated direnv output
+.direnv
+
+# Ignore local override env
+.env.local
+
+# Haskell
+
 dist
 dist-*
 cabal-dev
@@ -26,20 +36,6 @@ cabal.project.local~
 .HTF/
 .ghc.environment.*
 
-# End of https://www.toptal.com/developers/gitignore/api/haskell
+# sandwich
 
-# Haskell for Application
-
-*.cabal
-
-# Nix
-
-# Ignore build outputs from performing a nix-build or `nix build` command
-result
-result-*
-
-# Ignore automatically generated direnv output
-.direnv
-
-# Ignore local override env
-.env.local
+test_runs/
