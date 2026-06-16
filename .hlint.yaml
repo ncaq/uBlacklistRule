@@ -1,0 +1,3732 @@
+# himari hlint configuration
+#
+# このファイルはDhallによって自動生成されています。
+# 直接編集しないでください。
+#
+# himariが推奨するスタイルを機械的にチェックするためのhlint設定ファイルです。
+# 部分関数や危険な関数の使用を警告したり、
+# より可読性の高いパターンを提案します。
+#
+# 使い方:
+#   * このファイルをプロジェクトルートに .hlint.yaml としてコピー
+#   * または .hlint.yaml から参照: - arguments: [--hint=path/to/this/.hlint.yaml]
+- arguments:
+    - "-XGHC2024"
+    - "-XApplicativeDo"
+    - "-XBlockArguments"
+    - "-XCPP"
+    - "-XDefaultSignatures"
+    - "-XDerivingVia"
+    - "-XDuplicateRecordFields"
+    - "-XFunctionalDependencies"
+    - "-XLexicalNegation"
+    - "-XLinearTypes"
+    - "-XMonadComprehensions"
+    - "-XMultiWayIf"
+    - "-XNegativeLiterals"
+    - "-XNoFieldSelectors"
+    - "-XNoImplicitPrelude"
+    - "-XOverloadedLabels"
+    - "-XOverloadedRecordDot"
+    - "-XOverloadedStrings"
+    - "-XParallelListComp"
+    - "-XPatternSynonyms"
+    - "-XQualifiedDo"
+    - "-XQuantifiedConstraints"
+    - "-XQuasiQuotes"
+    - "-XRecordWildCards"
+    - "-XRecursiveDo"
+    - "-XStrictData"
+    - "-XTemplateHaskell"
+    - "-XTypeData"
+    - "-XTypeFamilies"
+    - "-XTypeFamilyDependencies"
+    - "-XViewPatterns"
+- group:
+    enabled: true
+    name: generalise
+- group:
+    enabled: true
+    name: dollar
+- group:
+    enabled: true
+    name: "use-lens"
+- group:
+    enabled: true
+    name: "use-th-quotes"
+- functions:
+    - message: Discards error info. Use eitherDecode instead to get error messages.
+      name: Data.Aeson.decode
+      within: []
+    - message: Discards error info. Use eitherDecodeStrict instead to get error messages.
+      name: Data.Aeson.decodeStrict
+      within: []
+    - message: Discards error info. Use eitherDecodeFileStrict instead to get error messages.
+      name: Data.Aeson.decodeFileStrict
+      within: []
+    - message: Discards error info. Use eitherDecodeStrictText instead to get error messages.
+      name: Data.Aeson.decodeStrictText
+      within: []
+- functions:
+    - message: Deprecated alias since aeson 2.2.0.0. Use eitherDecode instead.
+      name: "Data.Aeson.decode'"
+      within: []
+    - message: Deprecated alias since aeson 2.2.0.0. Use eitherDecodeStrict instead.
+      name: "Data.Aeson.decodeStrict'"
+      within: []
+    - message: Deprecated alias since aeson 2.2.0.0. Use eitherDecodeFileStrict instead.
+      name: "Data.Aeson.decodeFileStrict'"
+      within: []
+- functions:
+    - message: Deprecated alias since aeson 2.2.0.0. Use eitherDecode instead.
+      name: "Data.Aeson.eitherDecode'"
+      within: []
+    - message: Deprecated alias since aeson 2.2.0.0. Use eitherDecodeStrict instead.
+      name: "Data.Aeson.eitherDecodeStrict'"
+      within: []
+    - message: Deprecated alias since aeson 2.2.0.0. Use eitherDecodeFileStrict instead.
+      name: "Data.Aeson.eitherDecodeFileStrict'"
+      within: []
+- functions:
+    - message: Deprecated alias since aeson 2.2.0.0. Use throwDecode instead.
+      name: "Data.Aeson.throwDecode'"
+      within: []
+    - message: Deprecated alias since aeson 2.2.0.0. Use throwDecodeStrict instead.
+      name: "Data.Aeson.throwDecodeStrict'"
+      within: []
+- functions:
+    - message: Discards error info. Use parseEither instead to get error messages.
+      name: Data.Aeson.parseMaybe
+      within: []
+    - message: Discards error info. Use parseEither instead to get error messages.
+      name: Data.Aeson.Types.parseMaybe
+      within: []
+    - message: Discards error info. Use parseEither instead to get error messages.
+      name: Data.Aeson.Types.Internal.parseMaybe
+      within: []
+- modules:
+    - message: Unsafe ST operations. Use Control.Monad.ST instead.
+      name: Control.Monad.ST.Unsafe
+      within: []
+    - message: Unsafe lazy ST operations. Use Control.Monad.ST.Lazy instead.
+      name: Control.Monad.ST.Lazy.Unsafe
+      within: []
+- functions:
+    - message: Deprecated and partial. Use bitSizeMaybe or finiteBitSize instead.
+      name: Data.Bits.bitSize
+      within: []
+    - message: Undefined for negative or overflow shift.
+      name: Data.Bits.unsafeShiftL
+      within: []
+    - message: Undefined for negative or overflow shift.
+      name: Data.Bits.unsafeShiftR
+      within: []
+    - message: Undefined for negative rotation.
+      name: Data.Bits.rotateL
+      within: []
+    - message: Undefined for negative rotation.
+      name: Data.Bits.rotateR
+      within: []
+- functions:
+    - message: Use Data.ByteString.uncons instead
+      name: Data.ByteString.head
+      within: []
+    - message: Use Data.ByteString.uncons instead
+      name: Data.ByteString.tail
+      within: []
+    - message: Use Data.ByteString.unsnoc instead
+      name: Data.ByteString.init
+      within: []
+    - message: Use Data.ByteString.unsnoc instead
+      name: Data.ByteString.last
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldl with explicit initial value."
+      name: Data.ByteString.foldl1
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldl' with explicit initial value."
+      name: "Data.ByteString.foldl1'"
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldr with explicit initial value."
+      name: Data.ByteString.foldr1
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldr' with explicit initial value."
+      name: "Data.ByteString.foldr1'"
+      within: []
+    - message: "Partial: throws on empty ByteString. Use fold with explicit initial value."
+      name: Data.ByteString.maximum
+      within: []
+    - message: "Partial: throws on empty ByteString. Use fold with explicit initial value."
+      name: Data.ByteString.minimum
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use Data.ByteString.indexMaybe or Data.ByteString.(!?) instead"
+      name: Data.ByteString.index
+      within: []
+- functions:
+    - message: Use Data.ByteString.Char8.uncons instead
+      name: Data.ByteString.Char8.head
+      within: []
+    - message: Use Data.ByteString.Char8.uncons instead
+      name: Data.ByteString.Char8.tail
+      within: []
+    - message: Use Data.ByteString.Char8.unsnoc instead
+      name: Data.ByteString.Char8.init
+      within: []
+    - message: Use Data.ByteString.Char8.unsnoc instead
+      name: Data.ByteString.Char8.last
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldl with explicit initial value."
+      name: Data.ByteString.Char8.foldl1
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldl' with explicit initial value."
+      name: "Data.ByteString.Char8.foldl1'"
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldr with explicit initial value."
+      name: Data.ByteString.Char8.foldr1
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldr' with explicit initial value."
+      name: "Data.ByteString.Char8.foldr1'"
+      within: []
+    - message: "Partial: throws on empty ByteString. Use fold with explicit initial value."
+      name: Data.ByteString.Char8.maximum
+      within: []
+    - message: "Partial: throws on empty ByteString. Use fold with explicit initial value."
+      name: Data.ByteString.Char8.minimum
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use Data.ByteString.Char8.indexMaybe or Data.ByteString.Char8.(!?) instead"
+      name: Data.ByteString.Char8.index
+      within: []
+- functions:
+    - message: Use Data.ByteString.Lazy.uncons instead
+      name: Data.ByteString.Lazy.head
+      within: []
+    - message: Use Data.ByteString.Lazy.uncons instead
+      name: Data.ByteString.Lazy.tail
+      within: []
+    - message: Use Data.ByteString.Lazy.unsnoc instead
+      name: Data.ByteString.Lazy.init
+      within: []
+    - message: Use Data.ByteString.Lazy.unsnoc instead
+      name: Data.ByteString.Lazy.last
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldl with explicit initial value."
+      name: Data.ByteString.Lazy.foldl1
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldl' with explicit initial value."
+      name: "Data.ByteString.Lazy.foldl1'"
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldr with explicit initial value."
+      name: Data.ByteString.Lazy.foldr1
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldr' with explicit initial value."
+      name: "Data.ByteString.Lazy.foldr1'"
+      within: []
+    - message: "Partial: throws on empty ByteString. Use fold with explicit initial value."
+      name: Data.ByteString.Lazy.maximum
+      within: []
+    - message: "Partial: throws on empty ByteString. Use fold with explicit initial value."
+      name: Data.ByteString.Lazy.minimum
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use Data.ByteString.Lazy.indexMaybe or Data.ByteString.Lazy.(!?) instead"
+      name: Data.ByteString.Lazy.index
+      within: []
+    - message: "Partial: throws on empty ByteString."
+      name: Data.ByteString.Lazy.cycle
+      within: []
+- functions:
+    - message: Use Data.ByteString.Lazy.Char8.uncons instead
+      name: Data.ByteString.Lazy.Char8.head
+      within: []
+    - message: Use Data.ByteString.Lazy.Char8.uncons instead
+      name: Data.ByteString.Lazy.Char8.tail
+      within: []
+    - message: Use Data.ByteString.Lazy.Char8.unsnoc instead
+      name: Data.ByteString.Lazy.Char8.init
+      within: []
+    - message: Use Data.ByteString.Lazy.Char8.unsnoc instead
+      name: Data.ByteString.Lazy.Char8.last
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldl with explicit initial value."
+      name: Data.ByteString.Lazy.Char8.foldl1
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldl' with explicit initial value."
+      name: "Data.ByteString.Lazy.Char8.foldl1'"
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldr with explicit initial value."
+      name: Data.ByteString.Lazy.Char8.foldr1
+      within: []
+    - message: "Partial: throws on empty ByteString. Use foldr' with explicit initial value."
+      name: "Data.ByteString.Lazy.Char8.foldr1'"
+      within: []
+    - message: "Partial: throws on empty ByteString. Use fold with explicit initial value."
+      name: Data.ByteString.Lazy.Char8.maximum
+      within: []
+    - message: "Partial: throws on empty ByteString. Use fold with explicit initial value."
+      name: Data.ByteString.Lazy.Char8.minimum
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use Data.ByteString.Lazy.Char8.indexMaybe or Data.ByteString.Lazy.Char8.(!?) instead"
+      name: Data.ByteString.Lazy.Char8.index
+      within: []
+    - message: "Partial: throws on empty ByteString."
+      name: Data.ByteString.Lazy.Char8.cycle
+      within: []
+- functions:
+    - message: Use Data.ByteString.Short.uncons instead
+      name: Data.ByteString.Short.head
+      within: []
+    - message: Use Data.ByteString.Short.uncons instead
+      name: Data.ByteString.Short.tail
+      within: []
+    - message: Use Data.ByteString.Short.unsnoc instead
+      name: Data.ByteString.Short.init
+      within: []
+    - message: Use Data.ByteString.Short.unsnoc instead
+      name: Data.ByteString.Short.last
+      within: []
+    - message: "Partial: throws on empty ShortByteString. Use foldl with explicit initial value."
+      name: Data.ByteString.Short.foldl1
+      within: []
+    - message: "Partial: throws on empty ShortByteString. Use foldl' with explicit initial value."
+      name: "Data.ByteString.Short.foldl1'"
+      within: []
+    - message: "Partial: throws on empty ShortByteString. Use foldr with explicit initial value."
+      name: Data.ByteString.Short.foldr1
+      within: []
+    - message: "Partial: throws on empty ShortByteString. Use foldr' with explicit initial value."
+      name: "Data.ByteString.Short.foldr1'"
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use Data.ByteString.Short.indexMaybe or Data.ByteString.Short.(!?) instead"
+      name: Data.ByteString.Short.index
+      within: []
+- functions:
+    - message: "Unsafe: no bounds check. Use Data.ByteString.uncons instead"
+      name: Data.ByteString.Unsafe.unsafeHead
+      within: []
+    - message: "Unsafe: no bounds check. Use Data.ByteString.uncons instead"
+      name: Data.ByteString.Unsafe.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds check. Use Data.ByteString.unsnoc instead"
+      name: Data.ByteString.Unsafe.unsafeInit
+      within: []
+    - message: "Unsafe: no bounds check. Use Data.ByteString.unsnoc instead"
+      name: Data.ByteString.Unsafe.unsafeLast
+      within: []
+    - message: "Unsafe: no bounds check. Use Data.ByteString.indexMaybe instead"
+      name: Data.ByteString.Unsafe.unsafeIndex
+      within: []
+    - message: "Unsafe: no bounds check. Use Data.ByteString.take instead"
+      name: Data.ByteString.Unsafe.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds check. Use Data.ByteString.drop instead"
+      name: Data.ByteString.Unsafe.unsafeDrop
+      within: []
+- functions:
+    - message: "Partial: throws on non-hex-digit character. Use digitToIntMay from Himari.Char which returns Maybe."
+      name: Data.Char.digitToInt
+      within: []
+    - message: "Partial: throws on out-of-range (must be 0-15). Use intToDigitMay from Himari.Char which returns Maybe."
+      name: Data.Char.intToDigit
+      within: []
+    - message: "Partial: throws on invalid code point. Use chrMay from Himari.Char which returns Maybe."
+      name: Data.Char.chr
+      within: []
+- functions:
+    - message: "Exceptions don't propagate to parent thread. Use async or withAsync from UnliftIO.Async instead."
+      name: forkIO
+      within: []
+    - message: "Exceptions don't propagate to parent thread. Use asyncBound or withAsyncBound from UnliftIO.Async instead."
+      name: forkOS
+      within: []
+    - message: "Exceptions don't propagate to parent thread. Use asyncOn or withAsyncOn from UnliftIO.Async instead."
+      name: forkOn
+      within: []
+    - message: "Exceptions don't propagate to parent thread. Use asyncWithUnmask or withAsyncWithUnmask from UnliftIO.Async instead."
+      name: forkIOWithUnmask
+      within: []
+    - message: "Exceptions don't propagate to parent thread. Use asyncOnWithUnmask or withAsyncOnWithUnmask from UnliftIO.Async instead."
+      name: forkOnWithUnmask
+      within: []
+    - message: "Deprecated and exceptions don't propagate to parent thread. Use asyncWithUnmask or withAsyncWithUnmask from UnliftIO.Async instead."
+      name: forkWithUnmask
+      within: []
+    - message: No automatic cancellation or exception handling. Use UnliftIO.Async instead.
+      name: forkFinally
+      within: []
+    - message: Prefer structured cancellation with cancel or withAsync. Use UnliftIO.Async instead.
+      name: killThread
+      within: []
+    - message: "Almost impossible to use correctly. Consider typed-process or UnliftIO.Async."
+      name: forkProcess
+      within: []
+- functions:
+    - message: "Use Data.Map.lookup or Data.Map.!? instead"
+      name: "Data.Map.!"
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.lookupMin instead."
+      name: Data.Map.findMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.lookupMax instead."
+      name: Data.Map.findMax
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use Data.Map.lookupMin/lookupMax or check size."
+      name: Data.Map.elemAt
+      within: []
+    - message: "Partial: throws on out-of-bounds. Check size before using."
+      name: Data.Map.deleteAt
+      within: []
+    - message: "Partial: throws if key not found. Use Data.Map.lookupIndex instead."
+      name: Data.Map.findIndex
+      within: []
+    - message: "Partial: throws on out-of-bounds. Check size before using."
+      name: Data.Map.updateAt
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.minViewWithKey instead."
+      name: Data.Map.deleteFindMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.maxViewWithKey instead."
+      name: Data.Map.deleteFindMax
+      within: []
+- functions:
+    - message: "Use Data.Map.Strict.lookup or Data.Map.Strict.!? instead"
+      name: "Data.Map.Strict.!"
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.Strict.lookupMin instead."
+      name: Data.Map.Strict.findMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.Strict.lookupMax instead."
+      name: Data.Map.Strict.findMax
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use Data.Map.Strict.lookupMin/lookupMax or check size."
+      name: Data.Map.Strict.elemAt
+      within: []
+    - message: "Partial: throws on out-of-bounds. Check size before using."
+      name: Data.Map.Strict.deleteAt
+      within: []
+    - message: "Partial: throws if key not found. Use Data.Map.Strict.lookupIndex instead."
+      name: Data.Map.Strict.findIndex
+      within: []
+    - message: "Partial: throws on out-of-bounds. Check size before using."
+      name: Data.Map.Strict.updateAt
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.Strict.minViewWithKey instead."
+      name: Data.Map.Strict.deleteFindMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.Strict.maxViewWithKey instead."
+      name: Data.Map.Strict.deleteFindMax
+      within: []
+- functions:
+    - message: "Use Data.Map.Lazy.lookup or Data.Map.Lazy.!? instead"
+      name: "Data.Map.Lazy.!"
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.Lazy.lookupMin instead."
+      name: Data.Map.Lazy.findMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.Lazy.lookupMax instead."
+      name: Data.Map.Lazy.findMax
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use Data.Map.Lazy.lookupMin/lookupMax or check size."
+      name: Data.Map.Lazy.elemAt
+      within: []
+    - message: "Partial: throws on out-of-bounds. Check size before using."
+      name: Data.Map.Lazy.deleteAt
+      within: []
+    - message: "Partial: throws if key not found. Use Data.Map.Lazy.lookupIndex instead."
+      name: Data.Map.Lazy.findIndex
+      within: []
+    - message: "Partial: throws on out-of-bounds. Check size before using."
+      name: Data.Map.Lazy.updateAt
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.Lazy.minViewWithKey instead."
+      name: Data.Map.Lazy.deleteFindMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.Map.Lazy.maxViewWithKey instead."
+      name: Data.Map.Lazy.deleteFindMax
+      within: []
+- functions:
+    - message: "Partial: throws on empty set. Use Data.Set.lookupMin instead."
+      name: Data.Set.findMin
+      within: []
+    - message: "Partial: throws on empty set. Use Data.Set.lookupMax instead."
+      name: Data.Set.findMax
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use Data.Set.lookupMin/lookupMax or check size."
+      name: Data.Set.elemAt
+      within: []
+    - message: "Partial: throws on out-of-bounds. Check size before using."
+      name: Data.Set.deleteAt
+      within: []
+    - message: "Partial: throws if element not found. Use Data.Set.lookupIndex instead."
+      name: Data.Set.findIndex
+      within: []
+    - message: "Partial: throws on empty set. Use Data.Set.minView instead."
+      name: Data.Set.deleteFindMin
+      within: []
+    - message: "Partial: throws on empty set. Use Data.Set.maxView instead."
+      name: Data.Set.deleteFindMax
+      within: []
+- functions:
+    - message: "Use Data.IntMap.lookup or Data.IntMap.!? instead"
+      name: "Data.IntMap.!"
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.lookupMin instead."
+      name: Data.IntMap.findMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.lookupMax instead."
+      name: Data.IntMap.findMax
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.minViewWithKey instead."
+      name: Data.IntMap.deleteFindMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.maxViewWithKey instead."
+      name: Data.IntMap.deleteFindMax
+      within: []
+- functions:
+    - message: "Use Data.IntMap.Strict.lookup or Data.IntMap.Strict.!? instead"
+      name: "Data.IntMap.Strict.!"
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.Strict.lookupMin instead."
+      name: Data.IntMap.Strict.findMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.Strict.lookupMax instead."
+      name: Data.IntMap.Strict.findMax
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.Strict.minViewWithKey instead."
+      name: Data.IntMap.Strict.deleteFindMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.Strict.maxViewWithKey instead."
+      name: Data.IntMap.Strict.deleteFindMax
+      within: []
+- functions:
+    - message: "Use Data.IntMap.Lazy.lookup or Data.IntMap.Lazy.!? instead"
+      name: "Data.IntMap.Lazy.!"
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.Lazy.lookupMin instead."
+      name: Data.IntMap.Lazy.findMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.Lazy.lookupMax instead."
+      name: Data.IntMap.Lazy.findMax
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.Lazy.minViewWithKey instead."
+      name: Data.IntMap.Lazy.deleteFindMin
+      within: []
+    - message: "Partial: throws on empty map. Use Data.IntMap.Lazy.maxViewWithKey instead."
+      name: Data.IntMap.Lazy.deleteFindMax
+      within: []
+- functions:
+    - message: "Partial: throws on empty set. Use Data.IntSet.lookupMin instead."
+      name: Data.IntSet.findMin
+      within: []
+    - message: "Partial: throws on empty set. Use Data.IntSet.lookupMax instead."
+      name: Data.IntSet.findMax
+      within: []
+    - message: "Partial: throws on empty set. Use Data.IntSet.minView instead."
+      name: Data.IntSet.deleteFindMin
+      within: []
+    - message: "Partial: throws on empty set. Use Data.IntSet.maxView instead."
+      name: Data.IntSet.deleteFindMax
+      within: []
+- functions:
+    - message: "Partial: throws on out-of-bounds. Use Data.Sequence.lookup or Data.Sequence.!? instead."
+      name: Data.Sequence.index
+      within: []
+    - message: "Partial: throws on empty Seq."
+      name: Data.Sequence.scanl1
+      within: []
+    - message: "Partial: throws on empty Seq."
+      name: Data.Sequence.scanr1
+      within: []
+- hint:
+    lhs: Data.Text.pack
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.unpack
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Lazy.pack
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Lazy.unpack
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Lazy.toStrict
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Lazy.fromStrict
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Encoding.encodeUtf8
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Encoding.decodeUtf8
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Lazy.Encoding.encodeUtf8
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Lazy.Encoding.decodeUtf8
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.ByteString.pack
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.ByteString.unpack
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.ByteString.Lazy.pack
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.ByteString.Lazy.unpack
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.ByteString.Lazy.toStrict
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.ByteString.Lazy.fromStrict
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Lazy.Builder.fromText
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Lazy.Builder.fromLazyText
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Lazy.Builder.fromString
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- hint:
+    lhs: Data.Text.Lazy.Builder.toLazyText
+    note: Use convert from Data.Convertible for uniform type conversion
+    rhs: convert
+- functions:
+    - message: "Don't throw in pure code. Use throwM in MonadThrow context."
+      name: throw
+      within: []
+    - message: Use typed exceptions with throwM instead of throwString.
+      name: throwString
+      within: []
+    - message: Use typed exceptions with throwM instead of throwIO.
+      name: throwIO
+      within: []
+    - message: "Avoid in production code. For development placeholders, consider typed holes instead."
+      name: error
+      within: []
+    - message: Remember to implement before release. Consider typed holes for better error messages.
+      name: undefined
+      within: []
+    - message: Use proper error handling
+      name: errorWithoutStackTrace
+      within: []
+    - message: "Deprecated. Use error instead, which now includes stack traces."
+      name: errorWithStackTrace
+      within: []
+- extensions:
+    - message: "Defers ambiguity errors to call sites, making debugging harder"
+      name:
+        - AllowAmbiguousTypes
+      within: []
+    - message: "Defers type errors to runtime, defeating Haskell's type safety"
+      name:
+        - DeferTypeErrors
+      within: []
+    - message: "Causes unexpected type defaulting (e.g., show.read defaults to ())"
+      name:
+        - ExtendedDefaultRules
+      within: []
+    - message: Experimental and may break in future GHC versions
+      name:
+        - ImpredicativeTypes
+      within: []
+    - message: "Makes instance selection non-deterministic and order-dependent"
+      name:
+        - IncoherentInstances
+      within: []
+    - message: Can cause Core Lint errors with DataKinds and PolyKinds
+      name:
+        - LiberalTypeSynonyms
+      within: []
+    - message: "Deprecated since GHC 7.10, use OVERLAPPING pragma if truly needed"
+      name:
+        - OverlappingInstances
+      within: []
+    - message: "Changes do/if-then-else semantics, breaks deriving and TH"
+      name:
+        - RebindableSyntax
+      within: []
+    - message: "Can cause type checker non-termination or stack overflow"
+      name:
+        - UndecidableSuperClasses
+      within: []
+- extensions:
+    - message: 'Breaks coherence. If unavoidable, add {-# HLINT ignore "Avoid restricted extensions" #-}'
+      name:
+        - ImplicitParams
+      within: []
+    - message: 'May cause type checker loops. If unavoidable, add {-# HLINT ignore "Avoid restricted extensions" #-}'
+      name:
+        - UndecidableInstances
+      within: []
+- functions:
+    - message: "Partial: throws on empty Fold. Use (^?) instead."
+      name: "Control.Lens.Fold.^?!"
+      within: []
+    - message: "Partial: throws on empty Fold. Use (^@?) instead."
+      name: "Control.Lens.Fold.^@?!"
+      within: []
+    - message: "Partial: throws on 0 or >1 elements. Consider using (^?) or ensure exactly 1 element."
+      name: Control.Lens.Traversal.singular
+      within: []
+    - message: "Partial: throws on 0 or >1 elements."
+      name: Control.Lens.Traversal.unsafeSingular
+      within: []
+    - message: "Unsafe: may throw if list length changes."
+      name: Control.Lens.Traversal.unsafePartsOf
+      within: []
+    - message: "Unsafe: may throw if list length changes."
+      name: Control.Lens.Traversal.iunsafePartsOf
+      within: []
+- functions:
+    - message: "Unsound: violates lens laws unless lenses are disjoint. Use alongside instead."
+      name: Control.Lens.Unsound.lensProduct
+      within: []
+    - message: "Unsound: violates prism laws. Use without instead."
+      name: Control.Lens.Unsound.prismSum
+      within: []
+    - message: "Unsound: violates traversal laws unless traversals are disjoint. Use failing instead."
+      name: Control.Lens.Unsound.adjoin
+      within: []
+- modules:
+    - message: Replace with Control.Monad.Writer.CPS to avoid space leaks.
+      name: Control.Monad.Writer
+      within: []
+    - message: Replace with Control.Monad.Writer.CPS to avoid space leaks.
+      name: Control.Monad.Writer.Lazy
+      within: []
+    - message: Replace with Control.Monad.Writer.CPS to avoid space leaks.
+      name: Control.Monad.Writer.Strict
+      within: []
+    - message: Replace with Control.Monad.RWS.CPS to avoid space leaks.
+      name: Control.Monad.RWS
+      within: []
+    - message: Replace with Control.Monad.RWS.CPS to avoid space leaks.
+      name: Control.Monad.RWS.Lazy
+      within: []
+    - message: Replace with Control.Monad.RWS.CPS to avoid space leaks.
+      name: Control.Monad.RWS.Strict
+      within: []
+- modules:
+    - message: "Ambiguous: Use Control.Monad.State.Lazy or Control.Monad.State.Strict explicitly."
+      name: Control.Monad.State
+      within: []
+    - message: "Redirect: Import Control.Monad.Trans.Class or Control.Monad.IO.Class directly."
+      name: Control.Monad.Trans
+      within: []
+    - message: "Redirect: Import Data.Functor.Identity directly."
+      name: Control.Monad.Identity
+      within: []
+- functions:
+    - message: "O(n^2) complexity. Use ordNub or nubOrd instead."
+      name: nub
+      within: []
+    - message: "Lazy accumulator causes space leaks. Use foldl' instead."
+      name: foldl
+      within: []
+    - message: "O(n) stack space. Use length with explicit conversion."
+      name: genericLength
+      within: []
+- hint:
+    lhs: trace
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTrace
+- hint:
+    lhs: traceId
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceId
+- hint:
+    lhs: traceShow
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceShow
+- hint:
+    lhs: traceShowId
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceShowId
+- hint:
+    lhs: traceWith
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceWith
+- hint:
+    lhs: traceShowWith
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceShowWith
+- hint:
+    lhs: traceStack
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceStack
+- hint:
+    lhs: traceIO
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceIO
+- hint:
+    lhs: traceM
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceM
+- hint:
+    lhs: traceShowM
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceShowM
+- hint:
+    lhs: traceEvent
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceEvent
+- hint:
+    lhs: traceEventIO
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceEventIO
+- hint:
+    lhs: traceMarker
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceMarker
+- hint:
+    lhs: traceMarkerIO
+    note: "pTrace* provides pretty-printed output for easier debugging"
+    rhs: pTraceMarkerIO
+- functions:
+    - message: Unsafe primitive state token conversion. Use safe alternatives.
+      name: unsafePrimToPrim
+      within: []
+    - message: Unsafe freeze without copying. Use freezeArray for safety.
+      name: unsafeFreezeArray
+      within: []
+    - message: Unsafe thaw without copying. Use thawArray for safety.
+      name: unsafeThawArray
+      within: []
+    - message: Unsafe freeze without copying. Use freezeByteArray for safety.
+      name: unsafeFreezeByteArray
+      within: []
+    - message: Unsafe thaw without copying. Use thawByteArray for safety.
+      name: unsafeThawByteArray
+      within: []
+    - message: Unsafe freeze without copying. Use freezeSmallArray for safety.
+      name: unsafeFreezeSmallArray
+      within: []
+    - message: Unsafe thaw without copying. Use thawSmallArray for safety.
+      name: unsafeThawSmallArray
+      within: []
+    - message: Unsafe freeze without copying. Use freezePrimArray for safety.
+      name: unsafeFreezePrimArray
+      within: []
+    - message: Unsafe thaw without copying. Use thawPrimArray for safety.
+      name: unsafeThawPrimArray
+      within: []
+- modules:
+    - as: B
+      importStyle: explicitOrQualified
+      name: Data.ByteString
+    - as: B8
+      importStyle: explicitOrQualified
+      name: Data.ByteString.Char8
+    - as: BL
+      importStyle: explicitOrQualified
+      name: Data.ByteString.Lazy
+    - as: BL8
+      importStyle: explicitOrQualified
+      name: Data.ByteString.Lazy.Char8
+    - as: T
+      importStyle: explicitOrQualified
+      name: Data.Text
+    - as: TL
+      importStyle: explicitOrQualified
+      name: Data.Text.Lazy
+    - message: "Data.Map is a re-export of Data.Map.Lazy. Use Data.Map.Strict or Data.Map.Lazy directly."
+      name: Data.Map
+      within: []
+    - as: Map
+      importStyle: explicitOrQualified
+      name: Data.Map.Strict
+    - as: MapL
+      importStyle: explicitOrQualified
+      name: Data.Map.Lazy
+    - message: "Data.IntMap is a re-export of Data.IntMap.Lazy. Use Data.IntMap.Strict or Data.IntMap.Lazy directly."
+      name: Data.IntMap
+      within: []
+    - as: IntMap
+      importStyle: explicitOrQualified
+      name: Data.IntMap.Strict
+    - as: IntMapL
+      importStyle: explicitOrQualified
+      name: Data.IntMap.Lazy
+    - as: Set
+      importStyle: explicitOrQualified
+      name: Data.Set
+    - as: Seq
+      importStyle: explicitOrQualified
+      name: Data.Sequence
+    - as: IntSet
+      importStyle: explicitOrQualified
+      name: Data.IntSet
+    - as: HM
+      importStyle: explicitOrQualified
+      name: Data.HashMap.Strict
+    - as: HML
+      importStyle: explicitOrQualified
+      name: Data.HashMap.Lazy
+    - as: HS
+      importStyle: explicitOrQualified
+      name: Data.HashSet
+    - as: L
+      importStyle: explicitOrQualified
+      name: Data.List
+    - as: NE
+      importStyle: explicitOrQualified
+      name: Data.List.NonEmpty
+    - as: C
+      importStyle: explicitOrQualified
+      name: Data.Char
+    - as: Key
+      importStyle: explicitOrQualified
+      name: Data.Aeson.Key
+    - as: KeyMap
+      importStyle: explicitOrQualified
+      name: Data.Aeson.KeyMap
+    - as: V
+      importStyle: explicitOrQualified
+      name: Data.Vector
+    - as: VG
+      importStyle: explicitOrQualified
+      name: Data.Vector.Generic
+    - as: VS
+      importStyle: explicitOrQualified
+      name: Data.Vector.Storable
+    - as: VU
+      importStyle: explicitOrQualified
+      name: Data.Vector.Unboxed
+- functions:
+    - message: "Partial: throws on maxBound. Use succMay, succDef, or succSafe from Safe instead."
+      name: succ
+      within: []
+    - message: "Partial: throws on minBound. Use predMay, predDef, or predSafe from Safe instead."
+      name: pred
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use toEnumMay, toEnumDef, or toEnumSafe from Safe instead."
+      name: toEnum
+      within: []
+- functions:
+    - message: "Partial: throws on empty list. Use headMay or headDef from Safe instead."
+      name: Data.List.head
+      within: []
+    - message: "Partial: throws on empty list. Use tailMay, tailDef, or tailSafe from Safe instead."
+      name: Data.List.tail
+      within: []
+    - message: "Partial: throws on empty list. Use initMay, initDef, or initSafe from Safe instead."
+      name: Data.List.init
+      within: []
+    - message: "Partial: throws on empty list. Use lastMay or lastDef from Safe instead."
+      name: Data.List.last
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use atMay or atDef from Safe instead."
+      name: "Data.List.!!"
+      within: []
+    - message: "Partial: throws on empty list. Use cycleMay or cycleDef from Safe instead."
+      name: Data.List.cycle
+      within: []
+    - message: "Partial: throws on empty list. Use scanl1May or scanl1Def from Safe instead."
+      name: Data.List.scanl1
+      within: []
+    - message: "Partial: throws on empty list. Use scanr1May or scanr1Def from Safe instead."
+      name: Data.List.scanr1
+      within: []
+    - message: "Partial: throws on empty list. Use foldl1May from Safe instead."
+      name: Data.List.foldl1
+      within: []
+    - message: "Partial: throws on empty list. Use foldl1May' from Safe instead."
+      name: "Data.List.foldl1'"
+      within: []
+    - message: "Partial: throws on empty list. Use foldr1May from Safe instead."
+      name: Data.List.foldr1
+      within: []
+    - message: "Partial: throws on empty list. Use maximumMay or maximumBound from Safe instead."
+      name: Data.List.maximum
+      within: []
+    - message: "Partial: throws on empty list. Use minimumMay or minimumBound from Safe instead."
+      name: Data.List.minimum
+      within: []
+    - message: "Partial: throws on empty list. Use maximumByMay or maximumBoundBy from Safe instead."
+      name: Data.List.maximumBy
+      within: []
+    - message: "Partial: throws on empty list. Use minimumByMay or minimumBoundBy from Safe instead."
+      name: Data.List.minimumBy
+      within: []
+- functions:
+    - message: "Partial: throws on Nothing. Use fromMaybe or pattern match instead."
+      name: Data.Maybe.fromJust
+      within: []
+- functions:
+    - message: "Partial: throws on parse failure. Use readMay or readDef from Safe instead."
+      name: read
+      within: []
+- functions:
+    - message: "Partial: throws on empty structure. Use foldl1May from Safe.Foldable instead."
+      name: Data.Foldable.foldl1
+      within: []
+    - message: "Partial: throws on empty structure. Use foldr1May from Safe.Foldable instead."
+      name: Data.Foldable.foldr1
+      within: []
+    - message: "Partial: throws on empty structure. Use maximumMay or maximumBound from Safe.Foldable instead."
+      name: Data.Foldable.maximum
+      within: []
+    - message: "Partial: throws on empty structure. Use minimumMay or minimumBound from Safe.Foldable instead."
+      name: Data.Foldable.minimum
+      within: []
+    - message: "Partial: throws on empty structure. Use maximumByMay or maximumBoundBy from Safe.Foldable instead."
+      name: Data.Foldable.maximumBy
+      within: []
+    - message: "Partial: throws on empty structure. Use minimumByMay or minimumBoundBy from Safe.Foldable instead."
+      name: Data.Foldable.minimumBy
+      within: []
+- functions:
+    - message: "Partial: throws on empty structure. Use bifoldl with a default value instead."
+      name: Data.Bifoldable.bifoldl1
+      within: []
+    - message: "Partial: throws on empty structure. Use bifoldr with a default value instead."
+      name: Data.Bifoldable.bifoldr1
+      within: []
+    - message: "Partial: throws on empty structure. Use bifoldr with explicit initial value."
+      name: Data.Bifoldable.bimaximum
+      within: []
+    - message: "Partial: throws on empty structure. Use bifoldr with explicit initial value."
+      name: Data.Bifoldable.biminimum
+      within: []
+    - message: "Partial: throws on empty structure. Use bifoldr with explicit initial value."
+      name: Data.Bifoldable.bimaximumBy
+      within: []
+    - message: "Partial: throws on empty structure. Use bifoldr with explicit initial value."
+      name: Data.Bifoldable.biminimumBy
+      within: []
+- functions:
+    - message: "Partial: throws on out-of-bounds. Use atMay or atDef from Safe with toList instead."
+      name: "Data.List.NonEmpty.!!"
+      within: []
+    - message: "Partial: throws on empty list. Use nonEmpty instead."
+      name: Data.List.NonEmpty.fromList
+      within: []
+- functions:
+    - message: "Partial: throws on out-of-range. Use indexMay or indexDef from Safe instead."
+      name: Data.Ix.index
+      within: []
+- functions:
+    - message: "Partial: synonym for error. Use throwM or Left instead."
+      name: Safe.abort
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use atMay or atDef instead."
+      name: Safe.at
+      within: []
+    - message: "Partial: throws on empty list. Use headMay or headDef instead."
+      name: Safe.headErr
+      within: []
+    - message: "Partial: throws on empty list. Use tailMay or tailDef instead."
+      name: Safe.tailErr
+      within: []
+    - message: "Partial: throws on missing key. Use lookup or lookupJustDef instead."
+      name: Safe.lookupJust
+      within: []
+    - message: "Partial: throws when not found. Use find or findJustDef instead."
+      name: Safe.findJust
+      within: []
+    - message: "Partial: throws when not found. Use elemIndex or elemIndexJustDef instead."
+      name: Safe.elemIndexJust
+      within: []
+    - message: "Partial: throws when not found. Use findIndex or findIndexJustDef instead."
+      name: Safe.findIndexJust
+      within: []
+- functions:
+    - message: "Partial: throws on empty list. Use tailMay or tailDef instead."
+      name: Safe.tailNote
+      within: []
+    - message: "Partial: throws on empty list. Use initMay or initDef instead."
+      name: Safe.initNote
+      within: []
+    - message: "Partial: throws on empty list. Use headMay or headDef instead."
+      name: Safe.headNote
+      within: []
+    - message: "Partial: throws on empty list. Use lastMay or lastDef instead."
+      name: Safe.lastNote
+      within: []
+    - message: "Partial: throws on empty list. Use minimumMay or minimumBound instead."
+      name: Safe.minimumNote
+      within: []
+    - message: "Partial: throws on empty list. Use maximumMay or maximumBound instead."
+      name: Safe.maximumNote
+      within: []
+    - message: "Partial: throws on empty list. Use minimumByMay or minimumBoundBy instead."
+      name: Safe.minimumByNote
+      within: []
+    - message: "Partial: throws on empty list. Use maximumByMay or maximumBoundBy instead."
+      name: Safe.maximumByNote
+      within: []
+    - message: "Partial: throws on empty list. Use foldr1May instead."
+      name: Safe.foldr1Note
+      within: []
+    - message: "Partial: throws on empty list. Use foldl1May instead."
+      name: Safe.foldl1Note
+      within: []
+    - message: "Partial: throws on empty list. Use foldl1May' instead."
+      name: "Safe.foldl1Note'"
+      within: []
+    - message: "Partial: throws on empty list. Use scanr1May or scanr1Def instead."
+      name: Safe.scanr1Note
+      within: []
+    - message: "Partial: throws on empty list. Use scanl1May or scanl1Def instead."
+      name: Safe.scanl1Note
+      within: []
+    - message: "Partial: throws on empty list. Use cycleMay or cycleDef instead."
+      name: Safe.cycleNote
+      within: []
+    - message: "Partial: throws on Nothing. Use fromMaybe instead."
+      name: Safe.fromJustNote
+      within: []
+    - message: "Partial: throws on False. Use guard or when instead."
+      name: Safe.assertNote
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use atMay or atDef instead."
+      name: Safe.atNote
+      within: []
+    - message: "Partial: throws on parse failure. Use readMay or readDef instead."
+      name: Safe.readNote
+      within: []
+    - message: "Partial: throws on missing key. Use lookup or lookupJustDef instead."
+      name: Safe.lookupJustNote
+      within: []
+    - message: "Partial: throws when not found. Use find or findJustDef instead."
+      name: Safe.findJustNote
+      within: []
+    - message: "Partial: throws when not found. Use elemIndex or elemIndexJustDef instead."
+      name: Safe.elemIndexJustNote
+      within: []
+    - message: "Partial: throws when not found. Use findIndex or findIndexJustDef instead."
+      name: Safe.findIndexJustNote
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use toEnumMay or toEnumDef instead."
+      name: Safe.toEnumNote
+      within: []
+    - message: "Partial: throws on maxBound. Use succMay or succDef instead."
+      name: Safe.succNote
+      within: []
+    - message: "Partial: throws on minBound. Use predMay or predDef instead."
+      name: Safe.predNote
+      within: []
+    - message: "Partial: throws on out-of-range. Use indexMay or indexDef instead."
+      name: Safe.indexNote
+      within: []
+- functions:
+    - message: "Partial: throws on insufficient elements. Use takeExactMay or takeExactDef instead."
+      name: Safe.Exact.takeExact
+      within: []
+    - message: "Partial: throws on insufficient elements. Use dropExactMay or dropExactDef instead."
+      name: Safe.Exact.dropExact
+      within: []
+    - message: "Partial: throws on insufficient elements. Use splitAtExactMay or splitAtExactDef instead."
+      name: Safe.Exact.splitAtExact
+      within: []
+    - message: "Partial: throws on length mismatch. Use zipExactMay or zipExactDef instead."
+      name: Safe.Exact.zipExact
+      within: []
+    - message: "Partial: throws on length mismatch. Use zipWithExactMay or zipWithExactDef instead."
+      name: Safe.Exact.zipWithExact
+      within: []
+    - message: "Partial: throws on length mismatch. Use zip3ExactMay or zip3ExactDef instead."
+      name: Safe.Exact.zip3Exact
+      within: []
+    - message: "Partial: throws on length mismatch. Use zipWith3ExactMay or zipWith3ExactDef instead."
+      name: Safe.Exact.zipWith3Exact
+      within: []
+    - message: "Partial: throws on insufficient elements. Use takeExactMay or takeExactDef instead."
+      name: Safe.Exact.takeExactNote
+      within: []
+    - message: "Partial: throws on insufficient elements. Use dropExactMay or dropExactDef instead."
+      name: Safe.Exact.dropExactNote
+      within: []
+    - message: "Partial: throws on insufficient elements. Use splitAtExactMay or splitAtExactDef instead."
+      name: Safe.Exact.splitAtExactNote
+      within: []
+    - message: "Partial: throws on length mismatch. Use zipExactMay or zipExactDef instead."
+      name: Safe.Exact.zipExactNote
+      within: []
+    - message: "Partial: throws on length mismatch. Use zipWithExactMay or zipWithExactDef instead."
+      name: Safe.Exact.zipWithExactNote
+      within: []
+    - message: "Partial: throws on length mismatch. Use zip3ExactMay or zip3ExactDef instead."
+      name: Safe.Exact.zip3ExactNote
+      within: []
+    - message: "Partial: throws on length mismatch. Use zipWith3ExactMay or zipWith3ExactDef instead."
+      name: Safe.Exact.zipWith3ExactNote
+      within: []
+- functions:
+    - message: "Partial: throws on empty structure. Use foldl1May instead."
+      name: Safe.Foldable.foldl1Note
+      within: []
+    - message: "Partial: throws on empty structure. Use foldr1May instead."
+      name: Safe.Foldable.foldr1Note
+      within: []
+    - message: "Partial: throws on empty structure. Use minimumMay or minimumBound instead."
+      name: Safe.Foldable.minimumNote
+      within: []
+    - message: "Partial: throws on empty structure. Use maximumMay or maximumBound instead."
+      name: Safe.Foldable.maximumNote
+      within: []
+    - message: "Partial: throws on empty structure. Use minimumByMay or minimumBoundBy instead."
+      name: Safe.Foldable.minimumByNote
+      within: []
+    - message: "Partial: throws on empty structure. Use maximumByMay or maximumBoundBy instead."
+      name: Safe.Foldable.maximumByNote
+      within: []
+    - message: "Partial: throws when not found. Use find or findJustDef instead."
+      name: Safe.Foldable.findJust
+      within: []
+    - message: "Partial: throws when not found. Use find or findJustDef instead."
+      name: Safe.Foldable.findJustNote
+      within: []
+- functions:
+    - message: Encoding depends on LANG env. Use Text or ByteString.
+      name: System.IO.getChar
+      within: []
+    - message: Encoding depends on LANG env. Use Text or ByteString.
+      name: System.IO.getLine
+      within: []
+    - message: "Lazy IO + env-dependent encoding. Use strict Text or ByteString."
+      name: System.IO.getContents
+      within: []
+    - message: "Lazy IO + env-dependent encoding. Use Data.Text.IO.readFile or Data.ByteString.readFile."
+      name: System.IO.readFile
+      within: []
+    - message: "Lazy IO + env-dependent encoding."
+      name: System.IO.interact
+      within: []
+    - message: "Env-dependent + partial (uses read)."
+      name: System.IO.readIO
+      within: []
+    - message: "Env-dependent + partial (uses read)."
+      name: System.IO.readLn
+      within: []
+    - message: Encoding depends on LANG env. Use Text or ByteString.
+      name: System.IO.putChar
+      within: []
+    - message: Encoding depends on LANG env. Use Text or ByteString.
+      name: System.IO.putStr
+      within: []
+    - message: Encoding depends on LANG env. Use Text or ByteString.
+      name: System.IO.putStrLn
+      within: []
+    - message: Encoding depends on LANG env. Use Text or ByteString.
+      name: System.IO.print
+      within: []
+    - message: "Env-dependent encoding. Use Data.Text.IO.writeFile or Data.ByteString.writeFile."
+      name: System.IO.writeFile
+      within: []
+    - message: "Env-dependent encoding. Use Data.Text.IO.appendFile or Data.ByteString.appendFile."
+      name: System.IO.appendFile
+      within: []
+- functions:
+    - message: Use Data.Text.uncons instead
+      name: Data.Text.head
+      within: []
+    - message: Use Data.Text.uncons instead
+      name: Data.Text.tail
+      within: []
+    - message: Use Data.Text.unsnoc instead
+      name: Data.Text.init
+      within: []
+    - message: Use Data.Text.unsnoc instead
+      name: Data.Text.last
+      within: []
+    - message: "Partial: throws on empty Text. Use foldl with explicit initial value."
+      name: Data.Text.foldl1
+      within: []
+    - message: "Partial: throws on empty Text. Use foldl' with explicit initial value."
+      name: "Data.Text.foldl1'"
+      within: []
+    - message: "Partial: throws on empty Text. Use foldr with explicit initial value."
+      name: Data.Text.foldr1
+      within: []
+    - message: "Partial: throws on empty Text. Use fold with explicit initial value."
+      name: Data.Text.maximum
+      within: []
+    - message: "Partial: throws on empty Text. Use fold with explicit initial value."
+      name: Data.Text.minimum
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use safe indexing alternatives."
+      name: Data.Text.index
+      within: []
+- functions:
+    - message: Use Data.Text.Lazy.uncons instead
+      name: Data.Text.Lazy.head
+      within: []
+    - message: Use Data.Text.Lazy.uncons instead
+      name: Data.Text.Lazy.tail
+      within: []
+    - message: Use Data.Text.Lazy.unsnoc instead
+      name: Data.Text.Lazy.init
+      within: []
+    - message: Use Data.Text.Lazy.unsnoc instead
+      name: Data.Text.Lazy.last
+      within: []
+    - message: "Partial: throws on empty Text. Use foldl with explicit initial value."
+      name: Data.Text.Lazy.foldl1
+      within: []
+    - message: "Partial: throws on empty Text. Use foldl' with explicit initial value."
+      name: "Data.Text.Lazy.foldl1'"
+      within: []
+    - message: "Partial: throws on empty Text. Use foldr with explicit initial value."
+      name: Data.Text.Lazy.foldr1
+      within: []
+    - message: "Partial: throws on empty Text. Use fold with explicit initial value."
+      name: Data.Text.Lazy.maximum
+      within: []
+    - message: "Partial: throws on empty Text. Use fold with explicit initial value."
+      name: Data.Text.Lazy.minimum
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use safe indexing alternatives."
+      name: Data.Text.Lazy.index
+      within: []
+    - message: "Partial: throws on empty Text."
+      name: Data.Text.Lazy.cycle
+      within: []
+- functions:
+    - message: "Unsafe: no bounds check. Use Data.Text.uncons instead"
+      name: Data.Text.Unsafe.unsafeHead
+      within: []
+    - message: "Unsafe: no bounds check. Use Data.Text.uncons instead"
+      name: Data.Text.Unsafe.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds check. Use Data.Text.take instead"
+      name: Data.Text.Unsafe.takeWord8
+      within: []
+    - message: "Unsafe: no bounds check. Use Data.Text.drop instead"
+      name: Data.Text.Unsafe.dropWord8
+      within: []
+- functions:
+    - message: "Use System.Process.Typed.runProcess_ instead for type-safe process execution."
+      name: System.Process.callProcess
+      within: []
+    - message: "Use System.Process.Typed.runProcess_ with shell instead for type-safe process execution."
+      name: System.Process.callCommand
+      within: []
+    - message: "Use System.Process.Typed.startProcess instead for type-safe process execution."
+      name: System.Process.spawnProcess
+      within: []
+    - message: "Use System.Process.Typed.startProcess with shell instead for type-safe process execution."
+      name: System.Process.spawnCommand
+      within: []
+    - message: "Use System.Process.Typed.startProcess instead for type-safe process execution."
+      name: System.Process.createProcess
+      within: []
+    - message: "Use System.Process.Typed.startProcess instead for type-safe process execution."
+      name: System.Process.createProcess_
+      within: []
+    - message: "Use System.Process.Typed.stopProcess instead for type-safe process cleanup."
+      name: System.Process.cleanupProcess
+      within: []
+    - message: "Use System.Process.Typed.readProcessStdout instead for type-safe output capture."
+      name: System.Process.readProcess
+      within: []
+    - message: "Use System.Process.Typed.readProcess instead for type-safe output capture."
+      name: System.Process.readProcessWithExitCode
+      within: []
+    - message: "Use System.Process.Typed.readProcessStdout instead for type-safe output capture."
+      name: System.Process.readCreateProcess
+      within: []
+    - message: "Use System.Process.Typed.readProcess instead for type-safe output capture."
+      name: System.Process.readCreateProcessWithExitCode
+      within: []
+    - message: Use System.Process.Typed.waitExitCode instead for MonadIO support.
+      name: System.Process.waitForProcess
+      within: []
+    - message: Use System.Process.Typed.getExitCode instead for MonadIO support.
+      name: System.Process.getProcessExitCode
+      within: []
+    - message: Use System.Process.Typed.stopProcess instead for proper cleanup.
+      name: System.Process.terminateProcess
+      within: []
+    - message: Consider using System.Process.Typed with setCreateGroup for process group management.
+      name: System.Process.interruptProcessGroupOf
+      within: []
+    - message: "Use System.Process.Typed.runProcess with shell instead for type-safe process execution."
+      name: System.Process.runCommand
+      within: []
+    - message: "Use System.Process.Typed.runProcess instead for type-safe process execution."
+      name: System.Process.runProcess
+      within: []
+    - message: Use System.Process.Typed.startProcess with shell and createPipe instead.
+      name: System.Process.runInteractiveCommand
+      within: []
+    - message: Use System.Process.Typed.startProcess with createPipe instead.
+      name: System.Process.runInteractiveProcess
+      within: []
+    - message: "Use System.Process.Typed.runProcess with shell instead for type-safe process execution."
+      name: System.Process.system
+      within: []
+    - message: "Use System.Process.Typed.runProcess instead for type-safe process execution."
+      name: System.Process.rawSystem
+      within: []
+    - message: "Use System.Process.Typed.proc instead for type-safe ProcessConfig."
+      name: System.Process.proc
+      within: []
+    - message: "Use System.Process.Typed.shell instead for type-safe ProcessConfig."
+      name: System.Process.shell
+      within: []
+    - message: Use System.Process.Typed.withProcessWait or withProcessTerm instead for MonadUnliftIO support.
+      name: System.Process.withCreateProcess
+      within: []
+    - message: Use System.Process.Typed.withProcessWait_ or withProcessTerm_ instead for MonadUnliftIO support.
+      name: System.Process.withCreateProcess_
+      within: []
+- functions:
+    - message: Use typed exceptions instead. Define a proper exception type.
+      name: UnliftIO.Exception.throwString
+      within: []
+    - message: Use typed exceptions instead. Define a proper exception type.
+      name: UnliftIO.Exception.stringException
+      within: []
+- functions:
+    - message: Use UnliftIO.Async.async instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.async
+      within: []
+    - message: Use UnliftIO.Async.asyncBound instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.asyncBound
+      within: []
+    - message: Use UnliftIO.Async.asyncOn instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.asyncOn
+      within: []
+    - message: Use UnliftIO.Async.asyncWithUnmask instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.asyncWithUnmask
+      within: []
+    - message: Use UnliftIO.Async.withAsync instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.withAsync
+      within: []
+    - message: Use UnliftIO.Async.withAsyncBound instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.withAsyncBound
+      within: []
+    - message: Use UnliftIO.Async.withAsyncOn instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.withAsyncOn
+      within: []
+    - message: Use UnliftIO.Async.withAsyncWithUnmask instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.withAsyncWithUnmask
+      within: []
+    - message: Use UnliftIO.Async.wait instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.wait
+      within: []
+    - message: Use UnliftIO.Async.poll instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.poll
+      within: []
+    - message: Use UnliftIO.Async.waitCatch instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitCatch
+      within: []
+    - message: Use UnliftIO.Async.cancel instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.cancel
+      within: []
+    - message: Use UnliftIO.Async.uninterruptibleCancel instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.uninterruptibleCancel
+      within: []
+    - message: Use UnliftIO.Async.cancelWith instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.cancelWith
+      within: []
+    - message: Use UnliftIO.Async.race instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.race
+      within: []
+    - message: Use UnliftIO.Async.race_ instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.race_
+      within: []
+    - message: Use UnliftIO.Async.concurrently instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.concurrently
+      within: []
+    - message: Use UnliftIO.Async.concurrently_ instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.concurrently_
+      within: []
+    - message: Use UnliftIO.Async.mapConcurrently instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.mapConcurrently
+      within: []
+    - message: Use UnliftIO.Async.forConcurrently instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.forConcurrently
+      within: []
+    - message: Use UnliftIO.Async.mapConcurrently_ instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.mapConcurrently_
+      within: []
+    - message: Use UnliftIO.Async.forConcurrently_ instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.forConcurrently_
+      within: []
+    - message: Use UnliftIO.Async.replicateConcurrently instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.replicateConcurrently
+      within: []
+    - message: Use UnliftIO.Async.replicateConcurrently_ instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.replicateConcurrently_
+      within: []
+    - message: Use UnliftIO.Async.waitAny instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitAny
+      within: []
+    - message: Use UnliftIO.Async.waitAnyCatch instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitAnyCatch
+      within: []
+    - message: Use UnliftIO.Async.waitAnyCancel instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitAnyCancel
+      within: []
+    - message: Use UnliftIO.Async.waitAnyCatchCancel instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitAnyCatchCancel
+      within: []
+    - message: Use UnliftIO.Async.waitEither instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitEither
+      within: []
+    - message: Use UnliftIO.Async.waitEitherCatch instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitEitherCatch
+      within: []
+    - message: Use UnliftIO.Async.waitEitherCancel instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitEitherCancel
+      within: []
+    - message: Use UnliftIO.Async.waitEitherCatchCancel instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitEitherCatchCancel
+      within: []
+    - message: Use UnliftIO.Async.waitEither_ instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitEither_
+      within: []
+    - message: Use UnliftIO.Async.waitBoth instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.waitBoth
+      within: []
+    - message: Use UnliftIO.Async.link instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.link
+      within: []
+    - message: Use UnliftIO.Async.linkOnly instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.linkOnly
+      within: []
+    - message: Use UnliftIO.Async.link2 instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.link2
+      within: []
+    - message: Use UnliftIO.Async.link2Only instead for MonadUnliftIO support.
+      name: Control.Concurrent.Async.link2Only
+      within: []
+- functions:
+    - message: Use UnliftIO.Exception.catch instead for MonadUnliftIO support.
+      name: Control.Exception.catch
+      within: []
+    - message: Use UnliftIO.Exception.catchJust instead for MonadUnliftIO support.
+      name: Control.Exception.catchJust
+      within: []
+    - message: Use UnliftIO.Exception.handle instead for MonadUnliftIO support.
+      name: Control.Exception.handle
+      within: []
+    - message: Use UnliftIO.Exception.handleJust instead for MonadUnliftIO support.
+      name: Control.Exception.handleJust
+      within: []
+    - message: Use UnliftIO.Exception.try instead for MonadUnliftIO support.
+      name: Control.Exception.try
+      within: []
+    - message: Use UnliftIO.Exception.tryJust instead for MonadUnliftIO support.
+      name: Control.Exception.tryJust
+      within: []
+    - message: Use UnliftIO.Exception.bracket instead for MonadUnliftIO support.
+      name: Control.Exception.bracket
+      within: []
+    - message: Use UnliftIO.Exception.bracket_ instead for MonadUnliftIO support.
+      name: Control.Exception.bracket_
+      within: []
+    - message: Use UnliftIO.Exception.bracketOnError instead for MonadUnliftIO support.
+      name: Control.Exception.bracketOnError
+      within: []
+    - message: Use UnliftIO.Exception.finally instead for MonadUnliftIO support.
+      name: Control.Exception.finally
+      within: []
+    - message: Use UnliftIO.Exception.onException instead for MonadUnliftIO support.
+      name: Control.Exception.onException
+      within: []
+    - message: Use UnliftIO.Exception.mask instead for MonadUnliftIO support.
+      name: Control.Exception.mask
+      within: []
+    - message: Use UnliftIO.Exception.mask_ instead for MonadUnliftIO support.
+      name: Control.Exception.mask_
+      within: []
+    - message: Use UnliftIO.Exception.uninterruptibleMask instead for MonadUnliftIO support.
+      name: Control.Exception.uninterruptibleMask
+      within: []
+    - message: Use UnliftIO.Exception.uninterruptibleMask_ instead for MonadUnliftIO support.
+      name: Control.Exception.uninterruptibleMask_
+      within: []
+    - message: Use UnliftIO.Exception.evaluate instead for MonadUnliftIO support.
+      name: Control.Exception.evaluate
+      within: []
+- functions:
+    - message: Use UnliftIO.MVar.withMVar instead for MonadUnliftIO support.
+      name: Control.Concurrent.MVar.withMVar
+      within: []
+    - message: Use UnliftIO.MVar.withMVarMasked instead for MonadUnliftIO support.
+      name: Control.Concurrent.MVar.withMVarMasked
+      within: []
+    - message: Use UnliftIO.MVar.modifyMVar instead for MonadUnliftIO support.
+      name: Control.Concurrent.MVar.modifyMVar
+      within: []
+    - message: Use UnliftIO.MVar.modifyMVar_ instead for MonadUnliftIO support.
+      name: Control.Concurrent.MVar.modifyMVar_
+      within: []
+    - message: Use UnliftIO.MVar.modifyMVarMasked instead for MonadUnliftIO support.
+      name: Control.Concurrent.MVar.modifyMVarMasked
+      within: []
+    - message: Use UnliftIO.MVar.modifyMVarMasked_ instead for MonadUnliftIO support.
+      name: Control.Concurrent.MVar.modifyMVarMasked_
+      within: []
+- functions:
+    - message: Use UnliftIO.Timeout.timeout instead for MonadUnliftIO support.
+      name: System.Timeout.timeout
+      within: []
+- functions:
+    - message: Use UnliftIO.Temporary.withSystemTempFile instead for MonadUnliftIO support.
+      name: System.IO.Temp.withSystemTempFile
+      within: []
+    - message: Use UnliftIO.Temporary.withSystemTempDirectory instead for MonadUnliftIO support.
+      name: System.IO.Temp.withSystemTempDirectory
+      within: []
+    - message: Use UnliftIO.Temporary.withTempFile instead for MonadUnliftIO support.
+      name: System.IO.Temp.withTempFile
+      within: []
+    - message: Use UnliftIO.Temporary.withTempDirectory instead for MonadUnliftIO support.
+      name: System.IO.Temp.withTempDirectory
+      within: []
+- functions:
+    - message: Use UnliftIO.STM.atomically instead for MonadIO support.
+      name: Control.Concurrent.STM.atomically
+      within: []
+    - message: Use UnliftIO.STM.newTVarIO instead for MonadIO support.
+      name: Control.Concurrent.STM.newTVarIO
+      within: []
+    - message: Use UnliftIO.STM.readTVarIO instead for MonadIO support.
+      name: Control.Concurrent.STM.readTVarIO
+      within: []
+    - message: Use UnliftIO.STM.registerDelay instead for MonadIO support.
+      name: Control.Concurrent.STM.registerDelay
+      within: []
+    - message: Use UnliftIO.STM.mkWeakTVar instead for MonadIO support.
+      name: Control.Concurrent.STM.mkWeakTVar
+      within: []
+    - message: Use UnliftIO.STM.newTMVarIO instead for MonadIO support.
+      name: Control.Concurrent.STM.newTMVarIO
+      within: []
+    - message: Use UnliftIO.STM.newEmptyTMVarIO instead for MonadIO support.
+      name: Control.Concurrent.STM.newEmptyTMVarIO
+      within: []
+    - message: Use UnliftIO.STM.mkWeakTMVar instead for MonadIO support.
+      name: Control.Concurrent.STM.mkWeakTMVar
+      within: []
+    - message: Use UnliftIO.STM.newTChanIO instead for MonadIO support.
+      name: Control.Concurrent.STM.newTChanIO
+      within: []
+    - message: Use UnliftIO.STM.newBroadcastTChanIO instead for MonadIO support.
+      name: Control.Concurrent.STM.newBroadcastTChanIO
+      within: []
+    - message: Use UnliftIO.STM.newTQueueIO instead for MonadIO support.
+      name: Control.Concurrent.STM.newTQueueIO
+      within: []
+    - message: Use UnliftIO.STM.newTBQueueIO instead for MonadIO support.
+      name: Control.Concurrent.STM.newTBQueueIO
+      within: []
+- functions:
+    - message: Use UnliftIO.IO.withFile instead for MonadIO support.
+      name: System.IO.withFile
+      within: []
+    - message: Use UnliftIO.IO.withBinaryFile instead for MonadIO support.
+      name: System.IO.withBinaryFile
+      within: []
+    - message: Use UnliftIO.IO.openFile instead for MonadIO support.
+      name: System.IO.openFile
+      within: []
+    - message: Use UnliftIO.IO.hClose instead for MonadIO support.
+      name: System.IO.hClose
+      within: []
+    - message: Use UnliftIO.IO.hFlush instead for MonadIO support.
+      name: System.IO.hFlush
+      within: []
+    - message: Use UnliftIO.IO.hFileSize instead for MonadIO support.
+      name: System.IO.hFileSize
+      within: []
+    - message: Use UnliftIO.IO.hSetFileSize instead for MonadIO support.
+      name: System.IO.hSetFileSize
+      within: []
+    - message: Use UnliftIO.IO.hIsEOF instead for MonadIO support.
+      name: System.IO.hIsEOF
+      within: []
+    - message: Use UnliftIO.IO.hSetBuffering instead for MonadIO support.
+      name: System.IO.hSetBuffering
+      within: []
+    - message: Use UnliftIO.IO.hGetBuffering instead for MonadIO support.
+      name: System.IO.hGetBuffering
+      within: []
+    - message: Use UnliftIO.IO.hSeek instead for MonadIO support.
+      name: System.IO.hSeek
+      within: []
+    - message: Use UnliftIO.IO.hTell instead for MonadIO support.
+      name: System.IO.hTell
+      within: []
+    - message: Use UnliftIO.IO.hIsOpen instead for MonadIO support.
+      name: System.IO.hIsOpen
+      within: []
+    - message: Use UnliftIO.IO.hIsClosed instead for MonadIO support.
+      name: System.IO.hIsClosed
+      within: []
+    - message: Use UnliftIO.IO.hIsReadable instead for MonadIO support.
+      name: System.IO.hIsReadable
+      within: []
+    - message: Use UnliftIO.IO.hIsWritable instead for MonadIO support.
+      name: System.IO.hIsWritable
+      within: []
+    - message: Use UnliftIO.IO.hIsSeekable instead for MonadIO support.
+      name: System.IO.hIsSeekable
+      within: []
+    - message: Use UnliftIO.IO.hIsTerminalDevice instead for MonadIO support.
+      name: System.IO.hIsTerminalDevice
+      within: []
+    - message: Use UnliftIO.IO.hSetEcho instead for MonadIO support.
+      name: System.IO.hSetEcho
+      within: []
+    - message: Use UnliftIO.IO.hGetEcho instead for MonadIO support.
+      name: System.IO.hGetEcho
+      within: []
+    - message: Use UnliftIO.IO.hWaitForInput instead for MonadIO support.
+      name: System.IO.hWaitForInput
+      within: []
+    - message: Use UnliftIO.IO.hReady instead for MonadIO support.
+      name: System.IO.hReady
+      within: []
+- functions:
+    - message: Use UnliftIO.IORef.newIORef instead for MonadIO support.
+      name: Data.IORef.newIORef
+      within: []
+    - message: Use UnliftIO.IORef.readIORef instead for MonadIO support.
+      name: Data.IORef.readIORef
+      within: []
+    - message: Use UnliftIO.IORef.writeIORef instead for MonadIO support.
+      name: Data.IORef.writeIORef
+      within: []
+    - message: Use UnliftIO.IORef.modifyIORef instead for MonadIO support.
+      name: Data.IORef.modifyIORef
+      within: []
+    - message: "Use UnliftIO.IORef.modifyIORef' instead for MonadIO support."
+      name: "Data.IORef.modifyIORef'"
+      within: []
+    - message: Use UnliftIO.IORef.atomicModifyIORef instead for MonadIO support.
+      name: Data.IORef.atomicModifyIORef
+      within: []
+    - message: "Use UnliftIO.IORef.atomicModifyIORef' instead for MonadIO support."
+      name: "Data.IORef.atomicModifyIORef'"
+      within: []
+    - message: Use UnliftIO.IORef.mkWeakIORef instead for MonadIO support.
+      name: Data.IORef.mkWeakIORef
+      within: []
+- functions:
+    - message: Use UnliftIO.Chan.newChan instead for MonadIO support.
+      name: Control.Concurrent.Chan.newChan
+      within: []
+    - message: Use UnliftIO.Chan.writeChan instead for MonadIO support.
+      name: Control.Concurrent.Chan.writeChan
+      within: []
+    - message: Use UnliftIO.Chan.readChan instead for MonadIO support.
+      name: Control.Concurrent.Chan.readChan
+      within: []
+    - message: Use UnliftIO.Chan.dupChan instead for MonadIO support.
+      name: Control.Concurrent.Chan.dupChan
+      within: []
+    - message: Use UnliftIO.Chan.getChanContents instead for MonadIO support.
+      name: Control.Concurrent.Chan.getChanContents
+      within: []
+    - message: Use UnliftIO.Chan.writeList2Chan instead for MonadIO support.
+      name: Control.Concurrent.Chan.writeList2Chan
+      within: []
+- functions:
+    - message: Use UnliftIO.QSem.newQSem instead for MonadIO support.
+      name: Control.Concurrent.QSem.newQSem
+      within: []
+    - message: Use UnliftIO.QSem.waitQSem instead for MonadIO support.
+      name: Control.Concurrent.QSem.waitQSem
+      within: []
+    - message: Use UnliftIO.QSem.signalQSem instead for MonadIO support.
+      name: Control.Concurrent.QSem.signalQSem
+      within: []
+- functions:
+    - message: Use UnliftIO.QSemN.newQSemN instead for MonadIO support.
+      name: Control.Concurrent.QSemN.newQSemN
+      within: []
+    - message: Use UnliftIO.QSemN.waitQSemN instead for MonadIO support.
+      name: Control.Concurrent.QSemN.waitQSemN
+      within: []
+    - message: Use UnliftIO.QSemN.signalQSemN instead for MonadIO support.
+      name: Control.Concurrent.QSemN.signalQSemN
+      within: []
+- functions:
+    - message: Use UnliftIO.Directory.createDirectory instead for MonadIO support.
+      name: System.Directory.createDirectory
+      within: []
+    - message: Use UnliftIO.Directory.createDirectoryIfMissing instead for MonadIO support.
+      name: System.Directory.createDirectoryIfMissing
+      within: []
+    - message: Use UnliftIO.Directory.createFileLink instead for MonadIO support.
+      name: System.Directory.createFileLink
+      within: []
+    - message: Use UnliftIO.Directory.createDirectoryLink instead for MonadIO support.
+      name: System.Directory.createDirectoryLink
+      within: []
+    - message: Use UnliftIO.Directory.removeDirectoryLink instead for MonadIO support.
+      name: System.Directory.removeDirectoryLink
+      within: []
+    - message: Use UnliftIO.Directory.getSymbolicLinkTarget instead for MonadIO support.
+      name: System.Directory.getSymbolicLinkTarget
+      within: []
+    - message: Use UnliftIO.Directory.removeDirectory instead for MonadIO support.
+      name: System.Directory.removeDirectory
+      within: []
+    - message: Use UnliftIO.Directory.removeDirectoryRecursive instead for MonadIO support.
+      name: System.Directory.removeDirectoryRecursive
+      within: []
+    - message: Use UnliftIO.Directory.removePathForcibly instead for MonadIO support.
+      name: System.Directory.removePathForcibly
+      within: []
+    - message: Use UnliftIO.Directory.renameDirectory instead for MonadIO support.
+      name: System.Directory.renameDirectory
+      within: []
+    - message: Use UnliftIO.Directory.listDirectory instead for MonadIO support.
+      name: System.Directory.listDirectory
+      within: []
+    - message: Use UnliftIO.Directory.getDirectoryContents instead for MonadIO support.
+      name: System.Directory.getDirectoryContents
+      within: []
+    - message: Use UnliftIO.Directory.getCurrentDirectory instead for MonadIO support.
+      name: System.Directory.getCurrentDirectory
+      within: []
+    - message: Use UnliftIO.Directory.setCurrentDirectory instead for MonadIO support.
+      name: System.Directory.setCurrentDirectory
+      within: []
+    - message: Use UnliftIO.Directory.withCurrentDirectory instead for MonadIO support.
+      name: System.Directory.withCurrentDirectory
+      within: []
+    - message: Use UnliftIO.Directory.getHomeDirectory instead for MonadIO support.
+      name: System.Directory.getHomeDirectory
+      within: []
+    - message: Use UnliftIO.Directory.getXdgDirectory instead for MonadIO support.
+      name: System.Directory.getXdgDirectory
+      within: []
+    - message: Use UnliftIO.Directory.getXdgDirectoryList instead for MonadIO support.
+      name: System.Directory.getXdgDirectoryList
+      within: []
+    - message: Use UnliftIO.Directory.getAppUserDataDirectory instead for MonadIO support.
+      name: System.Directory.getAppUserDataDirectory
+      within: []
+    - message: Use UnliftIO.Directory.getUserDocumentsDirectory instead for MonadIO support.
+      name: System.Directory.getUserDocumentsDirectory
+      within: []
+    - message: Use UnliftIO.Directory.getTemporaryDirectory instead for MonadIO support.
+      name: System.Directory.getTemporaryDirectory
+      within: []
+    - message: Use UnliftIO.Directory.removeFile instead for MonadIO support.
+      name: System.Directory.removeFile
+      within: []
+    - message: Use UnliftIO.Directory.renameFile instead for MonadIO support.
+      name: System.Directory.renameFile
+      within: []
+    - message: Use UnliftIO.Directory.renamePath instead for MonadIO support.
+      name: System.Directory.renamePath
+      within: []
+    - message: Use UnliftIO.Directory.copyFile instead for MonadIO support.
+      name: System.Directory.copyFile
+      within: []
+    - message: Use UnliftIO.Directory.copyFileWithMetadata instead for MonadIO support.
+      name: System.Directory.copyFileWithMetadata
+      within: []
+    - message: Use UnliftIO.Directory.canonicalizePath instead for MonadIO support.
+      name: System.Directory.canonicalizePath
+      within: []
+    - message: Use UnliftIO.Directory.makeAbsolute instead for MonadIO support.
+      name: System.Directory.makeAbsolute
+      within: []
+    - message: Use UnliftIO.Directory.makeRelativeToCurrentDirectory instead for MonadIO support.
+      name: System.Directory.makeRelativeToCurrentDirectory
+      within: []
+    - message: Use UnliftIO.Directory.findExecutable instead for MonadIO support.
+      name: System.Directory.findExecutable
+      within: []
+    - message: Use UnliftIO.Directory.findExecutables instead for MonadIO support.
+      name: System.Directory.findExecutables
+      within: []
+    - message: Use UnliftIO.Directory.findExecutablesInDirectories instead for MonadIO support.
+      name: System.Directory.findExecutablesInDirectories
+      within: []
+    - message: Use UnliftIO.Directory.findFile instead for MonadIO support.
+      name: System.Directory.findFile
+      within: []
+    - message: Use UnliftIO.Directory.findFiles instead for MonadIO support.
+      name: System.Directory.findFiles
+      within: []
+    - message: Use UnliftIO.Directory.findFileWith instead for MonadIO support.
+      name: System.Directory.findFileWith
+      within: []
+    - message: Use UnliftIO.Directory.findFilesWith instead for MonadIO support.
+      name: System.Directory.findFilesWith
+      within: []
+    - message: Use UnliftIO.Directory.getFileSize instead for MonadIO support.
+      name: System.Directory.getFileSize
+      within: []
+    - message: Use UnliftIO.Directory.doesPathExist instead for MonadIO support.
+      name: System.Directory.doesPathExist
+      within: []
+    - message: Use UnliftIO.Directory.doesFileExist instead for MonadIO support.
+      name: System.Directory.doesFileExist
+      within: []
+    - message: Use UnliftIO.Directory.doesDirectoryExist instead for MonadIO support.
+      name: System.Directory.doesDirectoryExist
+      within: []
+    - message: Use UnliftIO.Directory.pathIsSymbolicLink instead for MonadIO support.
+      name: System.Directory.pathIsSymbolicLink
+      within: []
+    - message: Use UnliftIO.Directory.getPermissions instead for MonadIO support.
+      name: System.Directory.getPermissions
+      within: []
+    - message: Use UnliftIO.Directory.setPermissions instead for MonadIO support.
+      name: System.Directory.setPermissions
+      within: []
+    - message: Use UnliftIO.Directory.copyPermissions instead for MonadIO support.
+      name: System.Directory.copyPermissions
+      within: []
+    - message: Use UnliftIO.Directory.getAccessTime instead for MonadIO support.
+      name: System.Directory.getAccessTime
+      within: []
+    - message: Use UnliftIO.Directory.getModificationTime instead for MonadIO support.
+      name: System.Directory.getModificationTime
+      within: []
+    - message: Use UnliftIO.Directory.setAccessTime instead for MonadIO support.
+      name: System.Directory.setAccessTime
+      within: []
+    - message: Use UnliftIO.Directory.setModificationTime instead for MonadIO support.
+      name: System.Directory.setModificationTime
+      within: []
+- functions:
+    - message: Use UnliftIO.Foreign.peekCString instead for MonadIO support.
+      name: Foreign.C.String.peekCString
+      within: []
+    - message: Use UnliftIO.Foreign.peekCStringLen instead for MonadIO support.
+      name: Foreign.C.String.peekCStringLen
+      within: []
+    - message: Use UnliftIO.Foreign.newCString instead for MonadIO support.
+      name: Foreign.C.String.newCString
+      within: []
+    - message: Use UnliftIO.Foreign.newCStringLen instead for MonadIO support.
+      name: Foreign.C.String.newCStringLen
+      within: []
+    - message: Use UnliftIO.Foreign.withCString instead for MonadIO support.
+      name: Foreign.C.String.withCString
+      within: []
+    - message: Use UnliftIO.Foreign.withCStringLen instead for MonadIO support.
+      name: Foreign.C.String.withCStringLen
+      within: []
+    - message: Use UnliftIO.Foreign.peekCAString instead for MonadIO support.
+      name: Foreign.C.String.peekCAString
+      within: []
+    - message: Use UnliftIO.Foreign.peekCAStringLen instead for MonadIO support.
+      name: Foreign.C.String.peekCAStringLen
+      within: []
+    - message: Use UnliftIO.Foreign.newCAString instead for MonadIO support.
+      name: Foreign.C.String.newCAString
+      within: []
+    - message: Use UnliftIO.Foreign.newCAStringLen instead for MonadIO support.
+      name: Foreign.C.String.newCAStringLen
+      within: []
+    - message: Use UnliftIO.Foreign.withCAString instead for MonadIO support.
+      name: Foreign.C.String.withCAString
+      within: []
+    - message: Use UnliftIO.Foreign.withCAStringLen instead for MonadIO support.
+      name: Foreign.C.String.withCAStringLen
+      within: []
+- functions:
+    - message: Use UnliftIO.Foreign.throwErrno instead for MonadIO support.
+      name: Foreign.C.Error.throwErrno
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIf instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIf
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIf_ instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIf_
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfRetry instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfRetry
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfRetry_ instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfRetry_
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfMinus1 instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfMinus1
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfMinus1_ instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfMinus1_
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfMinus1Retry instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfMinus1Retry
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfMinus1Retry_ instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfMinus1Retry_
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfNull instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfNull
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfNullRetry instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfNullRetry
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfRetryMayBlock instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfRetryMayBlock
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfRetryMayBlock_ instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfRetryMayBlock_
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfMinus1RetryMayBlock instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfMinus1RetryMayBlock
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfMinus1RetryMayBlock_ instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfMinus1RetryMayBlock_
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoIfNullRetryMayBlock instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoIfNullRetryMayBlock
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoPath instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoPath
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoPathIf instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoPathIf
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoPathIf_ instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoPathIf_
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoPathIfNull instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoPathIfNull
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoPathIfMinus1 instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoPathIfMinus1
+      within: []
+    - message: Use UnliftIO.Foreign.throwErrnoPathIfMinus1_ instead for MonadIO support.
+      name: Foreign.C.Error.throwErrnoPathIfMinus1_
+      within: []
+- functions:
+    - message: Use UnliftIO.Foreign.peek instead for MonadIO support.
+      name: Foreign.Storable.peek
+      within: []
+    - message: Use UnliftIO.Foreign.poke instead for MonadIO support.
+      name: Foreign.Storable.poke
+      within: []
+    - message: Use UnliftIO.Foreign.peekByteOff instead for MonadIO support.
+      name: Foreign.Storable.peekByteOff
+      within: []
+    - message: Use UnliftIO.Foreign.pokeByteOff instead for MonadIO support.
+      name: Foreign.Storable.pokeByteOff
+      within: []
+    - message: Use UnliftIO.Foreign.peekElemOff instead for MonadIO support.
+      name: Foreign.Storable.peekElemOff
+      within: []
+    - message: Use UnliftIO.Foreign.pokeElemOff instead for MonadIO support.
+      name: Foreign.Storable.pokeElemOff
+      within: []
+- functions:
+    - message: Use UnliftIO.Foreign.alloca instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.alloca
+      within: []
+    - message: Use UnliftIO.Foreign.allocaBytes instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.allocaBytes
+      within: []
+    - message: Use UnliftIO.Foreign.allocaBytesAligned instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.allocaBytesAligned
+      within: []
+    - message: Use UnliftIO.Foreign.malloc instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.malloc
+      within: []
+    - message: Use UnliftIO.Foreign.mallocBytes instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.mallocBytes
+      within: []
+    - message: Use UnliftIO.Foreign.calloc instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.calloc
+      within: []
+    - message: Use UnliftIO.Foreign.callocBytes instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.callocBytes
+      within: []
+    - message: Use UnliftIO.Foreign.realloc instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.realloc
+      within: []
+    - message: Use UnliftIO.Foreign.reallocBytes instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.reallocBytes
+      within: []
+    - message: Use UnliftIO.Foreign.free instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.free
+      within: []
+    - message: Use UnliftIO.Foreign.finalizerFree instead for MonadIO support.
+      name: Foreign.Marshal.Alloc.finalizerFree
+      within: []
+- functions:
+    - message: Use UnliftIO.Foreign.peekArray instead for MonadIO support.
+      name: Foreign.Marshal.Array.peekArray
+      within: []
+    - message: Use UnliftIO.Foreign.peekArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Array.peekArray0
+      within: []
+    - message: Use UnliftIO.Foreign.pokeArray instead for MonadIO support.
+      name: Foreign.Marshal.Array.pokeArray
+      within: []
+    - message: Use UnliftIO.Foreign.pokeArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Array.pokeArray0
+      within: []
+    - message: Use UnliftIO.Foreign.newArray instead for MonadIO support.
+      name: Foreign.Marshal.Array.newArray
+      within: []
+    - message: Use UnliftIO.Foreign.newArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Array.newArray0
+      within: []
+    - message: Use UnliftIO.Foreign.withArray instead for MonadIO support.
+      name: Foreign.Marshal.Array.withArray
+      within: []
+    - message: Use UnliftIO.Foreign.withArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Array.withArray0
+      within: []
+    - message: Use UnliftIO.Foreign.withArrayLen instead for MonadIO support.
+      name: Foreign.Marshal.Array.withArrayLen
+      within: []
+    - message: Use UnliftIO.Foreign.withArrayLen0 instead for MonadIO support.
+      name: Foreign.Marshal.Array.withArrayLen0
+      within: []
+    - message: Use UnliftIO.Foreign.copyArray instead for MonadIO support.
+      name: Foreign.Marshal.Array.copyArray
+      within: []
+    - message: Use UnliftIO.Foreign.moveArray instead for MonadIO support.
+      name: Foreign.Marshal.Array.moveArray
+      within: []
+    - message: Use UnliftIO.Foreign.lengthArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Array.lengthArray0
+      within: []
+    - message: Use UnliftIO.Foreign.allocaArray instead for MonadIO support.
+      name: Foreign.Marshal.Array.allocaArray
+      within: []
+    - message: Use UnliftIO.Foreign.allocaArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Array.allocaArray0
+      within: []
+    - message: Use UnliftIO.Foreign.mallocArray instead for MonadIO support.
+      name: Foreign.Marshal.Array.mallocArray
+      within: []
+    - message: Use UnliftIO.Foreign.mallocArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Array.mallocArray0
+      within: []
+    - message: Use UnliftIO.Foreign.callocArray instead for MonadIO support.
+      name: Foreign.Marshal.Array.callocArray
+      within: []
+    - message: Use UnliftIO.Foreign.callocArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Array.callocArray0
+      within: []
+    - message: Use UnliftIO.Foreign.reallocArray instead for MonadIO support.
+      name: Foreign.Marshal.Array.reallocArray
+      within: []
+    - message: Use UnliftIO.Foreign.reallocArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Array.reallocArray0
+      within: []
+- functions:
+    - message: Use UnliftIO.Foreign.with instead for MonadIO support.
+      name: Foreign.Marshal.Utils.with
+      within: []
+    - message: Use UnliftIO.Foreign.new instead for MonadIO support.
+      name: Foreign.Marshal.Utils.new
+      within: []
+    - message: Use UnliftIO.Foreign.fromBool instead for MonadIO support.
+      name: Foreign.Marshal.Utils.fromBool
+      within: []
+    - message: Use UnliftIO.Foreign.toBool instead for MonadIO support.
+      name: Foreign.Marshal.Utils.toBool
+      within: []
+    - message: Use UnliftIO.Foreign.maybeNew instead for MonadIO support.
+      name: Foreign.Marshal.Utils.maybeNew
+      within: []
+    - message: Use UnliftIO.Foreign.maybeWith instead for MonadIO support.
+      name: Foreign.Marshal.Utils.maybeWith
+      within: []
+    - message: Use UnliftIO.Foreign.maybePeek instead for MonadIO support.
+      name: Foreign.Marshal.Utils.maybePeek
+      within: []
+    - message: Use UnliftIO.Foreign.withMany instead for MonadIO support.
+      name: Foreign.Marshal.Utils.withMany
+      within: []
+    - message: Use UnliftIO.Foreign.copyBytes instead for MonadIO support.
+      name: Foreign.Marshal.Utils.copyBytes
+      within: []
+    - message: Use UnliftIO.Foreign.moveBytes instead for MonadIO support.
+      name: Foreign.Marshal.Utils.moveBytes
+      within: []
+    - message: Use UnliftIO.Foreign.fillBytes instead for MonadIO support.
+      name: Foreign.Marshal.Utils.fillBytes
+      within: []
+- functions:
+    - message: Use UnliftIO.Foreign.withPool instead for MonadIO support.
+      name: Foreign.Marshal.Pool.withPool
+      within: []
+    - message: Use UnliftIO.Foreign.pooledMalloc instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledMalloc
+      within: []
+    - message: Use UnliftIO.Foreign.pooledMallocBytes instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledMallocBytes
+      within: []
+    - message: Use UnliftIO.Foreign.pooledRealloc instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledRealloc
+      within: []
+    - message: Use UnliftIO.Foreign.pooledReallocBytes instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledReallocBytes
+      within: []
+    - message: Use UnliftIO.Foreign.pooledMallocArray instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledMallocArray
+      within: []
+    - message: Use UnliftIO.Foreign.pooledMallocArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledMallocArray0
+      within: []
+    - message: Use UnliftIO.Foreign.pooledReallocArray instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledReallocArray
+      within: []
+    - message: Use UnliftIO.Foreign.pooledReallocArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledReallocArray0
+      within: []
+    - message: Use UnliftIO.Foreign.pooledNew instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledNew
+      within: []
+    - message: Use UnliftIO.Foreign.pooledNewArray instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledNewArray
+      within: []
+    - message: Use UnliftIO.Foreign.pooledNewArray0 instead for MonadIO support.
+      name: Foreign.Marshal.Pool.pooledNewArray0
+      within: []
+- functions:
+    - message: Use UnliftIO.Foreign.newForeignPtr instead for MonadIO support.
+      name: Foreign.ForeignPtr.newForeignPtr
+      within: []
+    - message: Use UnliftIO.Foreign.newForeignPtr_ instead for MonadIO support.
+      name: Foreign.ForeignPtr.newForeignPtr_
+      within: []
+    - message: Use UnliftIO.Foreign.addForeignPtrFinalizer instead for MonadIO support.
+      name: Foreign.ForeignPtr.addForeignPtrFinalizer
+      within: []
+    - message: Use UnliftIO.Foreign.withForeignPtr instead for MonadIO support.
+      name: Foreign.ForeignPtr.withForeignPtr
+      within: []
+    - message: Use UnliftIO.Foreign.finalizeForeignPtr instead for MonadIO support.
+      name: Foreign.ForeignPtr.finalizeForeignPtr
+      within: []
+    - message: Use UnliftIO.Foreign.touchForeignPtr instead for MonadIO support.
+      name: Foreign.ForeignPtr.touchForeignPtr
+      within: []
+    - message: Use UnliftIO.Foreign.mallocForeignPtr instead for MonadIO support.
+      name: Foreign.ForeignPtr.mallocForeignPtr
+      within: []
+    - message: Use UnliftIO.Foreign.mallocForeignPtrBytes instead for MonadIO support.
+      name: Foreign.ForeignPtr.mallocForeignPtrBytes
+      within: []
+    - message: Use UnliftIO.Foreign.mallocForeignPtrArray instead for MonadIO support.
+      name: Foreign.ForeignPtr.mallocForeignPtrArray
+      within: []
+    - message: Use UnliftIO.Foreign.mallocForeignPtrArray0 instead for MonadIO support.
+      name: Foreign.ForeignPtr.mallocForeignPtrArray0
+      within: []
+    - message: Use UnliftIO.Foreign.newGHCForeignPtr instead for MonadIO support.
+      name: Foreign.ForeignPtr.newGHCForeignPtr
+      within: []
+    - message: Use UnliftIO.Foreign.addGHCForeignPtrFinalizer instead for MonadIO support.
+      name: Foreign.ForeignPtr.addGHCForeignPtrFinalizer
+      within: []
+- functions:
+    - message: Use UnliftIO.Foreign.newStablePtr instead for MonadIO support.
+      name: Foreign.StablePtr.newStablePtr
+      within: []
+    - message: Use UnliftIO.Foreign.deRefStablePtr instead for MonadIO support.
+      name: Foreign.StablePtr.deRefStablePtr
+      within: []
+    - message: Use UnliftIO.Foreign.freeStablePtr instead for MonadIO support.
+      name: Foreign.StablePtr.freeStablePtr
+      within: []
+- functions:
+    - message: Use UnliftIO.Concurrent.myThreadId instead for MonadIO support.
+      name: Control.Concurrent.myThreadId
+      within: []
+    - message: Use UnliftIO.Concurrent.getNumCapabilities instead for MonadIO support.
+      name: Control.Concurrent.getNumCapabilities
+      within: []
+    - message: Use UnliftIO.Concurrent.setNumCapabilities instead for MonadIO support.
+      name: Control.Concurrent.setNumCapabilities
+      within: []
+    - message: Use UnliftIO.Concurrent.threadCapability instead for MonadIO support.
+      name: Control.Concurrent.threadCapability
+      within: []
+    - message: Use UnliftIO.Concurrent.yield instead for MonadIO support.
+      name: Control.Concurrent.yield
+      within: []
+    - message: Use UnliftIO.Concurrent.threadDelay instead for MonadIO support.
+      name: Control.Concurrent.threadDelay
+      within: []
+    - message: Use UnliftIO.Concurrent.threadWaitRead instead for MonadIO support.
+      name: Control.Concurrent.threadWaitRead
+      within: []
+    - message: Use UnliftIO.Concurrent.threadWaitWrite instead for MonadIO support.
+      name: Control.Concurrent.threadWaitWrite
+      within: []
+    - message: Use UnliftIO.Concurrent.isCurrentThreadBound instead for MonadIO support.
+      name: Control.Concurrent.isCurrentThreadBound
+      within: []
+    - message: Use UnliftIO.Concurrent.runInBoundThread instead for MonadIO support.
+      name: Control.Concurrent.runInBoundThread
+      within: []
+    - message: Use UnliftIO.Concurrent.runInUnboundThread instead for MonadIO support.
+      name: Control.Concurrent.runInUnboundThread
+      within: []
+    - message: Use UnliftIO.Concurrent.mkWeakThreadId instead for MonadIO support.
+      name: Control.Concurrent.mkWeakThreadId
+      within: []
+- functions:
+    - message: Use UnliftIO.Environment.getArgs instead for MonadIO support.
+      name: System.Environment.getArgs
+      within: []
+    - message: Use UnliftIO.Environment.getProgName instead for MonadIO support.
+      name: System.Environment.getProgName
+      within: []
+    - message: Use UnliftIO.Environment.getExecutablePath instead for MonadIO support.
+      name: System.Environment.getExecutablePath
+      within: []
+    - message: Use UnliftIO.Environment.getEnv instead for MonadIO support.
+      name: System.Environment.getEnv
+      within: []
+    - message: Use UnliftIO.Environment.lookupEnv instead for MonadIO support.
+      name: System.Environment.lookupEnv
+      within: []
+    - message: Use UnliftIO.Environment.setEnv instead for MonadIO support.
+      name: System.Environment.setEnv
+      within: []
+    - message: Use UnliftIO.Environment.unsetEnv instead for MonadIO support.
+      name: System.Environment.unsetEnv
+      within: []
+    - message: Use UnliftIO.Environment.withArgs instead for MonadIO support.
+      name: System.Environment.withArgs
+      within: []
+    - message: Use UnliftIO.Environment.withProgName instead for MonadIO support.
+      name: System.Environment.withProgName
+      within: []
+    - message: Use UnliftIO.Environment.getEnvironment instead for MonadIO support.
+      name: System.Environment.getEnvironment
+      within: []
+- functions:
+    - message: Use UnliftIO.Exception.Lens.catching instead for MonadUnliftIO support.
+      name: Control.Exception.Lens.catching
+      within: []
+    - message: Use UnliftIO.Exception.Lens.catching_ instead for MonadUnliftIO support.
+      name: Control.Exception.Lens.catching_
+      within: []
+    - message: Use UnliftIO.Exception.Lens.handling instead for MonadUnliftIO support.
+      name: Control.Exception.Lens.handling
+      within: []
+    - message: Use UnliftIO.Exception.Lens.handling_ instead for MonadUnliftIO support.
+      name: Control.Exception.Lens.handling_
+      within: []
+    - message: Use UnliftIO.Exception.Lens.trying instead for MonadUnliftIO support.
+      name: Control.Exception.Lens.trying
+      within: []
+    - message: Use UnliftIO.Exception.Lens.trying_ instead for MonadUnliftIO support.
+      name: Control.Exception.Lens.trying_
+      within: []
+- functions:
+    - message: "Partial: throws on missing key. Use Data.HashMap.Strict.lookup or Data.HashMap.Strict.!? instead"
+      name: "Data.HashMap.Strict.!"
+      within: []
+- functions:
+    - message: "Partial: throws on missing key. Use Data.HashMap.Lazy.lookup or Data.HashMap.Lazy.!? instead"
+      name: "Data.HashMap.Lazy.!"
+      within: []
+- functions:
+    - message: Breaks type safety. Only for very specific use cases.
+      name: unsafePerformIO
+      within: []
+    - message: Even more dangerous than unsafePerformIO.
+      name: unsafeDupablePerformIO
+      within: []
+    - message: Creates lazy IO. Avoid.
+      name: unsafeInterleaveIO
+      within: []
+    - message: Can cause segfaults. Avoid.
+      name: unsafeCoerce
+      within: []
+    - message: Unsafe version of fixIO. Avoid.
+      name: unsafeFixIO
+      within: []
+- functions:
+    - message: "Partial: throws on out-of-bounds. Use (!?) for safe indexing."
+      name: "Data.Vector.!"
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons or (!?) 0 instead."
+      name: Data.Vector.head
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc or check null first."
+      name: Data.Vector.last
+      within: []
+    - message: "Partial: throws on out-of-bounds regardless of Monad (M is for evaluation control, not error handling). Use (!?) for safe indexing."
+      name: Data.Vector.indexM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use uncons or check null first."
+      name: Data.Vector.headM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use unsnoc or check null first."
+      name: Data.Vector.lastM
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc for safe init."
+      name: Data.Vector.init
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons for safe tail."
+      name: Data.Vector.tail
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.//
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.update
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.update_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.accum
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.accumulate
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.accumulate_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.backpermute
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl with explicit initial value."
+      name: Data.Vector.foldl1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl' with explicit initial value."
+      name: "Data.Vector.foldl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr with explicit initial value."
+      name: Data.Vector.foldr1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr' with explicit initial value."
+      name: "Data.Vector.foldr1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.maximum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.maximumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.minimum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.minimumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.minIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.minIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.maxIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.maxIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM with explicit initial value."
+      name: Data.Vector.fold1M
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM' with explicit initial value."
+      name: "Data.Vector.fold1M'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM_ with explicit initial value."
+      name: Data.Vector.fold1M_
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM'_ with explicit initial value."
+      name: "Data.Vector.fold1M'_"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl with explicit initial value."
+      name: Data.Vector.scanl1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl' with explicit initial value."
+      name: "Data.Vector.scanl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr with explicit initial value."
+      name: Data.Vector.scanr1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr' with explicit initial value."
+      name: "Data.Vector.scanr1'"
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use (!?) for safe indexing."
+      name: "Data.Vector.Generic.!"
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Generic.head
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc or check null first."
+      name: Data.Vector.Generic.last
+      within: []
+    - message: "Partial: throws on out-of-bounds regardless of Monad (M is for evaluation control, not error handling). Use (!?) for safe indexing."
+      name: Data.Vector.Generic.indexM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use uncons or check null first."
+      name: Data.Vector.Generic.headM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use unsnoc or check null first."
+      name: Data.Vector.Generic.lastM
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc for safe init."
+      name: Data.Vector.Generic.init
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons for safe tail."
+      name: Data.Vector.Generic.tail
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Generic.//
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Generic.update
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Generic.update_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Generic.accum
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Generic.accumulate
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Generic.accumulate_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Generic.backpermute
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl with explicit initial value."
+      name: Data.Vector.Generic.foldl1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl' with explicit initial value."
+      name: "Data.Vector.Generic.foldl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr with explicit initial value."
+      name: Data.Vector.Generic.foldr1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr' with explicit initial value."
+      name: "Data.Vector.Generic.foldr1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Generic.maximum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Generic.maximumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Generic.minimum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Generic.minimumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Generic.minIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Generic.minIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Generic.maxIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Generic.maxIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM with explicit initial value."
+      name: Data.Vector.Generic.fold1M
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM' with explicit initial value."
+      name: "Data.Vector.Generic.fold1M'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM_ with explicit initial value."
+      name: Data.Vector.Generic.fold1M_
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM'_ with explicit initial value."
+      name: "Data.Vector.Generic.fold1M'_"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl with explicit initial value."
+      name: Data.Vector.Generic.scanl1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl' with explicit initial value."
+      name: "Data.Vector.Generic.scanl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr with explicit initial value."
+      name: Data.Vector.Generic.scanr1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr' with explicit initial value."
+      name: "Data.Vector.Generic.scanr1'"
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use (!?) for safe indexing."
+      name: "Data.Vector.Primitive.!"
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Primitive.head
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc or check null first."
+      name: Data.Vector.Primitive.last
+      within: []
+    - message: "Partial: throws on out-of-bounds regardless of Monad (M is for evaluation control, not error handling). Use (!?) for safe indexing."
+      name: Data.Vector.Primitive.indexM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use uncons or check null first."
+      name: Data.Vector.Primitive.headM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use unsnoc or check null first."
+      name: Data.Vector.Primitive.lastM
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc for safe init."
+      name: Data.Vector.Primitive.init
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons for safe tail."
+      name: Data.Vector.Primitive.tail
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Primitive.//
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Primitive.update
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Primitive.update_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Primitive.accum
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Primitive.accumulate
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Primitive.accumulate_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Primitive.backpermute
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl with explicit initial value."
+      name: Data.Vector.Primitive.foldl1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl' with explicit initial value."
+      name: "Data.Vector.Primitive.foldl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr with explicit initial value."
+      name: Data.Vector.Primitive.foldr1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr' with explicit initial value."
+      name: "Data.Vector.Primitive.foldr1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Primitive.maximum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Primitive.maximumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Primitive.minimum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Primitive.minimumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Primitive.minIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Primitive.minIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Primitive.maxIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Primitive.maxIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM with explicit initial value."
+      name: Data.Vector.Primitive.fold1M
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM' with explicit initial value."
+      name: "Data.Vector.Primitive.fold1M'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM_ with explicit initial value."
+      name: Data.Vector.Primitive.fold1M_
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM'_ with explicit initial value."
+      name: "Data.Vector.Primitive.fold1M'_"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl with explicit initial value."
+      name: Data.Vector.Primitive.scanl1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl' with explicit initial value."
+      name: "Data.Vector.Primitive.scanl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr with explicit initial value."
+      name: Data.Vector.Primitive.scanr1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr' with explicit initial value."
+      name: "Data.Vector.Primitive.scanr1'"
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use (!?) for safe indexing."
+      name: "Data.Vector.Storable.!"
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Storable.head
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc or check null first."
+      name: Data.Vector.Storable.last
+      within: []
+    - message: "Partial: throws on out-of-bounds regardless of Monad (M is for evaluation control, not error handling). Use (!?) for safe indexing."
+      name: Data.Vector.Storable.indexM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use uncons or check null first."
+      name: Data.Vector.Storable.headM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use unsnoc or check null first."
+      name: Data.Vector.Storable.lastM
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc for safe init."
+      name: Data.Vector.Storable.init
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons for safe tail."
+      name: Data.Vector.Storable.tail
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Storable.//
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Storable.update
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Storable.update_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Storable.accum
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Storable.accumulate
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Storable.accumulate_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Storable.backpermute
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl with explicit initial value."
+      name: Data.Vector.Storable.foldl1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl' with explicit initial value."
+      name: "Data.Vector.Storable.foldl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr with explicit initial value."
+      name: Data.Vector.Storable.foldr1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr' with explicit initial value."
+      name: "Data.Vector.Storable.foldr1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Storable.maximum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Storable.maximumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Storable.minimum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Storable.minimumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Storable.minIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Storable.minIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Storable.maxIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Storable.maxIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM with explicit initial value."
+      name: Data.Vector.Storable.fold1M
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM' with explicit initial value."
+      name: "Data.Vector.Storable.fold1M'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM_ with explicit initial value."
+      name: Data.Vector.Storable.fold1M_
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM'_ with explicit initial value."
+      name: "Data.Vector.Storable.fold1M'_"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl with explicit initial value."
+      name: Data.Vector.Storable.scanl1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl' with explicit initial value."
+      name: "Data.Vector.Storable.scanl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr with explicit initial value."
+      name: Data.Vector.Storable.scanr1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr' with explicit initial value."
+      name: "Data.Vector.Storable.scanr1'"
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use (!?) for safe indexing."
+      name: "Data.Vector.Strict.!"
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Strict.head
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc or check null first."
+      name: Data.Vector.Strict.last
+      within: []
+    - message: "Partial: throws on out-of-bounds regardless of Monad (M is for evaluation control, not error handling). Use (!?) for safe indexing."
+      name: Data.Vector.Strict.indexM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use uncons or check null first."
+      name: Data.Vector.Strict.headM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use unsnoc or check null first."
+      name: Data.Vector.Strict.lastM
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc for safe init."
+      name: Data.Vector.Strict.init
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons for safe tail."
+      name: Data.Vector.Strict.tail
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Strict.//
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Strict.update
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Strict.update_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Strict.accum
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Strict.accumulate
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Strict.accumulate_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Strict.backpermute
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl with explicit initial value."
+      name: Data.Vector.Strict.foldl1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl' with explicit initial value."
+      name: "Data.Vector.Strict.foldl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr with explicit initial value."
+      name: Data.Vector.Strict.foldr1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr' with explicit initial value."
+      name: "Data.Vector.Strict.foldr1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Strict.maximum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Strict.maximumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Strict.minimum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Strict.minimumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Strict.minIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Strict.minIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Strict.maxIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Strict.maxIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM with explicit initial value."
+      name: Data.Vector.Strict.fold1M
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM' with explicit initial value."
+      name: "Data.Vector.Strict.fold1M'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM_ with explicit initial value."
+      name: Data.Vector.Strict.fold1M_
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM'_ with explicit initial value."
+      name: "Data.Vector.Strict.fold1M'_"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl with explicit initial value."
+      name: Data.Vector.Strict.scanl1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl' with explicit initial value."
+      name: "Data.Vector.Strict.scanl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr with explicit initial value."
+      name: Data.Vector.Strict.scanr1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr' with explicit initial value."
+      name: "Data.Vector.Strict.scanr1'"
+      within: []
+    - message: "Partial: throws on out-of-bounds. Use (!?) for safe indexing."
+      name: "Data.Vector.Unboxed.!"
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Unboxed.head
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc or check null first."
+      name: Data.Vector.Unboxed.last
+      within: []
+    - message: "Partial: throws on out-of-bounds regardless of Monad (M is for evaluation control, not error handling). Use (!?) for safe indexing."
+      name: Data.Vector.Unboxed.indexM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use uncons or check null first."
+      name: Data.Vector.Unboxed.headM
+      within: []
+    - message: "Partial: throws on empty vector regardless of Monad (M is for evaluation control, not error handling). Use unsnoc or check null first."
+      name: Data.Vector.Unboxed.lastM
+      within: []
+    - message: "Partial: throws on empty vector. Use unsnoc for safe init."
+      name: Data.Vector.Unboxed.init
+      within: []
+    - message: "Partial: throws on empty vector. Use uncons for safe tail."
+      name: Data.Vector.Unboxed.tail
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Unboxed.//
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Unboxed.update
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Unboxed.update_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Unboxed.accum
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Unboxed.accumulate
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Unboxed.accumulate_
+      within: []
+    - message: "Partial: throws on out-of-bounds indices. Validate indices against length or use modify."
+      name: Data.Vector.Unboxed.backpermute
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl with explicit initial value."
+      name: Data.Vector.Unboxed.foldl1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldl' with explicit initial value."
+      name: "Data.Vector.Unboxed.foldl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr with explicit initial value."
+      name: Data.Vector.Unboxed.foldr1
+      within: []
+    - message: "Partial: throws on empty vector. Use foldr' with explicit initial value."
+      name: "Data.Vector.Unboxed.foldr1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Unboxed.maximum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Unboxed.maximumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Unboxed.minimum
+      within: []
+    - message: "Partial: throws on empty vector. Use fold with explicit initial value."
+      name: Data.Vector.Unboxed.minimumBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Unboxed.minIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Unboxed.minIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Unboxed.maxIndex
+      within: []
+    - message: "Partial: throws on empty vector. Use indexed fold with Maybe result."
+      name: Data.Vector.Unboxed.maxIndexBy
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM with explicit initial value."
+      name: Data.Vector.Unboxed.fold1M
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM' with explicit initial value."
+      name: "Data.Vector.Unboxed.fold1M'"
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM_ with explicit initial value."
+      name: Data.Vector.Unboxed.fold1M_
+      within: []
+    - message: "Partial: throws on empty vector. Use foldM'_ with explicit initial value."
+      name: "Data.Vector.Unboxed.fold1M'_"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl with explicit initial value."
+      name: Data.Vector.Unboxed.scanl1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanl' with explicit initial value."
+      name: "Data.Vector.Unboxed.scanl1'"
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr with explicit initial value."
+      name: Data.Vector.Unboxed.scanr1
+      within: []
+    - message: "Partial: throws on empty vector. Use scanr' with explicit initial value."
+      name: "Data.Vector.Unboxed.scanr1'"
+      within: []
+- functions:
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!) or (!?) instead."
+      name: Data.Vector.unsafeIndex
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.unsafeHead
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.unsafeLast
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!?) instead."
+      name: Data.Vector.unsafeIndexM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.unsafeHeadM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.unsafeLastM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc instead."
+      name: Data.Vector.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons instead."
+      name: Data.Vector.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (//) instead."
+      name: Data.Vector.unsafeUpd
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update instead."
+      name: Data.Vector.unsafeUpdate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update_ instead."
+      name: Data.Vector.unsafeUpdate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accum instead."
+      name: Data.Vector.unsafeAccum
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate instead."
+      name: Data.Vector.unsafeAccumulate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate_ instead."
+      name: Data.Vector.unsafeAccumulate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use backpermute instead."
+      name: Data.Vector.unsafeBackpermute
+      within: []
+    - message: "Unsafe: the mutable vector may not be used after this. Use freeze for safety."
+      name: Data.Vector.unsafeFreeze
+      within: []
+    - message: "Unsafe: the immutable vector may not be used after this. Use thaw for safety."
+      name: Data.Vector.unsafeThaw
+      within: []
+    - message: "Unsafe: no length checking. Use copy for safety."
+      name: Data.Vector.unsafeCopy
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!) or (!?) instead."
+      name: Data.Vector.Generic.unsafeIndex
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Generic.unsafeHead
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.Generic.unsafeLast
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!?) instead."
+      name: Data.Vector.Generic.unsafeIndexM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Generic.unsafeHeadM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.Generic.unsafeLastM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Generic.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc instead."
+      name: Data.Vector.Generic.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons instead."
+      name: Data.Vector.Generic.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Generic.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Generic.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (//) instead."
+      name: Data.Vector.Generic.unsafeUpd
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update instead."
+      name: Data.Vector.Generic.unsafeUpdate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update_ instead."
+      name: Data.Vector.Generic.unsafeUpdate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accum instead."
+      name: Data.Vector.Generic.unsafeAccum
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate instead."
+      name: Data.Vector.Generic.unsafeAccumulate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate_ instead."
+      name: Data.Vector.Generic.unsafeAccumulate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use backpermute instead."
+      name: Data.Vector.Generic.unsafeBackpermute
+      within: []
+    - message: "Unsafe: the mutable vector may not be used after this. Use freeze for safety."
+      name: Data.Vector.Generic.unsafeFreeze
+      within: []
+    - message: "Unsafe: the immutable vector may not be used after this. Use thaw for safety."
+      name: Data.Vector.Generic.unsafeThaw
+      within: []
+    - message: "Unsafe: no length checking. Use copy for safety."
+      name: Data.Vector.Generic.unsafeCopy
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!) or (!?) instead."
+      name: Data.Vector.Primitive.unsafeIndex
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Primitive.unsafeHead
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.Primitive.unsafeLast
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!?) instead."
+      name: Data.Vector.Primitive.unsafeIndexM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Primitive.unsafeHeadM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.Primitive.unsafeLastM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Primitive.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc instead."
+      name: Data.Vector.Primitive.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons instead."
+      name: Data.Vector.Primitive.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Primitive.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Primitive.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (//) instead."
+      name: Data.Vector.Primitive.unsafeUpd
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update instead."
+      name: Data.Vector.Primitive.unsafeUpdate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update_ instead."
+      name: Data.Vector.Primitive.unsafeUpdate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accum instead."
+      name: Data.Vector.Primitive.unsafeAccum
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate instead."
+      name: Data.Vector.Primitive.unsafeAccumulate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate_ instead."
+      name: Data.Vector.Primitive.unsafeAccumulate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use backpermute instead."
+      name: Data.Vector.Primitive.unsafeBackpermute
+      within: []
+    - message: "Unsafe: the mutable vector may not be used after this. Use freeze for safety."
+      name: Data.Vector.Primitive.unsafeFreeze
+      within: []
+    - message: "Unsafe: the immutable vector may not be used after this. Use thaw for safety."
+      name: Data.Vector.Primitive.unsafeThaw
+      within: []
+    - message: "Unsafe: no length checking. Use copy for safety."
+      name: Data.Vector.Primitive.unsafeCopy
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!) or (!?) instead."
+      name: Data.Vector.Storable.unsafeIndex
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Storable.unsafeHead
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.Storable.unsafeLast
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!?) instead."
+      name: Data.Vector.Storable.unsafeIndexM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Storable.unsafeHeadM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.Storable.unsafeLastM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Storable.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc instead."
+      name: Data.Vector.Storable.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons instead."
+      name: Data.Vector.Storable.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Storable.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Storable.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (//) instead."
+      name: Data.Vector.Storable.unsafeUpd
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update instead."
+      name: Data.Vector.Storable.unsafeUpdate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update_ instead."
+      name: Data.Vector.Storable.unsafeUpdate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accum instead."
+      name: Data.Vector.Storable.unsafeAccum
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate instead."
+      name: Data.Vector.Storable.unsafeAccumulate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate_ instead."
+      name: Data.Vector.Storable.unsafeAccumulate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use backpermute instead."
+      name: Data.Vector.Storable.unsafeBackpermute
+      within: []
+    - message: "Unsafe: the mutable vector may not be used after this. Use freeze for safety."
+      name: Data.Vector.Storable.unsafeFreeze
+      within: []
+    - message: "Unsafe: the immutable vector may not be used after this. Use thaw for safety."
+      name: Data.Vector.Storable.unsafeThaw
+      within: []
+    - message: "Unsafe: no length checking. Use copy for safety."
+      name: Data.Vector.Storable.unsafeCopy
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!) or (!?) instead."
+      name: Data.Vector.Strict.unsafeIndex
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Strict.unsafeHead
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.Strict.unsafeLast
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!?) instead."
+      name: Data.Vector.Strict.unsafeIndexM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Strict.unsafeHeadM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.Strict.unsafeLastM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Strict.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc instead."
+      name: Data.Vector.Strict.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons instead."
+      name: Data.Vector.Strict.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Strict.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Strict.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (//) instead."
+      name: Data.Vector.Strict.unsafeUpd
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update instead."
+      name: Data.Vector.Strict.unsafeUpdate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update_ instead."
+      name: Data.Vector.Strict.unsafeUpdate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accum instead."
+      name: Data.Vector.Strict.unsafeAccum
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate instead."
+      name: Data.Vector.Strict.unsafeAccumulate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate_ instead."
+      name: Data.Vector.Strict.unsafeAccumulate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use backpermute instead."
+      name: Data.Vector.Strict.unsafeBackpermute
+      within: []
+    - message: "Unsafe: the mutable vector may not be used after this. Use freeze for safety."
+      name: Data.Vector.Strict.unsafeFreeze
+      within: []
+    - message: "Unsafe: the immutable vector may not be used after this. Use thaw for safety."
+      name: Data.Vector.Strict.unsafeThaw
+      within: []
+    - message: "Unsafe: no length checking. Use copy for safety."
+      name: Data.Vector.Strict.unsafeCopy
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!) or (!?) instead."
+      name: Data.Vector.Unboxed.unsafeIndex
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Unboxed.unsafeHead
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.Unboxed.unsafeLast
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (!?) instead."
+      name: Data.Vector.Unboxed.unsafeIndexM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons or (!?) 0 instead."
+      name: Data.Vector.Unboxed.unsafeHeadM
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc or check null first."
+      name: Data.Vector.Unboxed.unsafeLastM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Unboxed.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use unsnoc instead."
+      name: Data.Vector.Unboxed.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Use uncons instead."
+      name: Data.Vector.Unboxed.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Unboxed.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Unboxed.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use (//) instead."
+      name: Data.Vector.Unboxed.unsafeUpd
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update instead."
+      name: Data.Vector.Unboxed.unsafeUpdate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update_ instead."
+      name: Data.Vector.Unboxed.unsafeUpdate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accum instead."
+      name: Data.Vector.Unboxed.unsafeAccum
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate instead."
+      name: Data.Vector.Unboxed.unsafeAccumulate
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accumulate_ instead."
+      name: Data.Vector.Unboxed.unsafeAccumulate_
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use backpermute instead."
+      name: Data.Vector.Unboxed.unsafeBackpermute
+      within: []
+    - message: "Unsafe: the mutable vector may not be used after this. Use freeze for safety."
+      name: Data.Vector.Unboxed.unsafeFreeze
+      within: []
+    - message: "Unsafe: the immutable vector may not be used after this. Use thaw for safety."
+      name: Data.Vector.Unboxed.unsafeThaw
+      within: []
+    - message: "Unsafe: no length checking. Use copy for safety."
+      name: Data.Vector.Unboxed.unsafeCopy
+      within: []
+- functions:
+    - message: "Partial: throws on empty vector. Use unsafeInit only if you've verified non-empty."
+      name: Data.Vector.Mutable.init
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeTail only if you've verified non-empty."
+      name: Data.Vector.Mutable.tail
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeInit only if you've verified non-empty."
+      name: Data.Vector.Generic.Mutable.init
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeTail only if you've verified non-empty."
+      name: Data.Vector.Generic.Mutable.tail
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeInit only if you've verified non-empty."
+      name: Data.Vector.Primitive.Mutable.init
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeTail only if you've verified non-empty."
+      name: Data.Vector.Primitive.Mutable.tail
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeInit only if you've verified non-empty."
+      name: Data.Vector.Storable.Mutable.init
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeTail only if you've verified non-empty."
+      name: Data.Vector.Storable.Mutable.tail
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeInit only if you've verified non-empty."
+      name: Data.Vector.Strict.Mutable.init
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeTail only if you've verified non-empty."
+      name: Data.Vector.Strict.Mutable.tail
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeInit only if you've verified non-empty."
+      name: Data.Vector.Unboxed.Mutable.init
+      within: []
+    - message: "Partial: throws on empty vector. Use unsafeTail only if you've verified non-empty."
+      name: Data.Vector.Unboxed.Mutable.tail
+      within: []
+- functions:
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Mutable.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Mutable.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Mutable.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Mutable.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Mutable.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use read instead."
+      name: Data.Vector.Mutable.unsafeRead
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use write instead."
+      name: Data.Vector.Mutable.unsafeWrite
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modify instead."
+      name: Data.Vector.Mutable.unsafeModify
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modifyM instead."
+      name: Data.Vector.Mutable.unsafeModifyM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use swap instead."
+      name: Data.Vector.Mutable.unsafeSwap
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use exchange instead."
+      name: Data.Vector.Mutable.unsafeExchange
+      within: []
+    - message: "Unsafe: no length/overlap checking. Use copy for safety."
+      name: Data.Vector.Mutable.unsafeCopy
+      within: []
+    - message: "Unsafe: no length checking. Use move for safety."
+      name: Data.Vector.Mutable.unsafeMove
+      within: []
+    - message: "Unsafe: no non-negative check. Use grow for safety."
+      name: Data.Vector.Mutable.unsafeGrow
+      within: []
+    - message: "Unsafe: elements are uninitialized and may cause exceptions. Use new or replicate instead."
+      name: Data.Vector.Mutable.unsafeNew
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Generic.Mutable.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Generic.Mutable.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Generic.Mutable.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Generic.Mutable.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Generic.Mutable.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use read instead."
+      name: Data.Vector.Generic.Mutable.unsafeRead
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use write instead."
+      name: Data.Vector.Generic.Mutable.unsafeWrite
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modify instead."
+      name: Data.Vector.Generic.Mutable.unsafeModify
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modifyM instead."
+      name: Data.Vector.Generic.Mutable.unsafeModifyM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use swap instead."
+      name: Data.Vector.Generic.Mutable.unsafeSwap
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use exchange instead."
+      name: Data.Vector.Generic.Mutable.unsafeExchange
+      within: []
+    - message: "Unsafe: no length/overlap checking. Use copy for safety."
+      name: Data.Vector.Generic.Mutable.unsafeCopy
+      within: []
+    - message: "Unsafe: no length checking. Use move for safety."
+      name: Data.Vector.Generic.Mutable.unsafeMove
+      within: []
+    - message: "Unsafe: no non-negative check. Use grow for safety."
+      name: Data.Vector.Generic.Mutable.unsafeGrow
+      within: []
+    - message: "Unsafe: elements are uninitialized and may cause exceptions. Use new or replicate instead."
+      name: Data.Vector.Generic.Mutable.unsafeNew
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Primitive.Mutable.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Primitive.Mutable.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Primitive.Mutable.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Primitive.Mutable.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Primitive.Mutable.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use read instead."
+      name: Data.Vector.Primitive.Mutable.unsafeRead
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use write instead."
+      name: Data.Vector.Primitive.Mutable.unsafeWrite
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modify instead."
+      name: Data.Vector.Primitive.Mutable.unsafeModify
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modifyM instead."
+      name: Data.Vector.Primitive.Mutable.unsafeModifyM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use swap instead."
+      name: Data.Vector.Primitive.Mutable.unsafeSwap
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use exchange instead."
+      name: Data.Vector.Primitive.Mutable.unsafeExchange
+      within: []
+    - message: "Unsafe: no length/overlap checking. Use copy for safety."
+      name: Data.Vector.Primitive.Mutable.unsafeCopy
+      within: []
+    - message: "Unsafe: no length checking. Use move for safety."
+      name: Data.Vector.Primitive.Mutable.unsafeMove
+      within: []
+    - message: "Unsafe: no non-negative check. Use grow for safety."
+      name: Data.Vector.Primitive.Mutable.unsafeGrow
+      within: []
+    - message: "Unsafe: elements are uninitialized and may cause exceptions. Use new or replicate instead."
+      name: Data.Vector.Primitive.Mutable.unsafeNew
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Storable.Mutable.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Storable.Mutable.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Storable.Mutable.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Storable.Mutable.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Storable.Mutable.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use read instead."
+      name: Data.Vector.Storable.Mutable.unsafeRead
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use write instead."
+      name: Data.Vector.Storable.Mutable.unsafeWrite
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modify instead."
+      name: Data.Vector.Storable.Mutable.unsafeModify
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modifyM instead."
+      name: Data.Vector.Storable.Mutable.unsafeModifyM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use swap instead."
+      name: Data.Vector.Storable.Mutable.unsafeSwap
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use exchange instead."
+      name: Data.Vector.Storable.Mutable.unsafeExchange
+      within: []
+    - message: "Unsafe: no length/overlap checking. Use copy for safety."
+      name: Data.Vector.Storable.Mutable.unsafeCopy
+      within: []
+    - message: "Unsafe: no length checking. Use move for safety."
+      name: Data.Vector.Storable.Mutable.unsafeMove
+      within: []
+    - message: "Unsafe: no non-negative check. Use grow for safety."
+      name: Data.Vector.Storable.Mutable.unsafeGrow
+      within: []
+    - message: "Unsafe: elements are uninitialized and may cause exceptions. Use new or replicate instead."
+      name: Data.Vector.Storable.Mutable.unsafeNew
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Strict.Mutable.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Strict.Mutable.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Strict.Mutable.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Strict.Mutable.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Strict.Mutable.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use read instead."
+      name: Data.Vector.Strict.Mutable.unsafeRead
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use write instead."
+      name: Data.Vector.Strict.Mutable.unsafeWrite
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modify instead."
+      name: Data.Vector.Strict.Mutable.unsafeModify
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modifyM instead."
+      name: Data.Vector.Strict.Mutable.unsafeModifyM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use swap instead."
+      name: Data.Vector.Strict.Mutable.unsafeSwap
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use exchange instead."
+      name: Data.Vector.Strict.Mutable.unsafeExchange
+      within: []
+    - message: "Unsafe: no length/overlap checking. Use copy for safety."
+      name: Data.Vector.Strict.Mutable.unsafeCopy
+      within: []
+    - message: "Unsafe: no length checking. Use move for safety."
+      name: Data.Vector.Strict.Mutable.unsafeMove
+      within: []
+    - message: "Unsafe: no non-negative check. Use grow for safety."
+      name: Data.Vector.Strict.Mutable.unsafeGrow
+      within: []
+    - message: "Unsafe: elements are uninitialized and may cause exceptions. Use new or replicate instead."
+      name: Data.Vector.Strict.Mutable.unsafeNew
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use slice instead."
+      name: Data.Vector.Unboxed.Mutable.unsafeSlice
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Unboxed.Mutable.unsafeInit
+      within: []
+    - message: "Unsafe: no empty check, may cause segfaults. Verify non-empty first."
+      name: Data.Vector.Unboxed.Mutable.unsafeTail
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use take instead."
+      name: Data.Vector.Unboxed.Mutable.unsafeTake
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use drop instead."
+      name: Data.Vector.Unboxed.Mutable.unsafeDrop
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use read instead."
+      name: Data.Vector.Unboxed.Mutable.unsafeRead
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use write instead."
+      name: Data.Vector.Unboxed.Mutable.unsafeWrite
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modify instead."
+      name: Data.Vector.Unboxed.Mutable.unsafeModify
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use modifyM instead."
+      name: Data.Vector.Unboxed.Mutable.unsafeModifyM
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use swap instead."
+      name: Data.Vector.Unboxed.Mutable.unsafeSwap
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use exchange instead."
+      name: Data.Vector.Unboxed.Mutable.unsafeExchange
+      within: []
+    - message: "Unsafe: no length/overlap checking. Use copy for safety."
+      name: Data.Vector.Unboxed.Mutable.unsafeCopy
+      within: []
+    - message: "Unsafe: no length checking. Use move for safety."
+      name: Data.Vector.Unboxed.Mutable.unsafeMove
+      within: []
+    - message: "Unsafe: no non-negative check. Use grow for safety."
+      name: Data.Vector.Unboxed.Mutable.unsafeGrow
+      within: []
+    - message: "Unsafe: elements are uninitialized and may cause exceptions. Use new or replicate instead."
+      name: Data.Vector.Unboxed.Mutable.unsafeNew
+      within: []
+    - message: "Unsafe: no non-negative check. Use growFront for safety."
+      name: Data.Vector.Generic.Mutable.unsafeGrowFront
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use accum for safety."
+      name: Data.Vector.Generic.Mutable.unsafeAccum
+      within: []
+    - message: "Unsafe: no bounds checking, may cause segfaults. Use update for safety."
+      name: Data.Vector.Generic.Mutable.unsafeUpdate
+      within: []
+    - message: "Unsafe: type cast without memory safety guarantees. Ensure correct memory layout."
+      name: Data.Vector.Primitive.Mutable.unsafeCast
+      within: []
+    - message: "Unsafe: coerces vector type without safety checks."
+      name: Data.Vector.Primitive.Mutable.unsafeCoerceMVector
+      within: []
+    - message: "Unsafe: type cast without memory safety guarantees. Ensure correct memory layout."
+      name: Data.Vector.Storable.Mutable.unsafeCast
+      within: []
+    - message: "Unsafe: coerces vector type without safety checks."
+      name: Data.Vector.Storable.Mutable.unsafeCoerceMVector
+      within: []
+    - message: "Unsafe: creates vector from raw pointer without validation."
+      name: Data.Vector.Storable.Mutable.unsafeFromForeignPtr
+      within: []
+    - message: "Unsafe: creates vector from raw pointer without validation."
+      name: Data.Vector.Storable.Mutable.unsafeFromForeignPtr0
+      within: []
+    - message: "Unsafe: extracts raw pointer, vector may not be used safely after."
+      name: Data.Vector.Storable.Mutable.unsafeToForeignPtr
+      within: []
+    - message: "Unsafe: extracts raw pointer, vector may not be used safely after."
+      name: Data.Vector.Storable.Mutable.unsafeToForeignPtr0
+      within: []
+    - message: "Unsafe: passes raw pointer to IO action without safety guarantees."
+      name: Data.Vector.Storable.Mutable.unsafeWith
+      within: []
+- functions:
+    - message: "Discards error info. Use decodeEither' or decodeThrow instead."
+      name: Data.Yaml.decode
+      within: []
+    - message: Discards error info. Use decodeFileEither or decodeFileThrow instead.
+      name: Data.Yaml.decodeFile
+      within: []
+- functions:
+    - message: "Deprecated. Use decodeEither' instead for ParseException details."
+      name: Data.Yaml.decodeEither
+      within: []

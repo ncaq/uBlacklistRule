@@ -4,9 +4,10 @@
 module Host (makeHostGroups) where
 
 import Code
-import Import
-import RIO.List qualified as L
-import RIO.Text qualified as T
+import Data.Containers.ListUtils qualified as L
+import Data.FileEmbed (embedStringFile)
+import Data.Text qualified as T
+import Himari
 import Type
 
 -- | 簡潔に表す方法が無い場合に諦めてそのままfullもinfixも作ってしまう。
@@ -102,7 +103,7 @@ gtranslate = fromFull $ T.lines $(embedStringFile "asset/gtranslate-site.txt")
 itMure :: HostGroup
 itMure =
   HostGroup
-    { hostGroupFull = L.nub $ (\code -> "it-mure." <> code <> ".net") <$> codes
+    { hostGroupFull = L.nubOrd $ (\code -> "it-mure." <> code <> ".net") <$> codes
     , hostGroupInfix = ["it-mure"]
     }
 
@@ -115,9 +116,9 @@ itSwarm =
     }
  where
   full =
-    L.nub
-      $ (["it-swarm." <> domain | domain <- topLevelOnlyDomain <> codes])
-      <> (["it-swarm-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
+    L.nubOrd $
+      (["it-swarm." <> domain | domain <- topLevelOnlyDomain <> codes])
+        <> (["it-swarm-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
 
 -- | `qastack.jp`系のサイト。
 qastack :: HostGroup
@@ -128,8 +129,8 @@ qastack =
     }
  where
   full =
-    L.nub
-      $ concat
+    L.nubOrd $
+      concat
         [ ("qastack." <>) <$> codes
         , ("qastack.in." <>) <$> codes
         , ("qastack.info." <>) <$> codes
@@ -144,7 +145,8 @@ issuecloser =
     , hostGroupInfix = ["issuecloser"]
     }
  where
-  full = L.nub (["issuecloser-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
+  full =
+    L.nubOrd (["issuecloser-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
 
 -- | `coder-question.com`系のサイト。
 coderQuestion :: HostGroup
@@ -155,9 +157,9 @@ coderQuestion =
     }
  where
   full =
-    L.nub
-      $ (["coder-question." <> domain | domain <- topLevelOnlyDomain <> codes])
-      <> (["coder-question-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
+    L.nubOrd $
+      (["coder-question." <> domain | domain <- topLevelOnlyDomain <> codes])
+        <> (["coder-question-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
 
 -- | `coder-solution.com`系のサイト。
 coderSolution :: HostGroup
@@ -168,14 +170,14 @@ coderSolution =
     }
  where
   full =
-    L.nub
-      $ (["coder-solution." <> domain | domain <- topLevelOnlyDomain <> codes])
-      <> (["coder-solution-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
+    L.nubOrd $
+      (["coder-solution." <> domain | domain <- topLevelOnlyDomain <> codes])
+        <> (["coder-solution-" <> code <> "." <> domain | domain <- topLevelOnlyDomain, code <- codes])
 
 -- | `ja.linux-terminal.com`系のサイト。
 linuxTerminal :: HostGroup
 linuxTerminal =
   HostGroup
-    { hostGroupFull = L.nub $ (<> ".linux-terminal.com") <$> codes
+    { hostGroupFull = L.nubOrd $ (<> ".linux-terminal.com") <$> codes
     , hostGroupInfix = ["linux-terminal"]
     }

@@ -3,9 +3,10 @@
 -- | uBlacklistのtitleマッチを当てにしたルールたちです。
 module Title (titlePattern) where
 
-import Import
-import RIO.List qualified as L
-import RIO.Text qualified as T
+import Data.List qualified as L
+import Data.Text qualified as T
+import Himari
+import Text.RawString.QQ (r)
 import Type
 
 titlePattern :: [Title]
@@ -40,8 +41,8 @@ indexOfPattern =
 -- | URLをそのまま表したようなタイトルです。
 startIndexOfAsUrl :: [Text]
 startIndexOfAsUrl =
-  T.lines
-    $ T.strip
+  T.lines $
+    T.strip
       [r|
 ftp:\/\/ftp\.
 ftp\/
@@ -51,8 +52,8 @@ https?:\/\/ftp\.
 -- | ブロック対象とするauto indexっぽいページのタイトルの開始部分です。
 autoIndexOfPrefix :: [Text]
 autoIndexOfPrefix =
-  T.lines
-    $ T.strip
+  T.lines $
+    T.strip
       [r|
 Ftp
 Ftp -
@@ -63,8 +64,8 @@ of
 -- | ブロック対象とするディレクトリの開始パスです。
 startDir :: [Text]
 startDir =
-  T.lines
-    $ T.strip
+  T.lines $
+    T.strip
       [r|
 Linux
 debian

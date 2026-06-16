@@ -47,5 +47,5 @@ import qualified Text.Pretty.Simple
 :seti -XNoFieldSelectors
 :seti -XTemplateHaskell
 
--- NoImplicitPreludeが既に指定されているのでRIOをimportしないと基本的な関数が使えなくなります。
-import RIO
+-- NoImplicitPreludeが既に指定されているのでHimariをimportしないと基本的な関数が使えなくなります。
+import Himari

@@ -6,6 +6,142 @@ haddock-style: single-line
 sort-constraints: true
 sort-derived-classes: true
 
+# Himariがre-exportしているモジュールの演算子fixity解決用
+# チェーン方式: fourmoluは再帰的にreexportsを展開する
+reexports:
+  # Himari → 内部モジュール
+  - module Himari exports "himari" Himari.Char
+  - module Himari exports "himari" Himari.Env
+  - module Himari exports "himari" Himari.Env.Simple
+  - module Himari exports "himari" Himari.Logger
+  - module Himari exports "himari" Himari.Prelude
+
+  # Himari.Prelude → 外部モジュール
+  - module Himari.Prelude exports "base" Control.Applicative
+  - module Himari.Prelude exports "base" Control.Monad
+  - module Himari.Prelude exports "base" Control.Monad.ST
+  - module Himari.Prelude exports "base" Data.Bifoldable
+  - module Himari.Prelude exports "base" Data.Bitraversable
+  - module Himari.Prelude exports "base" Data.Bool
+  - module Himari.Prelude exports "base" Data.Coerce
+  - module Himari.Prelude exports "base" Data.Complex
+  - module Himari.Prelude exports "base" Data.Either
+  - module Himari.Prelude exports "base" Data.Eq
+  - module Himari.Prelude exports "base" Data.Fixed
+  - module Himari.Prelude exports "base" Data.Foldable
+  - module Himari.Prelude exports "base" Data.Function
+  - module Himari.Prelude exports "base" Data.Functor.Compose
+  - module Himari.Prelude exports "base" Data.Int
+  - module Himari.Prelude exports "base" Data.Kind
+  - module Himari.Prelude exports "base" Data.Maybe
+  - module Himari.Prelude exports "base" Data.Ord
+  - module Himari.Prelude exports "base" Data.Proxy
+  - module Himari.Prelude exports "base" Data.Ratio
+  - module Himari.Prelude exports "base" Data.String
+  - module Himari.Prelude exports "base" Data.Traversable
+  - module Himari.Prelude exports "base" Data.Tuple
+  - module Himari.Prelude exports "base" Data.Void
+  - module Himari.Prelude exports "base" Data.Word
+  - module Himari.Prelude exports "base" GHC.Stack
+  - module Himari.Prelude exports "base" Numeric.Natural
+  - module Himari.Prelude exports "base" Prelude
+  - module Himari.Prelude exports "base" Text.Show
+  - module Himari.Prelude exports "convertible" Data.Convertible
+  - module Himari.Prelude exports "deepseq" Control.DeepSeq
+  - module Himari.Prelude exports "hashable" Data.Hashable
+  - module Himari.Prelude exports "lens" Control.Lens
+  - module Himari.Prelude exports "monad-logger" Control.Monad.Logger
+  - module Himari.Prelude exports "mtl" Control.Monad.Cont
+  - module Himari.Prelude exports "mtl" Control.Monad.Reader
+  - module Himari.Prelude exports "mtl" Control.Monad.State.Strict
+  - module Himari.Prelude exports "mtl" Control.Monad.Writer.CPS
+  - module Himari.Prelude exports "pretty-simple" Debug.Pretty.Simple
+  - module Himari.Prelude exports "pretty-simple" Text.Pretty.Simple
+  - module Himari.Prelude exports "primitive" Control.Monad.Primitive
+  - module Himari.Prelude exports "time" Data.Time
+  - module Himari.Prelude exports "unliftio" UnliftIO
+  - module Himari.Prelude exports "unliftio" UnliftIO.Concurrent
+  - module Himari.Prelude exports "unliftio" UnliftIO.Directory
+  - module Himari.Prelude exports "unliftio" UnliftIO.Environment
+  - module Himari.Prelude exports "unliftio" UnliftIO.Exception.Lens
+  - module Himari.Prelude exports "unliftio" UnliftIO.IO.File
+  # Himari.Prelude → 内部サブモジュール
+  - module Himari.Prelude exports "himari" Himari.Prelude.Aeson
+  - module Himari.Prelude exports "himari" Himari.Prelude.Arrow
+  - module Himari.Prelude exports "himari" Himari.Prelude.Catch
+  - module Himari.Prelude exports "himari" Himari.Prelude.Category
+  - module Himari.Prelude exports "himari" Himari.Prelude.Data
+  - module Himari.Prelude exports "himari" Himari.Prelude.FilePath
+  - module Himari.Prelude exports "himari" Himari.Prelude.Generics
+  - module Himari.Prelude exports "himari" Himari.Prelude.Monoid
+  - module Himari.Prelude exports "himari" Himari.Prelude.Process
+  - module Himari.Prelude exports "himari" Himari.Prelude.Safe
+  - module Himari.Prelude exports "himari" Himari.Prelude.Type
+  - module Himari.Prelude exports "himari" Himari.Prelude.TypeLevel
+
+  # Himari.Prelude.Aeson → 外部モジュール
+  - module Himari.Prelude.Aeson exports "aeson" Data.Aeson
+  - module Himari.Prelude.Aeson exports "aeson" Data.Aeson.QQ.Simple
+  - module Himari.Prelude.Aeson exports "aeson-pretty" Data.Aeson.Encode.Pretty
+  - module Himari.Prelude.Aeson exports "deriving-aeson" Deriving.Aeson
+
+  # Himari.Prelude.Category → 外部モジュール
+  - module Himari.Prelude.Category exports "base" Control.Category
+
+  # Himari.Prelude.FilePath → 外部モジュール
+  - module Himari.Prelude.FilePath exports "filepath" System.FilePath
+
+  # Himari.Prelude.Generics → 外部モジュール
+  - module Himari.Prelude.Generics exports "base" GHC.Generics
+
+  # Himari.Prelude.Safe → 外部モジュール
+  - module Himari.Prelude.Safe exports "safe" Safe
+  - module Himari.Prelude.Safe exports "safe" Safe.Exact
+  - module Himari.Prelude.Safe exports "safe" Safe.Foldable
+
+  # Himari.Prelude.Arrow → 外部モジュール
+  - module Himari.Prelude.Arrow exports "base" Control.Arrow
+
+  # Himari.Prelude.Catch → 外部モジュール
+  - module Himari.Prelude.Catch exports "exceptions" Control.Monad.Catch
+
+  # Himari.Prelude.Data → 外部モジュール
+  - module Himari.Prelude.Data exports "base" Data.Data
+
+  # Himari.Prelude.Monoid → 外部モジュール
+  - module Himari.Prelude.Monoid exports "base" Data.Monoid
+  - module Himari.Prelude.Monoid exports "base" Data.Semigroup
+
+  # Himari.Prelude.Process → 外部モジュール
+  - module Himari.Prelude.Process exports "typed-process" System.Process.Typed
+
+  # Himari.Prelude.Type → 外部モジュール
+  - module Himari.Prelude.Type exports "bytestring" Data.ByteString
+  - module Himari.Prelude.Type exports "bytestring" Data.ByteString.Lazy
+  - module Himari.Prelude.Type exports "bytestring" Data.ByteString.Short
+  - module Himari.Prelude.Type exports "unordered-containers" Data.HashMap.Strict
+  - module Himari.Prelude.Type exports "unordered-containers" Data.HashSet
+  - module Himari.Prelude.Type exports "containers" Data.IntMap.Strict
+  - module Himari.Prelude.Type exports "containers" Data.IntSet
+  - module Himari.Prelude.Type exports "base" Data.List
+  - module Himari.Prelude.Type exports "base" Data.List.NonEmpty
+  - module Himari.Prelude.Type exports "containers" Data.Map.Strict
+  - module Himari.Prelude.Type exports "containers" Data.Sequence
+  - module Himari.Prelude.Type exports "containers" Data.Set
+  - module Himari.Prelude.Type exports "text" Data.Text
+  - module Himari.Prelude.Type exports "text" Data.Text.Lazy
+  - module Himari.Prelude.Type exports "containers" Data.Tree
+  - module Himari.Prelude.Type exports "vector" Data.Vector
+
+  # Himari.Prelude.TypeLevel → 外部モジュール
+  - module Himari.Prelude.TypeLevel exports "base" Data.Type.Coercion
+  - module Himari.Prelude.TypeLevel exports "base" Data.Type.Equality
+
+# 利用者向けの汎用的なfixity設定
+# hspecは既にfourmoluによってサポートされているため不要
+# sydtestは既にinfix宣言があるため不要
+# sandwichはinfix宣言がないため手動設定が必要
+# hspec, sydtest, sandwichと名前が被っている演算子が多いが優先度は概ね同じなので使いまわします
 fixities:
   - infix 1 `shouldBe`, `shouldNotBe`, `shouldContain`, `shouldNotContain`
   - infix 1 `shouldBeSet`, `shouldContainPredicate`, `shouldNotContainPredicate`

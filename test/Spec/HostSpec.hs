@@ -1,10 +1,9 @@
 module Spec.HostSpec (tests) where
 
-import Data.Aeson
+import Data.Text qualified as T
+import Himari
 import Host
-import Import
 import Network.HTTP.Simple
-import RIO.Text qualified as T
 import Test.Sandwich
 import Type
 
@@ -63,4 +62,6 @@ getStackExchangeSites = do
           ["curl/7.81.1"]
           "https://api.stackexchange.com/2.3/sites?pagesize=10000"
   sites <- getResponseBody <$> httpJSON request
-  return $ T.dropPrefix "https://" . site_url <$> items sites
+  return $ dropHttpsPrefix . site_url <$> items sites
+ where
+  dropHttpsPrefix url = fromMaybe url $ T.stripPrefix "https://" url
