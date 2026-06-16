@@ -1,6 +1,6 @@
 module Main (main) where
 
-import RIO
+import Himari
 import Spec qualified
 import Test.Sandwich
 

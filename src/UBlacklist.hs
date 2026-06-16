@@ -1,13 +1,14 @@
 module UBlacklist (writeUBlacklistTxt) where
 
-import Import
-import RIO.Text as T
+import Data.Text qualified as T
+import Data.Text.IO.Utf8 qualified as Utf8
+import Himari
 import Type
 
 -- | `uBlacklist.txt`をワーキングディレクトリに書き込みます。
-writeUBlacklistTxt :: [UBlacklistPattern] -> RIO env ()
+writeUBlacklistTxt :: (MonadIO m) => [UBlacklistPattern] -> m ()
 writeUBlacklistTxt patterns =
-  writeFileUtf8 "uBlacklist.txt" $ T.unlines (T.unlines . toUBlacklistText <$> patterns)
+  liftIO . Utf8.writeFile "uBlacklist.txt" $ T.unlines (T.unlines . toUBlacklistText <$> patterns)
 
 toUBlacklistText :: UBlacklistPattern -> [Text]
 toUBlacklistText (UBlacklistPatternHostGroup x) = toMatchAllUrl <$> hostGroupFull x

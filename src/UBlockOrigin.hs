@@ -2,15 +2,18 @@
 
 module UBlockOrigin (writeUBlockOriginTxt) where
 
-import Data.String.Here
-import Import
-import RIO.Text as T
+import Data.String.Here (i)
+import Data.Text qualified as T
+import Data.Text.IO.Utf8 qualified as Utf8
+import Himari
+import Text.RawString.QQ (r)
 import Type
 
 -- | `uBlockOrigin.txt`をワーキングディレクトリに書き込みます。
-writeUBlockOriginTxt :: [HostGroup] -> RIO env ()
+writeUBlockOriginTxt :: (MonadIO m) => [HostGroup] -> m ()
 writeUBlockOriginTxt hostGroups =
-  writeFileUtf8 "uBlockOrigin.txt"
+  liftIO
+    . Utf8.writeFile "uBlockOrigin.txt"
     . stripTextFile
     . (header <>)
     $ T.unlines (T.unlines . fmap toRule . hostGroupInfix <$> hostGroups)
@@ -38,4 +41,4 @@ toRule host =
 -- | 通常の`strip`だとテキストファイルとして必要な末尾改行も削除してしまうのでそれを取り付け直す。
 -- 効率のことは考えていないコードです。
 stripTextFile :: Text -> Text
-stripTextFile = flip snoc '\n' . T.strip
+stripTextFile = flip T.snoc '\n' . T.strip

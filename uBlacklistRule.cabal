@@ -66,7 +66,6 @@ library
   exposed-modules:
     Code
     Host
-    Import
     Run
     Title
     Type
@@ -75,14 +74,14 @@ library
 
   build-depends:
     base,
-    convertible,
+    containers,
     file-embed,
     here,
+    himari,
     iso3166-country-codes,
     iso639,
-    pretty-simple,
     raw-strings-qq,
-    rio,
+    text,
 
 executable uBlacklistRule
   import: basic
@@ -95,7 +94,7 @@ executable uBlacklistRule
 
   build-depends:
     base,
-    rio,
+    himari,
     uBlacklistRule,
 
 test-suite uBlacklistRule-test
@@ -117,9 +116,9 @@ test-suite uBlacklistRule-test
     sandwich:sandwich-discover
 
   build-depends:
-    aeson,
     base,
+    himari,
     http-conduit,
-    rio,
     sandwich,
+    text,
     uBlacklistRule,
