@@ -1,3 +1,12 @@
+[files]
+# assetは特性上ブロック対象のドメイン名などが大量に並ぶため、typosの対象として不適切。
+# assetから生成されるuBlacklist.txtとuBlockOrigin.txtも同様に除外する。
+extend-exclude = [
+  "asset/",
+  "uBlacklist.txt",
+  "uBlockOrigin.txt",
+]
+
 [default.extend-words]
 # Part of "RGBa" (Pillow's pre-multiplied alpha RGB mode)
 Ba = "Ba"

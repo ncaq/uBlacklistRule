@@ -1,19 +1,23 @@
 {-# LANGUAGE QuasiQuotes #-}
+
 module UBlockOrigin (writeUBlockOriginTxt) where
 
-import           Data.String.Here
-import           Import
-import           RIO.Text         as T
-import           Type
+import Data.String.Here
+import Import
+import RIO.Text as T
+import Type
 
 -- | `uBlockOrigin.txt`をワーキングディレクトリに書き込みます。
 writeUBlockOriginTxt :: [HostGroup] -> RIO env ()
 writeUBlockOriginTxt hostGroups =
-  writeFileUtf8 "uBlockOrigin.txt" . stripTextFile . (header <>) $
-  T.unlines (T.unlines . fmap toRule . hostGroupInfix <$> hostGroups)
+  writeFileUtf8 "uBlockOrigin.txt"
+    . stripTextFile
+    . (header <>)
+    $ T.unlines (T.unlines . fmap toRule . hostGroupInfix <$> hostGroups)
 
 header :: Text
-header = [r|
+header =
+  [r|
 [uBlock Origin]
 ! Title: uBlacklistRule for Firefox for Android
 ! Description: Rules for uBlacklist will be converted to uBlock Origin rules for environments where uBlacklist is not available.

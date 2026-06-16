@@ -1,11 +1,12 @@
 {-# OPTIONS_GHC -Wno-orphans #-}
+
 module Code (codes) where
 
-import           Data.ISO3166_CountryCodes
-import           Data.LanguageCodes
-import           Import
-import           RIO.List
-import           RIO.Text                  as T
+import Data.ISO3166_CountryCodes
+import Data.LanguageCodes
+import Import
+import RIO.List
+import RIO.Text as T
 
 -- | 機械翻訳サイトが使う可能性のある地域コード一覧。
 -- 単にブラックリスト一覧として見ると、分かれているのはわかりにくいだけなので混ぜてソートします。

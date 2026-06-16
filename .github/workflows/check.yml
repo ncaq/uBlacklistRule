@@ -13,20 +13,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  nix-fast-build:
-    name: nix-fast-build
+  nix-flake-check:
+    name: nix-flake-check
     runs-on: ubuntu-24.04
     permissions:
       contents: read # リポジトリコンテンツの読み取り
       id-token: write # niks3 OIDC認証
-    timeout-minutes: 120 # キャッシュがヒットしなくてGHCのビルドなどをすると時間がかかるため、タイムアウトを長めに設定。
+    timeout-minutes: 240 # キャッシュがヒットしなくてGHCのビルドなどをすると時間がかかるため、タイムアウトを長めに設定。
     steps:
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           persist-credentials: false
       - uses: ncaq/nix-composite-action@5a61f70ad5b7d2f276732e14355b7fb2ddd4caaf # v1.3.0
         with:
-          extra-nix-config: |
-            sandbox = relaxed
           cachix-auth-token: "${{ secrets.CACHIX_AUTH_TOKEN }}"
-      - run: nix run '.#nix-fast-build' -- --option eval-cache false --option sandbox relaxed --no-link --skip-cached --no-nom
+      - run: nix flake check

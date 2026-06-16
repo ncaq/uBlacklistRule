@@ -1,0 +1,125 @@
+cabal-version: 3.12
+name: uBlacklistRule
+version: 0.1.0.0
+synopsis: uBlacklist向けのルールです。
+license: MIT
+license-file: LICENSE
+author: ncaq
+maintainer: ncaq@ncaq.net
+copyright: ncaq
+build-type: Simple
+extra-source-files:
+  -- `Host.hs`がfile-embedでコンパイル時に埋め込むため、コンポーネントのソースに含める。
+  README.md
+  asset/*.txt
+
+source-repository head
+  type: git
+  location: https://github.com/ncaq/uBlacklistRule
+
+common basic
+  ghc-options:
+    -Wall
+    -Wcompat
+    -Widentities
+    -Wincomplete-record-updates
+    -Wincomplete-uni-patterns
+    -Wpartial-fields
+    -Wredundant-constraints
+
+  default-language: GHC2024
+  default-extensions:
+    ApplicativeDo
+    BlockArguments
+    CPP
+    DefaultSignatures
+    DerivingVia
+    DuplicateRecordFields
+    FunctionalDependencies
+    LexicalNegation
+    LinearTypes
+    MonadComprehensions
+    MultiWayIf
+    NegativeLiterals
+    NoImplicitPrelude
+    OverloadedLabels
+    OverloadedRecordDot
+    OverloadedStrings
+    ParallelListComp
+    PatternSynonyms
+    QualifiedDo
+    QuantifiedConstraints
+    QuasiQuotes
+    RecordWildCards
+    RecursiveDo
+    StrictData
+    TemplateHaskell
+    TypeData
+    TypeFamilies
+    TypeFamilyDependencies
+    ViewPatterns
+
+library
+  import: basic
+  hs-source-dirs: src
+  -- cabal-gild: discover ./src
+  exposed-modules:
+    Code
+    Host
+    Import
+    Run
+    Title
+    Type
+    UBlacklist
+    UBlockOrigin
+
+  build-depends:
+    base,
+    convertible,
+    file-embed,
+    here,
+    iso3166-country-codes,
+    iso639,
+    pretty-simple,
+    raw-strings-qq,
+    rio,
+
+executable uBlacklistRule
+  import: basic
+  hs-source-dirs: app
+  main-is: Main.hs
+  ghc-options:
+    -threaded
+    -rtsopts
+    -with-rtsopts=-N
+
+  build-depends:
+    base,
+    rio,
+    uBlacklistRule,
+
+test-suite uBlacklistRule-test
+  import: basic
+  type: exitcode-stdio-1.0
+  hs-source-dirs: test
+  main-is: Main.hs
+  ghc-options:
+    -threaded
+    -rtsopts
+    -with-rtsopts=-N
+
+  -- cabal-gild: discover ./test --exclude ./test/Main.hs
+  other-modules:
+    Spec
+    Spec.HostSpec
+
+  build-tool-depends:
+    sandwich:sandwich-discover
+
+  build-depends:
+    aeson,
+    base,
+    http-conduit,
+    rio,
+    sandwich,
+    uBlacklistRule,

@@ -1,7 +1,14 @@
 indentation: 2
-column-limit: 120
+column-limit: 100
 function-arrows: leading
 import-export-style: leading
 haddock-style: single-line
 sort-constraints: true
 sort-derived-classes: true
+
+fixities:
+  - infix 1 `shouldBe`, `shouldNotBe`, `shouldContain`, `shouldNotContain`
+  - infix 1 `shouldBeSet`, `shouldContainPredicate`, `shouldNotContainPredicate`
+  - infix 1 `shouldBeNothing`, `shouldBeJust`, `shouldBeLeft`, `shouldBeRight`
+  - infix 1 `textShouldContain`, `textShouldNotContain`
+  - infix 1 `shouldFail`, `shouldFailPredicate`, `shouldThrow`

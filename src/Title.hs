@@ -1,11 +1,12 @@
 {-# LANGUAGE QuasiQuotes #-}
+
 -- | uBlacklistのtitleマッチを当てにしたルールたちです。
 module Title (titlePattern) where
 
-import           Import
-import qualified RIO.List as L
-import qualified RIO.Text as T
-import           Type
+import Import
+import RIO.List qualified as L
+import RIO.Text qualified as T
+import Type
 
 titlePattern :: [Title]
 titlePattern = [nullTitlePattern, redirectPattern, indexOfPattern]
@@ -33,21 +34,26 @@ redirectPattern = Title [[r|^待つ。$|]]
 indexOfPattern :: Title
 indexOfPattern =
   let u = ('^' `T.cons`) <$> startIndexOfAsUrl
-      a = ["^" <> p <> " \\/" <> d| p <- autoIndexOfPrefix, d <- startDir]
-  in Title $ L.sort (u <> a)
+      a = ["^" <> p <> " \\/" <> d | p <- autoIndexOfPrefix, d <- startDir]
+   in Title $ L.sort (u <> a)
 
 -- | URLをそのまま表したようなタイトルです。
 startIndexOfAsUrl :: [Text]
-startIndexOfAsUrl = T.lines $ T.strip [r|
+startIndexOfAsUrl =
+  T.lines
+    $ T.strip
+      [r|
 ftp:\/\/ftp\.
 ftp\/
 https?:\/\/ftp\.
 |]
 
-
 -- | ブロック対象とするauto indexっぽいページのタイトルの開始部分です。
 autoIndexOfPrefix :: [Text]
-autoIndexOfPrefix = T.lines $ T.strip [r|
+autoIndexOfPrefix =
+  T.lines
+    $ T.strip
+      [r|
 Ftp
 Ftp -
 Index of
@@ -56,7 +62,10 @@ of
 
 -- | ブロック対象とするディレクトリの開始パスです。
 startDir :: [Text]
-startDir = T.lines $ T.strip [r|
+startDir =
+  T.lines
+    $ T.strip
+      [r|
 Linux
 debian
 ftp

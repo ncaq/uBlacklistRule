@@ -1,0 +1,10 @@
+rules:
+  # `secrets-outside-env`はトークンをEnvironmentに紐付けず参照するのを警告する。
+  # しかしEnvironmentのprotection rules(承認ゲート)は、
+  # private repositoryではGitHub Pro以上が必要。
+  # deploymentの表示も個人ライブラリのpublishでは過剰。
+  # どうせ書き込み権限がないとsecretは読めない。
+  # 承認ゲートが必要なシークレットだけ理解のもとでEnvironmentに入れれば十分。
+  # ルールごと無視します。
+  secrets-outside-env:
+    disable: true
