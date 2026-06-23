@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
         with:
           persist-credentials: false
-      - uses: ncaq/nix-composite-action@76930b11f37310bc68c66492a09045c4f0432226 # v1.3.1
+      - uses: ncaq/nix-composite-action@1f61495635078811dbd842fc9d320c4d67380fcf # v2.0.0
         with:
           cachix-auth-token: "${{ secrets.CACHIX_AUTH_TOKEN }}"
       - run: nix flake check
