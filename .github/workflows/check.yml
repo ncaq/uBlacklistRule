@@ -15,7 +15,7 @@ concurrency:
 jobs:
   nix-flake-check:
     name: nix-flake-check
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: read # リポジトリコンテンツの読み取り
       id-token: write # niks3 OIDC認証
