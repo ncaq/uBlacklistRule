@@ -18,18 +18,18 @@
       "Bash(actionlint:*)",
       "Bash(deadnix:*)",
       "Bash(editorconfig-checker:*)",
-      "Bash(gh * browse:*)",
-      "Bash(gh * checks:*)",
-      "Bash(gh * clone:*)",
-      "Bash(gh * diff:*)",
-      "Bash(gh * download:*)",
-      "Bash(gh * list:*)",
-      "Bash(gh * logs:*)",
-      "Bash(gh * search:*)",
-      "Bash(gh * status:*)",
-      "Bash(gh * verify:*)",
-      "Bash(gh * view:*)",
-      "Bash(gh * watch:*)",
+      "Bash(gh * browse*)",
+      "Bash(gh * checks*)",
+      "Bash(gh * clone*)",
+      "Bash(gh * diff*)",
+      "Bash(gh * download*)",
+      "Bash(gh * list*)",
+      "Bash(gh * logs*)",
+      "Bash(gh * search*)",
+      "Bash(gh * status*)",
+      "Bash(gh * verify*)",
+      "Bash(gh * view*)",
+      "Bash(gh * watch*)",
       "Bash(gh api *issues/*/comments*)",
       "Bash(gh api *pulls/*/comments*)",
       "Bash(gh api *pulls/*/reviews*)",
@@ -65,6 +65,6 @@
       "Bash(zizmor:*)",
       "mcp__plugin_nix-tasuke_nixos"
     ],
-    "deny": ["Bash(gh * delete:*)", "Bash(gh repo archive:*)", "Bash(gh repo rename:*)", "Bash(rm:*)"]
+    "deny": ["Bash(gh * delete*)", "Bash(gh repo archive:*)", "Bash(gh repo rename:*)", "Bash(rm:*)"]
   }
 }
