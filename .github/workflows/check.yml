@@ -24,5 +24,5 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           persist-credentials: false
-      - uses: ncaq/nix-composite-action@d23db784c25570a243d83ebb23da31e240ccfe77 # v3.0.6
+      - uses: ncaq/nix-composite-action@d23ad7ee210d5755242ca7ff00881b81fb00580e # v3.0.7
       - run: nix flake check
