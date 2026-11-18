@@ -1,0 +1,6 @@
+# actionlintがubuntu-26.04系統のランナーラベルに未対応なので既知のラベルとして登録する。
+# https://github.com/rhysd/actionlint/issues/682
+self-hosted-runner:
+  labels:
+    - ubuntu-26.04
+    - ubuntu-26.04-arm
